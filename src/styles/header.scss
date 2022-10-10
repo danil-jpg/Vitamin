@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     
     position: absolute;
-    z-index: 1;
+    z-index: 2;
 }
 .header__container{
     display: flex;
@@ -15,15 +15,23 @@
     display: block;
     flex-grow: 1;
     margin: 0px 0px 0px 20px;
+    img{
+        cursor: pointer;
+    }
 }
-.header__account-profile {
+.header__account {
+
     .header__account-icon{
+        cursor: pointer;
+
         margin: 0px 0px 0px 0px;
         display: block;
     }
 }
 .header__cart {
     .header__cart-icon{
+        cursor: pointer;
+
         margin: 0px 0px 0px 30px;
         display: block;
     }
