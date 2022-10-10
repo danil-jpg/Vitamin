@@ -1,0 +1,84 @@
+.header__main{
+    margin: 30px 0 0 0;
+    background-image: url('img/Lending/line-header1.svg');
+    background-repeat: no-repeat;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    max-width: 100vw;
+}
+.header__logo-icon {
+    display: block;
+    flex-grow: 1;
+    margin: 0px 0px 0px 20px;
+}
+.header__account-profile {
+    .header__account-icon{
+        margin: 0px 0px 0px 0px;
+        display: block;
+    }
+}
+.header__cart {
+    .header__cart-icon{
+        margin: 0px 0px 0px 30px;
+        display: block;
+    }
+}
+.header__button {
+    font-family: Effra;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    text-align: center;
+    color: #FFFFFF;
+
+    background: #FF7D4E;
+    border-radius: 100px;
+
+    width: 154px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px 15px 0px 30px;
+}
+
+@media (max-width:480px){
+    .header__container{
+        justify-content: space-between;
+
+        padding: 0px 20px 0px 20px;
+    }
+    .header__main {
+        margin: 15px 0 0;
+        padding: 0px 0px 15px 0px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.7);
+    }
+    .header__button{
+        display: none;
+    }
+    .header__logo-icon{
+        order: 2;
+        flex-grow: 0;
+
+        margin: 0px 0px 0px 0px;
+        img{
+            width: 33.6px;
+            height: 40px;
+        }
+    }
+    .header__account{
+        order: 1;
+    }
+    .header__cart{
+        order: 3;
+        .header__cart-icon{
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}
