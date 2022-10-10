@@ -1,31 +1,151 @@
 .lending{
-    background-color: #F3EBE9;
+    background-color: #fff;
 }
 .lending-vitamin__container{
+    width: 100vw;
+    padding: 0 0px 0px 15px;
+
     display: flex;
+    position: relative;
+
+    height: 960px;
+    &::before{
+        content: "";
+        position: absolute;
+        bottom: 38px;
+        right: 42.3%;
+        z-index: 2;
+
+        background-image: url("../img/Lending/line-header2.svg");
+        background-repeat: no-repeat;
+        background-position: top 0 right 0;
+
+        width: 280px;
+        height: 140px;
+    }
 }
 .lending-vitamin__text-contents {
     display: flex;
     flex-direction: column;
+
+    flex: 0 1 50%;
+
+    padding: 0 0 0 187px;
+
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 198px;
+        z-index: 2;
+
+        background-image: url("../img/Lending/line-header1.svg");
+        background-repeat: no-repeat;
+        background-position: top 0 right 0;
+
+        width: 180px;
+        height: 165px;
+    }
 }
 .lending-vitamin__text-title {
     font-family: 'Effra';
     font-weight: 500;
     font-size: 56px;
     line-height: 68px;
+
+    margin: 260px 0px 0px 0px;
     span{
         color: rgba(237, 129, 94, 1);
     }
 }
 .lending-vitamin__text-text {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 163.42%;
+
+    color: #808080;
+
+    margin: 35px 0px 0px 0px;
 }
 .lending-vitamin__button {
+    margin: 51px 0px 0px 0px;
+    display: flex;
+    align-items: center;
 }
 .lending-vitamin__button-left {
+    background: #6E5DDC;
+    border-radius: 200px;
+    width: 260px;
+    height: 74px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 163.42%;
+    color: #FFFFFF;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0px 33px 0px 0px;
+    padding: 0px 0px 3px 0px;
 }
 .lending-vitamin__button-right {
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #F27E58;
+
+    background-image: url('../img/Lending/arrow-to-shop.svg');
+    background-repeat: no-repeat;
+    background-position: right 2px top 6px;
+
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 0px;
 }
 .lending-vitamin__icon-contents {
-}
+    flex: 0 1 50%;
+
+    overflow: hidden;
+    background-color: #F9F9F9;
+
+    position: relative;
+    &::before{
+        content: "";
+        background-color: #6E5DDC;
+        border-radius: 100%;
+        width: 523px;
+        height: 523px;
+
+        position: absolute;
+        top: 218px;
+        left: 181px;
+        z-index: 0;
+    }
+    &::after{
+        content: "";
+        background-color: #FFCA78;
+        border-radius: 100%;
+        width: 95px;
+        height: 95px;
+
+        position: absolute;
+        top: 171px;
+        right: 74px;
+        z-index: 0;
+    }
 .lending-vitamin__block {
+    }
+    img{
+        object-position: left -195px top 135px;
+
+        position: relative;
+        z-index: 1;
+    }
 }
