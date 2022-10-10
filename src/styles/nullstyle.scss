@@ -69,6 +69,7 @@
     -o-flex-direction: column;
     flex-direction: column;
     min-height: 100%;
+    position: relative;
 }
 [class*=__container]{
     width: 1426px;
