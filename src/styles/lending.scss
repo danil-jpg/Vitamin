@@ -139,15 +139,15 @@
         right: 74px;
         z-index: 0;
     }
+}
 .lending-vitamin__block {
-    }
     img{
         object-position: left -195px top 135px;
 
         position: relative;
         z-index: 1;
     }
-}
+    }
 
 @media (max-width: 1460px){
     .lending-vitamin__container{
@@ -299,6 +299,7 @@
         width: 320px;
     }
     .lending-vitamin__text-title{
+        margin-left: 5px;
         br{
             display: block;
         }
