@@ -1,3 +1,4 @@
+// lending-vitamin
 .lending{
     background-color: #fff;
 }
@@ -328,6 +329,8 @@
     }
 }
 
+
+// lending-healthy
 .lending-healthy__container {
     width: 100vw;
     height: 960px;
@@ -347,7 +350,7 @@
     flex: 0 1 50%;
 
     margin: 0px 0px 0px 0px;
-    padding: 0 0 44px 43px;
+    padding: 0 0 44px 54px;
 
     position: relative;
     &::before{
@@ -549,5 +552,265 @@
     }
     .lending-healthy__block-3 img {
         width: 38px;
+    }
+}
+
+// lending-listeners
+.lending-listeners {
+}
+.lending-listeners__container{
+}
+.listeners__block-icon{
+    img{
+        &:nth-child(1){
+            transform: translate(0,-278px);
+
+            position: relative;
+            z-index: 1;
+        }
+        &:nth-child(2){
+            transform: translate(-58px,-101px);
+        }
+    }
+}
+.lending-listeners__text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    margin-top: 49px;
+    margin-bottom: 70px;
+    padding: 0px 0px 0px 0px;
+
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 4px;
+        right: 20px;
+
+        background-color: #8172DD;
+        border-radius: 100%;
+
+        width: 95px;
+        height: 95px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 18px;
+        left: -52px;
+
+        background-image: url('../img/Lending/lending-listeners-1.svg');
+        background-repeat: no-repeat;
+
+        width: 142px;
+        height: 280px;
+    }
+    img{
+        padding: 0px 1px 0px 0px;
+    }
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+        text-align: center;
+
+        margin: 50px 0px 0px 0px;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.42%;
+        text-align: center;
+
+        color: #808080;
+
+        margin: 30px 0px 0px 0px;
+    }
+    a{
+        width: 260px;
+        height: 74px;
+        margin: 52px 0px 0px 0px;
+        padding: 0px 0px 3px 0px;
+
+        background: #6E5DDC;
+        border-radius: 200px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 163.42%;
+
+        color: #FFFFFF;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1460px){
+    .lending-listeners__container{
+        width: 1140px;
+    }
+    .listeners__block-icon{
+        margin-top: 180px;
+
+        display: flex;
+        justify-content: center;
+
+        width: 100%;
+    }
+    .listeners__block-icon img:nth-child(2) {
+        transform: translate(-58px,9px);
+
+        width: clamp(16rem, 6.439rem + 47.81vw, 50.063rem);
+    }
+    .listeners__block-icon img:nth-child(1) {
+        transform: translate(0,-150px);
+        
+        width: clamp(10.5rem, 4.149rem + 31.75vw, 33.125rem);
+    }
+}
+@media (max-width: 1140px){
+    .lending-listeners__container{
+        width: 912px;
+    }
+}
+@media (max-width: 890px){
+    .lending-listeners__container{
+        width: 645px;
+    }
+    .listeners__block-icon{
+        margin-top: 110px;
+    }
+    .listeners__block-icon img:nth-child(1) {
+        transform: translate(30px,-70px);
+    }
+    .listeners__block-icon img:nth-child(2) {
+        transform: translate(-35px,9px);
+    }
+    .lending-listeners__text::after{
+        display: none;
+    }
+    .lending-listeners__text{
+        img{
+            width: clamp(3.125rem, 1.371rem + 8.77vw, 6.25rem);
+        }
+        h2{
+            font-size: clamp(1.5rem, 0.377rem + 5.61vw, 3.5rem);
+            line-height: clamp(1.813rem, 0.444rem + 6.84vw, 4.25rem);
+            margin-top: 30px;
+        }
+        p{
+            font-size: clamp(0.875rem, 0.664rem + 1.05vw, 1.25rem);
+            br{
+                display: none;
+            }
+        }
+        a{
+            width: clamp(9.625rem, 5.906rem + 18.6vw, 16.25rem);
+            height: clamp(3.125rem, 2.283rem + 4.21vw, 4.625rem);
+
+            font-size: clamp(1rem, 0.86rem + 0.7vw, 1.25rem);
+            line-height: clamp(1.188rem, 0.696rem + 2.46vw, 2.063rem);
+        }
+    }
+}
+@media (max-width: 645px){
+    .lending-listeners__container{
+        width: 375px;
+    }
+    .listeners__block-icon {
+        margin-top: 57px;
+    }
+    .listeners__block-icon img:nth-child(1){
+        width: 202.24px;
+        height: 171.72px;
+
+        transform: translate(59px,-56px);
+    }
+    .listeners__block-icon img:nth-child(2){
+        width: 293.74px;
+        height: 170.44px;
+
+        transform: translate(-61px,9px);
+    }
+    .lending-listeners__text{
+        margin-top: 67px;
+        margin-bottom: 61px;
+    }
+    .lending-listeners__text::before{
+        width: 60px;
+        height: 60px;
+
+        top: -35px;
+        right: -45px;
+    }
+    .lending-listeners__text img{
+        height: 50px;
+        width: 50px;
+    }
+    .lending-listeners__text h2{
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .lending-listeners__text p{
+        margin-top: 15px;
+        padding: 0 7px 0 7px;
+
+        font-size: 14px;
+        line-height: 163.42%;
+    }
+    .lending-listeners__text a{
+        margin-top: 27px;
+
+        width: 154px;
+        height: 50px;
+
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media (max-width: 374px){
+    .lending-listeners__container{
+        width: 320px;
+    }
+    .listeners__block-icon {
+        margin-top: 39px;
+    }
+    .listeners__block-icon img:nth-child(1){
+        width: 168.24px;
+        height: 142.85px;
+
+        transform: translate(51px,-39px);
+    }
+    .listeners__block-icon img:nth-child(2){
+        width: 256px;
+        height: 148.54px;
+
+        transform: translate(-53px,9px);
+    }
+    .lending-listeners__text::before{
+        top: -14px;
+    }
+    .lending-listeners__text{
+        margin-top: 70px;
+        margin-bottom: 60px;
+    }
+    .lending-listeners__text h2{
+        br{
+            display: none;
+        }
+    }
+    .lending-listeners__text a{
+        margin-top: 20px;
     }
 }
