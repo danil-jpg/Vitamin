@@ -526,3 +526,28 @@
         }
     }
 }
+@media (max-width: 320px){
+    .lending-healthy__content-left::before {
+        left: 69.7%;
+        top: -15.3%;
+    }
+    .lending-healthy__content-left h2 {
+        padding: 0 18px;
+    }
+    .lending-healthy__block img{
+        width: 47px;
+    }
+    .lending-healthy__block{
+        p{
+            br{
+                display: block;
+            }
+        }
+    }
+    .lending-healthy__block-2 img {
+        width: 39px;
+    }
+    .lending-healthy__block-3 img {
+        width: 38px;
+    }
+}
