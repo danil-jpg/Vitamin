@@ -36,7 +36,6 @@
     &::before{
         content: "";
         position: absolute;
-        top: 0;
         right: 198px;
         z-index: 2;
 
@@ -140,12 +139,191 @@
         right: 74px;
         z-index: 0;
     }
+}
 .lending-vitamin__block {
-    }
     img{
         object-position: left -195px top 135px;
 
         position: relative;
         z-index: 1;
+    }
+    }
+
+@media (max-width: 1460px){
+    .lending-vitamin__container{
+        width: 1190px;
+        height: 100%;
+
+        flex-direction: column;
+
+        padding: 0 15px;
+    }
+    .lending-vitamin__text-title{
+        margin-top: clamp(6.875rem, 4.243rem + 13.16vw, 16.25rem);
+    }
+    .lending-vitamin__text-contents{
+        flex: 0 1 100%;
+        padding: 0px 0px 0px 0px;
+
+        text-align: center;
+        align-items: center;
+    }
+    .lending-vitamin__icon-contents{
+        flex: 0 1 100%;
+        
+        background-color: #fff;
+    }
+    .lending-vitamin__text-contents::before{
+        bottom: 0;
+        right: 0;
+        transform: rotate(180deg);
+    }
+    .lending-vitamin__icon-contents::after{
+        display: none;
+    }
+    .lending-vitamin__icon-contents::before{
+        top: 60px;
+        left: 340px;
+    }
+    .lending-vitamin__icon-contents img{
+        object-position: left -65px top 0px;
+    }   
+    .lending-vitamin__container::before{
+        top: 50%;
+        bottom: 0;
+        right: 0;
+        left: -130px;
+    }
+}
+@media (max-width: 1140px){
+    .lending-vitamin__container{
+        width: 912px;
+    }
+    .lending-vitamin__icon-contents img{
+        object-position: left -170px top 0;
+    }
+    .lending-vitamin__icon-contents::before{
+        left: 225px;
+    }
+}
+@media (max-width: 890px){
+    .lending-vitamin__container{
+        width: 645px;
+    }
+    .lending-vitamin__button{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .lending-vitamin__icon-contents img {
+        object-position: left 0 top -25px;
+        inline-size: 100%;
+    }
+    .lending-vitamin__icon-contents::before{
+        display: none;
+    }
+}
+@media (max-width: 645px){
+    .lending-vitamin__container{
+        width: 375px;
+    }
+    .lending-vitamin__text-title{
+        font-size: 24px;
+        line-height: 29px;
+
+        margin-top: 110px;
+        br{
+            display: none;
+        }
+    }
+    .lending-vitamin__text-text{
+        font-size: 14px;
+        line-height: 163.42%;
+
+        margin-top: 15px;
+    }
+    .lending-vitamin__text-contents::before{
+        width: 75px;
+        height: 90px;
+
+        background-size: 100%;
+
+        bottom: 1px;
+        right: -17px;
+    }
+    .lending-vitamin__button{
+        margin-top: 20px;
+    }
+    .lending-vitamin__button-left{
+        width: 154px;
+        height: 50px;
+
+        font-size: 16px;
+        line-height: 19px;
+
+        margin: 0px 0px 0px 0px;
+    }
+    .lending-vitamin__button-right{
+        font-size: 14px;
+        line-height: 17px;
+
+        margin: 0 0 0 2px;
+
+        background-position: right 7px top 5px;
+        background-size: 5.3%;
+    }
+    .lending-vitamin__icon-contents img {
+        display: none;
+    }
+    .lending-vitamin__block{
+        background-image: url('../img/Lending/lending-vitamins2.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: top 11px left -17px;
+        background-size: 110%;
+
+        height: 341px;
+    }
+    .lending-vitamin__container::before{
+        background-size: 100%;
+
+        top: 56.3%;
+        bottom: 0;
+        right: 0;
+        left: -64px;
+        width: 138px;
+        height: 84px;
+    }
+}
+@media (max-width: 374px){
+    .lending-vitamin__container{
+        width: 320px;
+    }
+    .lending-vitamin__text-title{
+        margin-left: 5px;
+        br{
+            display: block;
+        }
+    }
+    .lending-vitamin__text-text{
+        br{
+            display: none;
+        } 
+    }
+    .lending-vitamin__button {
+        margin-top: 21px;
+    }
+    .lending-vitamin__text-contents::before {
+        bottom: 30px;
+        right: -27px;
+    }
+    .lending-vitamin__container::before {
+        top: 61.9%;
+        left: -68px;
+    }
+    .lending-vitamin__block {
+        background-position: top 12px left -16px;
+        background-size: 111%;
+
+        height: 295px;
     }
 }
