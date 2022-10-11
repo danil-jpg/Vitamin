@@ -327,3 +327,202 @@
         height: 295px;
     }
 }
+
+.lending-healthy__container {
+    width: 100vw;
+    height: 960px;
+    display: flex;
+
+    padding: 0px 0px 0px 0px;
+}
+.lending-healthy__content-left {
+    background-image: url('../img/Lending/lending-healthy.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 50%;
+
+    margin: 0px 0px 0px 0px;
+    padding: 0 0 44px 43px;
+
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: 65px;
+        left: 126px;
+        background-color: #FFCA78;
+        border-radius: 100%;
+
+        width: 139px;
+        height: 139px;
+
+    }
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+        
+        color: #FFFFFF;  
+    }
+}
+.lending-healthy__content-right {
+    flex: 0 1 50%;
+
+    padding: 109px 0 0 61px;
+}
+.lending-healthy__block {
+    display: flex;
+    gap: 90px;
+
+    margin: 108px 0px 0px 0px;
+    p{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        padding-top: 6px;
+    }
+}
+.lending-healthy__block-2{
+    margin: 108px 0 0 7px;
+    gap: 97px;
+    p{
+        padding: 13px 0px 0 0px;
+    }
+}
+.lending-healthy__block-3{
+    margin: 100px 0 0 9px;
+    gap: 98px;
+    p{
+        padding: 19px 0px 0 0px;
+    }
+}
+@media (max-width: 1460px){
+    .lending-healthy__container{
+        height: 100%;
+
+        flex-direction: column;
+    }
+    .lending-healthy__content-left{
+        background-size: cover;
+
+        flex: 0 1 100%;
+
+        padding: 15px 0px 15px 0px;
+    }
+    .lending-healthy__content-left::before{
+        left: 85%;
+        top: -25%;
+    }
+    .lending-healthy__content-right{
+        flex: 0 1 100%;
+
+        padding: 0px 0px 0px 0px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .lending-healthy__content-left h2{
+        text-align: center;
+    }
+    .lending-healthy__block{
+        margin-top: clamp(2.875rem, 2.037rem + 4.19vw, 6.75rem);
+    }
+}
+@media (max-width: 890px){
+    .lending-healthy__content-left h2{
+        font-size: clamp(1.5rem, 0.377rem + 5.61vw, 3.5rem);
+        line-height: clamp(1.813rem, 0.444rem + 6.84vw, 4.25rem);
+    }
+    .lending-healthy__block p{
+        font-size: clamp(0.875rem, 0.314rem + 2.81vw, 1.875rem);
+        line-height: clamp(1rem, 0.298rem + 3.51vw, 2.25rem);
+    }
+    .lending-healthy__block{
+        gap: clamp(1.563rem, -0.718rem + 11.4vw, 5.625rem);
+    }
+    .lending-healthy__content-left::before{
+        width: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
+        height: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
+    }
+}
+@media (max-width: 375px){
+    .lending-healthy__content-left{
+        height: 198px;
+
+        padding: 0px 0px 0px 0px;
+
+        flex: 1 1 auto;
+        h2{
+            font-size: 24px;
+            line-height: 29px;
+            padding: 0px 47px 0px 47px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .lending-healthy__content-left::before {
+        left: 79.8%;
+        top: -15%;
+        width: 60px;
+        height: 60px;
+    }
+    .lending-healthy__content-right{
+        padding: 0px 20px 0px 20px;
+
+        align-items: flex-start;
+    }
+    .lending-healthy__block{
+        margin-top: 40px;
+        gap: 25.6px;
+        img{
+            height: 38px;
+            width: 50px;
+        }
+        p{
+            padding-top: 3px;
+
+            font-size: 14px;
+            line-height: 16.9px;
+            br{
+                display: none;
+            }
+        }
+    }
+    .lending-healthy__block-2{
+        margin-top: 41px;
+        margin-left: 4px;
+        gap: 28.8px;
+        img{
+            height: 43px;
+            width: 45px;
+        }
+        p{
+            padding-top: 5px;
+        }
+    }
+    .lending-healthy__block-3{
+        margin-top: 40.31px;
+        margin-bottom: 40px;
+        margin-left: 4px;
+        gap: 30.3px;
+        img{
+            height: 48px;
+            width: 44px;
+        }
+        p{
+            padding-top: 8.2px;
+        }
+    }
+}
