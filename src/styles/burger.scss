@@ -18,6 +18,8 @@
 .burger-menu__wrapper.active {
     left: 0;
     transition: 0.3s;
+    background-color: white;
+    height: 100vh;
 }
 .header__container.active > *:not(.burger-menu__wrapper) {
     opacity: 0;
@@ -240,10 +242,9 @@
     text-align: center;
     color: #ffffff;
     margin: 0 auto;
-
-    margin: 0 auto;
     display: block;
     margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 480px) {
