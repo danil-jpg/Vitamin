@@ -189,6 +189,7 @@ function watch () {
   gulp.watch(paths.html.src, gulp.series(htmlMin, html))
   gulp.watch(paths.componentsHtml.dest).on('change', browserSync.reload)
   gulp.watch(paths.styles.src, gulp.series(stylesMin, styles))
+  gulp.watch(paths.scripts.src, scripts)
   gulp.watch(paths.fonts.src, fonts)
   gulp.watch(paths.images.src, img)
 }

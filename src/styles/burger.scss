@@ -1,3 +1,7 @@
+// header {
+//     display: none;
+// }
+
 .burger-dev__block {
     width: 100%;
 }
@@ -7,9 +11,19 @@
 .burger-menu__wrapper {
     width: 100%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -15px;
+    left: -100%;
+    transition: 0.3s;
 }
+.burger-menu__wrapper.active {
+    left: 0;
+    transition: 0.3s;
+}
+.header__container.active > *:not(.burger-menu__wrapper) {
+    opacity: 0;
+    pointer-events: none;
+}
+
 .burger-menu__container {
 }
 .burger-menu__top-wrapper {
@@ -32,17 +46,22 @@
     margin-top: 19px;
 }
 .burger-menu__center-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    position: relative;
-    width: 89%;
-    padding-left: 5px;
-    margin-top: 18px;
+    margin-top: 39px;
 }
 .burger-menu__row-center {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 90%;
+    padding-left: 1px;
+    padding-right: 1px;
+    * {
+        cursor: pointer;
+    }
 }
+
 .burger-menu__link {
     font-family: "Effra";
     font-style: normal;
@@ -51,6 +70,159 @@
     line-height: lh(24, 20);
     color: #000000;
 }
+.burger-menu__link_orange {
+    color: #ff7d4e;
+}
+
+.burger-menu__row-center:nth-of-type(2),
+.burger-menu__row-center:nth-of-type(3) {
+    margin-top: 31px;
+}
+
+.burger-menu__hor-line-center {
+    width: per(335, 375);
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.burger-menu__bottom-wrapper {
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+}
+.burger-menu__bottom-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(19, 14);
+    color: #000000;
+    opacity: 0.5;
+    margin-top: 15px;
+}
+
+.burger-menu__bottom-subText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(12);
+    line-height: lh(16, 12);
+    color: #000000;
+    opacity: 0.3;
+    margin-top: 16px;
+}
+.shop-menu__wrapper {
+    background: white;
+    position: absolute;
+    top: 19px;
+    transition: 0.3s;
+    left: -200%;
+}
+
+.shop-menu__wrapper.active {
+    left: 0%;
+    transition: 0.3s;
+}
+.shop-menu__content {
+}
+.shop-menu__top {
+    position: relative;
+    width: 100%;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        position: absolute;
+        left: 20px;
+    }
+}
+
+.menu-name {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    text-align: center;
+    color: #000000;
+}
+.burger-menu__hor-line {
+}
+.menu__hor-line_top {
+    margin-top: 22px;
+}
+.shop-menu__center {
+    margin-top: 38px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 39px;
+}
+.menu__item {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    color: #000000;
+    margin-top: 31px;
+}
+
+.shop-menu__hor-line-center {
+    margin-top: 41px;
+}
+
+.menu__item:last-of-type {
+    color: #d32d2c;
+}
+
+.shop-menu__bottom {
+    margin-top: 37px;
+}
+.shop-menu__bottom-text {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: lh(22, 18);
+    text-align: center;
+    color: #000000;
+    width: 90%;
+    margin: 0 auto;
+}
+.shop-menu__bottom-descr {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(19, 14);
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+    width: 90%;
+    margin-top: 18px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.shop-menu__quiz-btn {
+    width: per(335, 375);
+    height: 56px;
+    background: #ff7d4e;
+    border: 1px solid #ff7d4e;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: lh(19, 16);
+    text-align: center;
+    color: #ffffff;
+    margin: 0 auto;
+
+    margin: 0 auto;
+    display: block;
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 480px) {
     .header__account {
         display: none;
