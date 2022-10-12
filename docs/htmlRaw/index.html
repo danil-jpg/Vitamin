@@ -16,17 +16,32 @@
             <header class="header__main">
     <div class="header__container">
         <div class="header__logo-icon">
-            <img src="img/Lending/logo.svg" alt="Logo">
+            <img src="img/Lending/logo.svg" alt="Logo" />
         </div>
         <div class="header__account">
-            <img src="img/Lending/Profile.svg" alt="Profile" class="header__account-icon">
+            <picture>
+                <source
+                    media="(max-width: 480px)"
+                    srcset="img/BurgerMenu/Menu.svg"
+                />
+                <img
+                    src="img/Lending/Profile.svg"
+                    alt="Profile"
+                    class="header__account-icon"
+                />
+            </picture>
         </div>
         <div class="header__cart">
-            <img src="img/Lending/Cart.svg" alt="Cart" class="header__cart-icon">
+            <img
+                src="img/Lending/Cart.svg"
+                alt="Cart"
+                class="header__cart-icon"
+            />
         </div>
         <a href="#" class="header__button">Take the quiz</a>
     </div>
 </header>
+
             <div class="lending-vitamin__container">
                 <div class="lending-vitamin__text-contents">
                     <h1 class="lending-vitamin__text-title">Find out what <span>vitamins&nbsp;</span> <br> your body needs right&nbsp;<br> now.</h1>
