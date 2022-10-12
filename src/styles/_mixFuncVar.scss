@@ -1,0 +1,43 @@
+@use "sass:math";
+
+@keyframes opacity-close {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes opacity-open {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@function stripUnit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+
+@function em($pxElemValue, $pxParentValue: 16) {
+    @return #{calc($pxElemValue / $pxParentValue)}em;
+}
+
+@function rem($pxValue) {
+    @return #{calc(stripUnit($pxValue) / stripUnit(16))}rem;
+}
+
+@function lh($lh, $fs) {
+    @return calc($lh/$fs);
+}
+
+@function per($elemWidth, $parentWidth) {
+    @return calc(($elemWidth/$parentWidth) * 100%);
+}
