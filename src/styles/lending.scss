@@ -4,7 +4,7 @@
 }
 .lending-vitamin__container{
     width: 100vw;
-    padding: 0 0px 0px 15px;
+    padding: 0px 0px 0px 0px;
 
     display: flex;
     position: relative;
@@ -31,13 +31,13 @@
 
     flex: 0 1 50%;
 
-    padding: 0 0 0 187px;
+    padding: 0 0 0 202px;
 
     position: relative;
     &::before{
         content: "";
         position: absolute;
-        right: 198px;
+        right: 191px;
         z-index: 2;
 
         background-image: url("../img/Lending/line-header1.svg");
@@ -125,7 +125,7 @@
 
         position: absolute;
         top: 218px;
-        left: 181px;
+        left: 189px;
         z-index: 0;
     }
     &::after{
@@ -143,7 +143,7 @@
 }
 .lending-vitamin__block {
     img{
-        object-position: left -195px top 135px;
+        object-position: left -186px top 135px;
 
         position: relative;
         z-index: 1;
@@ -556,10 +556,6 @@
 }
 
 // lending-listeners
-.lending-listeners {
-}
-.lending-listeners__container{
-}
 .listeners__block-icon{
     img{
         &:nth-child(1){
@@ -619,7 +615,7 @@
         line-height: 68px;
         text-align: center;
 
-        margin: 50px 0px 0px 0px;
+        margin: 51px 1px 0 0px;
     }
     p{
         font-family: 'Open Sans';
@@ -631,7 +627,7 @@
 
         color: #808080;
 
-        margin: 30px 0px 0px 0px;
+        margin: 29px 0px 0px 0px;
     }
     a{
         width: 260px;
@@ -761,6 +757,7 @@
     .lending-listeners__text h2{
         font-size: 24px;
         line-height: 29px;
+        margin-right: 0;
     }
     .lending-listeners__text p{
         margin-top: 15px;
@@ -770,7 +767,7 @@
         line-height: 163.42%;
     }
     .lending-listeners__text a{
-        margin-top: 27px;
+        margin-top: 28px;
 
         width: 154px;
         height: 50px;
@@ -812,5 +809,6 @@
     }
     .lending-listeners__text a{
         margin-top: 20px;
+        margin-right: 1px;
     }
 }
