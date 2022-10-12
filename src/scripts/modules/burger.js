@@ -9,6 +9,9 @@ function burger () {
   const infoTrigger = document.querySelectorAll('.info-trigger *')
   const infoMenu = document.querySelector('.info-menu__wrapper')
   const returnInfoArrow = document.querySelector('.info-return-arrow')
+  const profileTrigger = document.querySelector('.profile-menu-trigger')
+  const profileMenu = document.querySelector('.profile-menu__wrapper')
+  const returnProfileArrow = document.querySelector('.profile-return-arrow')
 
   menuTrigger.addEventListener('click', () => {
     menu.classList.toggle('active')
@@ -23,7 +26,6 @@ function burger () {
   shopTrigger.forEach(item => {
     item.addEventListener('click', () => {
       shopMenu.classList.toggle('active')
-      // notMenu.classList.toggle('active')
     })
   })
 
@@ -33,12 +35,19 @@ function burger () {
     })
   })
 
+  profileTrigger.addEventListener('click', () => {
+    profileMenu.classList.toggle('active')
+  })
+
   returnShopArrow.addEventListener('click', () => {
     shopMenu.classList.toggle('active')
   })
 
   returnInfoArrow.addEventListener('click', () => {
     infoMenu.classList.toggle('active')
+  })
+  returnProfileArrow.addEventListener('click', () => {
+    profileMenu.classList.toggle('active')
   })
 }
 

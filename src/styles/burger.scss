@@ -135,6 +135,18 @@
     transition: 0.3s;
 }
 
+.profile-menu__wrapper {
+    background: #fff;
+    position: absolute;
+    top: 19px;
+    transition: 0.3s;
+    left: -200%;
+    height: 100vh;
+}
+.profile-menu__wrapper.active {
+    transition: 0.3s;
+    left: 00%;
+}
 .shop-menu__top {
     position: relative;
     width: 100%;
