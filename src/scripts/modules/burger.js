@@ -5,7 +5,10 @@ function burger () {
   const menuClose = document.querySelector('.burger-close')
   const shopTrigger = document.querySelectorAll('.shop-trigger *')
   const shopMenu = document.querySelector('.shop-menu__wrapper')
-  const returnArrow = document.querySelector('.shop-return-arrow')
+  const returnShopArrow = document.querySelector('.shop-return-arrow')
+  const infoTrigger = document.querySelectorAll('.info-trigger *')
+  const infoMenu = document.querySelector('.info-menu__wrapper')
+  const returnInfoArrow = document.querySelector('.info-return-arrow')
 
   menuTrigger.addEventListener('click', () => {
     menu.classList.toggle('active')
@@ -24,8 +27,18 @@ function burger () {
     })
   })
 
-  returnArrow.addEventListener('click', () => {
+  infoTrigger.forEach(item => {
+    item.addEventListener('click', () => {
+      infoMenu.classList.toggle('active')
+    })
+  })
+
+  returnShopArrow.addEventListener('click', () => {
     shopMenu.classList.toggle('active')
+  })
+
+  returnInfoArrow.addEventListener('click', () => {
+    infoMenu.classList.toggle('active')
   })
 }
 

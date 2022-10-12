@@ -118,12 +118,23 @@
     left: -200%;
 }
 
+.info-menu__wrapper {
+    background: white;
+    position: absolute;
+    top: 19px;
+    transition: 0.3s;
+    left: -200%;
+    height: 100vh;
+}
+.info-menu__wrapper.active {
+    left: 0%;
+    transition: 0.3s;
+}
 .shop-menu__wrapper.active {
     left: 0%;
     transition: 0.3s;
 }
-.shop-menu__content {
-}
+
 .shop-menu__top {
     position: relative;
     width: 100%;
