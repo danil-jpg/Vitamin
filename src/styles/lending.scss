@@ -1,22 +1,22 @@
 // lending-vitamin
-.lending {
+.lending{
     background-color: #fff;
 }
-.lending-vitamin__container {
+.lending-vitamin__container{
+    padding: 0px 0px 0px 0px;
     width: 100vw;
-    padding: 0 0px 0px 15px;
 
     display: flex;
     position: relative;
 
     height: 960px;
-    &::before {
+    &::before{
         content: "";
         position: absolute;
         bottom: 38px;
         right: 42.3%;
-        z-index: 1;
-        // Изменил з-индекс,что-бы элемент не перекрывал бургер
+        z-index: 2;
+
         background-image: url("../img/Lending/line-header2.svg");
         background-repeat: no-repeat;
         background-position: top 0 right 0;
@@ -31,14 +31,14 @@
 
     flex: 0 1 50%;
 
-    padding: 0 0 0 187px;
+    padding: 0 0 0 202px;
 
     position: relative;
-    &::before {
+    &::before{
         content: "";
         position: absolute;
-        right: 198px;
-        z-index: 1;
+        right: 191px;
+        z-index: 2;
 
         background-image: url("../img/Lending/line-header1.svg");
         background-repeat: no-repeat;
@@ -49,18 +49,18 @@
     }
 }
 .lending-vitamin__text-title {
-    font-family: "Effra";
+    font-family: 'Effra';
     font-weight: 500;
     font-size: 56px;
     line-height: 68px;
 
     margin: 260px 0px 0px 0px;
-    span {
+    span{
         color: rgba(237, 129, 94, 1);
     }
 }
 .lending-vitamin__text-text {
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-weight: 400;
     font-size: 20px;
     line-height: 163.42%;
@@ -75,17 +75,17 @@
     align-items: center;
 }
 .lending-vitamin__button-left {
-    background: #6e5ddc;
+    background: #6E5DDC;
     border-radius: 200px;
     width: 260px;
     height: 74px;
 
-    font-family: "Open Sans";
+    font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 163.42%;
-    color: #ffffff;
+    color: #FFFFFF;
 
     display: flex;
     align-items: center;
@@ -95,14 +95,14 @@
     padding: 0px 0px 3px 0px;
 }
 .lending-vitamin__button-right {
-    font-family: "Effra";
+    font-family: 'Effra';
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
-    color: #f27e58;
+    color: #F27E58;
 
-    background-image: url("../img/Lending/arrow-to-shop.svg");
+    background-image: url('../img/Lending/arrow-to-shop.svg');
     background-repeat: no-repeat;
     background-position: right 2px top 6px;
 
@@ -113,24 +113,24 @@
     flex: 0 1 50%;
 
     overflow: hidden;
-    background-color: #f9f9f9;
+    background-color: #F9F9F9;
 
     position: relative;
-    &::before {
+    &::before{
         content: "";
-        background-color: #6e5ddc;
+        background-color: #6E5DDC;
         border-radius: 100%;
         width: 523px;
         height: 523px;
 
         position: absolute;
         top: 218px;
-        left: 181px;
+        left: 189px;
         z-index: 0;
     }
-    &::after {
+    &::after{
         content: "";
-        background-color: #ffca78;
+        background-color: #FFCA78;
         border-radius: 100%;
         width: 95px;
         height: 95px;
@@ -142,16 +142,16 @@
     }
 }
 .lending-vitamin__block {
-    img {
-        object-position: left -195px top 135px;
+    img{
+        object-position: left -186px top 135px;
 
         position: relative;
         z-index: 1;
     }
-}
+    }
 
-@media (max-width: 1460px) {
-    .lending-vitamin__container {
+@media (max-width: 1460px){
+    .lending-vitamin__container{
         width: 1190px;
         height: 100%;
 
@@ -159,59 +159,59 @@
 
         padding: 0 15px;
     }
-    .lending-vitamin__text-title {
+    .lending-vitamin__text-title{
         margin-top: clamp(6.875rem, 4.243rem + 13.16vw, 16.25rem);
     }
-    .lending-vitamin__text-contents {
+    .lending-vitamin__text-contents{
         flex: 0 1 100%;
         padding: 0px 0px 0px 0px;
 
         text-align: center;
         align-items: center;
     }
-    .lending-vitamin__icon-contents {
+    .lending-vitamin__icon-contents{
         flex: 0 1 100%;
-
+        
         background-color: #fff;
     }
-    .lending-vitamin__text-contents::before {
+    .lending-vitamin__text-contents::before{
         bottom: 0;
         right: 0;
         transform: rotate(180deg);
     }
-    .lending-vitamin__icon-contents::after {
+    .lending-vitamin__icon-contents::after{
         display: none;
     }
-    .lending-vitamin__icon-contents::before {
+    .lending-vitamin__icon-contents::before{
         top: 60px;
         left: 340px;
     }
-    .lending-vitamin__icon-contents img {
+    .lending-vitamin__icon-contents img{
         object-position: left -65px top 0px;
-    }
-    .lending-vitamin__container::before {
+    }   
+    .lending-vitamin__container::before{
         top: 50%;
         bottom: 0;
         right: 0;
         left: -130px;
     }
 }
-@media (max-width: 1140px) {
-    .lending-vitamin__container {
+@media (max-width: 1140px){
+    .lending-vitamin__container{
         width: 912px;
     }
-    .lending-vitamin__icon-contents img {
+    .lending-vitamin__icon-contents img{
         object-position: left -170px top 0;
     }
-    .lending-vitamin__icon-contents::before {
+    .lending-vitamin__icon-contents::before{
         left: 225px;
     }
 }
-@media (max-width: 890px) {
-    .lending-vitamin__container {
+@media (max-width: 890px){
+    .lending-vitamin__container{
         width: 645px;
     }
-    .lending-vitamin__button {
+    .lending-vitamin__button{
         flex-direction: column;
         gap: 20px;
     }
@@ -219,30 +219,30 @@
         object-position: left 0 top -25px;
         inline-size: 100%;
     }
-    .lending-vitamin__icon-contents::before {
+    .lending-vitamin__icon-contents::before{
         display: none;
     }
 }
-@media (max-width: 645px) {
-    .lending-vitamin__container {
+@media (max-width: 645px){
+    .lending-vitamin__container{
         width: 375px;
     }
-    .lending-vitamin__text-title {
+    .lending-vitamin__text-title{
         font-size: 24px;
         line-height: 29px;
 
         margin-top: 110px;
-        br {
+        br{
             display: none;
         }
     }
-    .lending-vitamin__text-text {
+    .lending-vitamin__text-text{
         font-size: 14px;
         line-height: 163.42%;
 
         margin-top: 15px;
     }
-    .lending-vitamin__text-contents::before {
+    .lending-vitamin__text-contents::before{
         width: 75px;
         height: 90px;
 
@@ -251,10 +251,10 @@
         bottom: 1px;
         right: -17px;
     }
-    .lending-vitamin__button {
+    .lending-vitamin__button{
         margin-top: 20px;
     }
-    .lending-vitamin__button-left {
+    .lending-vitamin__button-left{
         width: 154px;
         height: 50px;
 
@@ -263,7 +263,7 @@
 
         margin: 0px 0px 0px 0px;
     }
-    .lending-vitamin__button-right {
+    .lending-vitamin__button-right{
         font-size: 14px;
         line-height: 17px;
 
@@ -275,8 +275,8 @@
     .lending-vitamin__icon-contents img {
         display: none;
     }
-    .lending-vitamin__block {
-        background-image: url("../img/Lending/lending-vitamins2.svg");
+    .lending-vitamin__block{
+        background-image: url('../img/Lending/lending-vitamins2.svg');
         background-repeat: no-repeat;
         background-position: center;
         background-position: top 11px left -17px;
@@ -284,7 +284,7 @@
 
         height: 341px;
     }
-    .lending-vitamin__container::before {
+    .lending-vitamin__container::before{
         background-size: 100%;
 
         top: 56.3%;
@@ -295,20 +295,20 @@
         height: 84px;
     }
 }
-@media (max-width: 374px) {
-    .lending-vitamin__container {
+@media (max-width: 374px){
+    .lending-vitamin__container{
         width: 320px;
     }
-    .lending-vitamin__text-title {
+    .lending-vitamin__text-title{
         margin-left: 5px;
-        br {
+        br{
             display: block;
         }
     }
-    .lending-vitamin__text-text {
-        br {
+    .lending-vitamin__text-text{
+        br{
             display: none;
-        }
+        } 
     }
     .lending-vitamin__button {
         margin-top: 21px;
@@ -329,6 +329,7 @@
     }
 }
 
+
 // lending-healthy
 .lending-healthy__container {
     width: 100vw;
@@ -338,7 +339,7 @@
     padding: 0px 0px 0px 0px;
 }
 .lending-healthy__content-left {
-    background-image: url("../img/Lending/lending-healthy.webp");
+    background-image: url('../img/Lending/lending-healthy.webp');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -352,25 +353,26 @@
     padding: 0 0 44px 54px;
 
     position: relative;
-    &::before {
+    &::before{
         content: "";
         position: absolute;
         top: 65px;
         left: 126px;
-        background-color: #ffca78;
+        background-color: #FFCA78;
         border-radius: 100%;
 
         width: 139px;
         height: 139px;
+
     }
-    h2 {
-        font-family: "Effra";
+    h2{
+        font-family: 'Effra';
         font-style: normal;
         font-weight: 500;
         font-size: 56px;
         line-height: 68px;
-
-        color: #ffffff;
+        
+        color: #FFFFFF;  
     }
 }
 .lending-healthy__content-right {
@@ -383,8 +385,8 @@
     gap: 90px;
 
     margin: 108px 0px 0px 0px;
-    p {
-        font-family: "Effra";
+    p{
+        font-family: 'Effra';
         font-style: normal;
         font-weight: 500;
         font-size: 30px;
@@ -392,38 +394,38 @@
         padding-top: 6px;
     }
 }
-.lending-healthy__block-2 {
+.lending-healthy__block-2{
     margin: 108px 0 0 7px;
     gap: 97px;
-    p {
+    p{
         padding: 13px 0px 0 0px;
     }
 }
-.lending-healthy__block-3 {
+.lending-healthy__block-3{
     margin: 100px 0 0 9px;
     gap: 98px;
-    p {
+    p{
         padding: 19px 0px 0 0px;
     }
 }
-@media (max-width: 1460px) {
-    .lending-healthy__container {
+@media (max-width: 1460px){
+    .lending-healthy__container{
         height: 100%;
 
         flex-direction: column;
     }
-    .lending-healthy__content-left {
+    .lending-healthy__content-left{
         background-size: cover;
 
         flex: 0 1 100%;
 
         padding: 15px 0px 15px 0px;
     }
-    .lending-healthy__content-left::before {
+    .lending-healthy__content-left::before{
         left: 85%;
         top: -25%;
     }
-    .lending-healthy__content-right {
+    .lending-healthy__content-right{
         flex: 0 1 100%;
 
         padding: 0px 0px 0px 0px;
@@ -433,42 +435,42 @@
         justify-content: center;
         align-items: center;
     }
-    .lending-healthy__content-left h2 {
+    .lending-healthy__content-left h2{
         text-align: center;
     }
-    .lending-healthy__block {
+    .lending-healthy__block{
         margin-top: clamp(2.875rem, 2.037rem + 4.19vw, 6.75rem);
     }
 }
-@media (max-width: 890px) {
-    .lending-healthy__content-left h2 {
+@media (max-width: 890px){
+    .lending-healthy__content-left h2{
         font-size: clamp(1.5rem, 0.377rem + 5.61vw, 3.5rem);
         line-height: clamp(1.813rem, 0.444rem + 6.84vw, 4.25rem);
     }
-    .lending-healthy__block p {
+    .lending-healthy__block p{
         font-size: clamp(0.875rem, 0.314rem + 2.81vw, 1.875rem);
         line-height: clamp(1rem, 0.298rem + 3.51vw, 2.25rem);
     }
-    .lending-healthy__block {
+    .lending-healthy__block{
         gap: clamp(1.563rem, -0.718rem + 11.4vw, 5.625rem);
     }
-    .lending-healthy__content-left::before {
+    .lending-healthy__content-left::before{
         width: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
         height: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
     }
 }
-@media (max-width: 375px) {
-    .lending-healthy__content-left {
+@media (max-width: 375px){
+    .lending-healthy__content-left{
         height: 198px;
 
         padding: 0px 0px 0px 0px;
 
         flex: 1 1 auto;
-        h2 {
+        h2{
             font-size: 24px;
             line-height: 29px;
             padding: 0px 47px 0px 47px;
-            br {
+            br{
                 display: none;
             }
         }
@@ -479,55 +481,55 @@
         width: 60px;
         height: 60px;
     }
-    .lending-healthy__content-right {
+    .lending-healthy__content-right{
         padding: 0px 20px 0px 20px;
 
         align-items: flex-start;
     }
-    .lending-healthy__block {
+    .lending-healthy__block{
         margin-top: 40px;
         gap: 25.6px;
-        img {
+        img{
             height: 38px;
             width: 50px;
         }
-        p {
+        p{
             padding-top: 3px;
 
             font-size: 14px;
             line-height: 16.9px;
-            br {
+            br{
                 display: none;
             }
         }
     }
-    .lending-healthy__block-2 {
+    .lending-healthy__block-2{
         margin-top: 41px;
         margin-left: 4px;
         gap: 28.8px;
-        img {
+        img{
             height: 43px;
             width: 45px;
         }
-        p {
+        p{
             padding-top: 5px;
         }
     }
-    .lending-healthy__block-3 {
+    .lending-healthy__block-3{
         margin-top: 40.31px;
         margin-bottom: 40px;
         margin-left: 4px;
         gap: 30.3px;
-        img {
+        img{
             height: 48px;
             width: 44px;
         }
-        p {
+        p{
             padding-top: 8.2px;
         }
     }
 }
-@media (max-width: 320px) {
+@media (max-width: 320px){
     .lending-healthy__content-left::before {
         left: 69.7%;
         top: -15.3%;
@@ -535,12 +537,12 @@
     .lending-healthy__content-left h2 {
         padding: 0 18px;
     }
-    .lending-healthy__block img {
+    .lending-healthy__block img{
         width: 47px;
     }
-    .lending-healthy__block {
-        p {
-            br {
+    .lending-healthy__block{
+        p{
+            br{
                 display: block;
             }
         }
@@ -554,20 +556,16 @@
 }
 
 // lending-listeners
-.lending-listeners {
-}
-.lending-listeners__container {
-}
-.listeners__block-icon {
-    img {
-        &:nth-child(1) {
-            transform: translate(0, -278px);
+.listeners__block-icon{
+    img{
+        &:nth-child(1){
+            transform: translate(0,-278px);
 
             position: relative;
             z-index: 1;
         }
-        &:nth-child(2) {
-            transform: translate(-58px, -101px);
+        &:nth-child(2){
+            transform: translate(-58px,-101px);
         }
     }
 }
@@ -582,45 +580,45 @@
     padding: 0px 0px 0px 0px;
 
     position: relative;
-    &::before {
+    &::before{
         content: "";
         position: absolute;
         top: 4px;
         right: 20px;
 
-        background-color: #8172dd;
+        background-color: #8172DD;
         border-radius: 100%;
 
         width: 95px;
         height: 95px;
     }
-    &::after {
+    &::after{
         content: "";
         position: absolute;
         top: 18px;
         left: -52px;
 
-        background-image: url("../img/Lending/lending-listeners-1.svg");
+        background-image: url('../img/Lending/lending-listeners-1.svg');
         background-repeat: no-repeat;
 
         width: 142px;
         height: 280px;
     }
-    img {
+    img{
         padding: 0px 1px 0px 0px;
     }
-    h2 {
-        font-family: "Effra";
+    h2{
+        font-family: 'Effra';
         font-style: normal;
         font-weight: 500;
         font-size: 56px;
         line-height: 68px;
         text-align: center;
 
-        margin: 50px 0px 0px 0px;
+        margin: 51px 1px 0 0px;
     }
-    p {
-        font-family: "Open Sans";
+    p{
+        font-family: 'Open Sans';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
@@ -629,24 +627,24 @@
 
         color: #808080;
 
-        margin: 30px 0px 0px 0px;
+        margin: 29px 0px 0px 0px;
     }
-    a {
+    a{
         width: 260px;
         height: 74px;
         margin: 52px 0px 0px 0px;
         padding: 0px 0px 3px 0px;
 
-        background: #6e5ddc;
+        background: #6E5DDC;
         border-radius: 200px;
 
-        font-family: "Open Sans";
+        font-family: 'Open Sans';
         font-style: normal;
         font-weight: 700;
         font-size: 20px;
         line-height: 163.42%;
 
-        color: #ffffff;
+        color: #FFFFFF;
 
         display: flex;
         align-items: center;
@@ -654,11 +652,11 @@
     }
 }
 
-@media (max-width: 1460px) {
-    .lending-listeners__container {
+@media (max-width: 1460px){
+    .lending-listeners__container{
         width: 1140px;
     }
-    .listeners__block-icon {
+    .listeners__block-icon{
         margin-top: 180px;
 
         display: flex;
@@ -667,53 +665,53 @@
         width: 100%;
     }
     .listeners__block-icon img:nth-child(2) {
-        transform: translate(-58px, 9px);
+        transform: translate(-58px,9px);
 
         width: clamp(16rem, 6.439rem + 47.81vw, 50.063rem);
     }
     .listeners__block-icon img:nth-child(1) {
-        transform: translate(0, -150px);
-
+        transform: translate(0,-150px);
+        
         width: clamp(10.5rem, 4.149rem + 31.75vw, 33.125rem);
     }
 }
-@media (max-width: 1140px) {
-    .lending-listeners__container {
+@media (max-width: 1140px){
+    .lending-listeners__container{
         width: 912px;
     }
 }
-@media (max-width: 890px) {
-    .lending-listeners__container {
+@media (max-width: 890px){
+    .lending-listeners__container{
         width: 645px;
     }
-    .listeners__block-icon {
+    .listeners__block-icon{
         margin-top: 110px;
     }
     .listeners__block-icon img:nth-child(1) {
-        transform: translate(30px, -70px);
+        transform: translate(30px,-70px);
     }
     .listeners__block-icon img:nth-child(2) {
-        transform: translate(-35px, 9px);
+        transform: translate(-35px,9px);
     }
-    .lending-listeners__text::after {
+    .lending-listeners__text::after{
         display: none;
     }
-    .lending-listeners__text {
-        img {
+    .lending-listeners__text{
+        img{
             width: clamp(3.125rem, 1.371rem + 8.77vw, 6.25rem);
         }
-        h2 {
+        h2{
             font-size: clamp(1.5rem, 0.377rem + 5.61vw, 3.5rem);
             line-height: clamp(1.813rem, 0.444rem + 6.84vw, 4.25rem);
             margin-top: 30px;
         }
-        p {
+        p{
             font-size: clamp(0.875rem, 0.664rem + 1.05vw, 1.25rem);
-            br {
+            br{
                 display: none;
             }
         }
-        a {
+        a{
             width: clamp(9.625rem, 5.906rem + 18.6vw, 16.25rem);
             height: clamp(3.125rem, 2.283rem + 4.21vw, 4.625rem);
 
@@ -722,53 +720,54 @@
         }
     }
 }
-@media (max-width: 645px) {
-    .lending-listeners__container {
+@media (max-width: 645px){
+    .lending-listeners__container{
         width: 375px;
     }
     .listeners__block-icon {
         margin-top: 57px;
     }
-    .listeners__block-icon img:nth-child(1) {
+    .listeners__block-icon img:nth-child(1){
         width: 202.24px;
         height: 171.72px;
 
-        transform: translate(59px, -56px);
+        transform: translate(59px,-56px);
     }
-    .listeners__block-icon img:nth-child(2) {
+    .listeners__block-icon img:nth-child(2){
         width: 293.74px;
         height: 170.44px;
 
-        transform: translate(-61px, 9px);
+        transform: translate(-61px,9px);
     }
-    .lending-listeners__text {
+    .lending-listeners__text{
         margin-top: 67px;
         margin-bottom: 61px;
     }
-    .lending-listeners__text::before {
+    .lending-listeners__text::before{
         width: 60px;
         height: 60px;
 
         top: -35px;
         right: -45px;
     }
-    .lending-listeners__text img {
+    .lending-listeners__text img{
         height: 50px;
         width: 50px;
     }
-    .lending-listeners__text h2 {
+    .lending-listeners__text h2{
         font-size: 24px;
         line-height: 29px;
+        margin-right: 0;
     }
-    .lending-listeners__text p {
+    .lending-listeners__text p{
         margin-top: 15px;
         padding: 0 7px 0 7px;
 
         font-size: 14px;
         line-height: 163.42%;
     }
-    .lending-listeners__text a {
-        margin-top: 27px;
+    .lending-listeners__text a{
+        margin-top: 28px;
 
         width: 154px;
         height: 50px;
@@ -777,38 +776,39 @@
         line-height: 19px;
     }
 }
-@media (max-width: 374px) {
-    .lending-listeners__container {
+@media (max-width: 374px){
+    .lending-listeners__container{
         width: 320px;
     }
     .listeners__block-icon {
         margin-top: 39px;
     }
-    .listeners__block-icon img:nth-child(1) {
+    .listeners__block-icon img:nth-child(1){
         width: 168.24px;
         height: 142.85px;
 
-        transform: translate(51px, -39px);
+        transform: translate(51px,-39px);
     }
-    .listeners__block-icon img:nth-child(2) {
+    .listeners__block-icon img:nth-child(2){
         width: 256px;
         height: 148.54px;
 
-        transform: translate(-53px, 9px);
+        transform: translate(-53px,9px);
     }
-    .lending-listeners__text::before {
+    .lending-listeners__text::before{
         top: -14px;
     }
-    .lending-listeners__text {
+    .lending-listeners__text{
         margin-top: 70px;
         margin-bottom: 60px;
     }
-    .lending-listeners__text h2 {
-        br {
+    .lending-listeners__text h2{
+        br{
             display: none;
         }
     }
-    .lending-listeners__text a {
+    .lending-listeners__text a{
         margin-top: 20px;
+        margin-right: 1px;
     }
 }
