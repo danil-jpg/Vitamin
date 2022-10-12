@@ -29,15 +29,15 @@ const paths = {
     dest: 'docs/htmlRaw'
   },
   componentsHtml: {
-    src: 'src/smallComponents/**/*',
-    allSrc: 'src/smallComponents/**/*',
-    dest: 'docs/smallComponents'
+    src: 'src/html/**/*',
+    allSrc: 'src/html/**/*',
+    dest: 'docs/html'
   },
   stylesMin: {
     src: 'src/styles/**/*',
     dest: 'docs/styles/'
   },
-  styles : {
+  styles: {
     src: 'src/styles/**/*',
     dest: 'docs/stylesRaw/'
   },
@@ -185,10 +185,10 @@ function watch () {
     server: 'docs/',
     port: 3002
   })
-  gulp.watch(paths.componentsHtml.src, gulp.series(componentsHtml, html,htmlMin))
-  gulp.watch(paths.html.src, gulp.series(htmlMin,html))
+  gulp.watch(paths.componentsHtml.src, gulp.series(componentsHtml, html, htmlMin))
+  gulp.watch(paths.html.src, gulp.series(htmlMin, html))
   gulp.watch(paths.componentsHtml.dest).on('change', browserSync.reload)
-  gulp.watch(paths.styles.src, gulp.series(stylesMin,styles))
+  gulp.watch(paths.styles.src, gulp.series(stylesMin, styles))
   gulp.watch(paths.fonts.src, fonts)
   gulp.watch(paths.images.src, img)
 }
@@ -208,7 +208,7 @@ function img () {
 
 const build = gulp.series(
   clean,
-  gulp.parallel(html,htmlMin, componentsHtml, stylesMin,styles, scripts, img, fonts),
+  gulp.parallel(html, htmlMin, componentsHtml, stylesMin, styles, scripts, img, fonts),
   watch
 )
 
