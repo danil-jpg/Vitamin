@@ -1,3 +1,3 @@
-import test from './modules/differentScripts.js'
+import burger from './modules/burger.js'
 
-test()
+burger()
