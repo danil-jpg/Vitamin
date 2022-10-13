@@ -1,3 +1,6 @@
+import slider from 'swiper'
+import Swiper, { Navigation, Pagination } from 'swiper'
+
 const chooseSwiper = document.querySelector('.swiper-choose')
 
 const newsSwiper = new Swiper(chooseSwiper, {
