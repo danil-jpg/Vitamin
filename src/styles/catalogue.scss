@@ -1,0 +1,65 @@
+.catalogue-slider {
+    width: 100%;
+    display: inline-block;
+}
+.catalogue-slider__content {
+}
+.catalogue-slide__slide-wrapper {
+    margin-top: 101px;
+}
+.catalogue-slide__slide-item {
+    background: url(../img/Catalogue/catalogue-banner-1.webp) no-repeat;
+    border-radius: 24px;
+    width: per(1396, 1800);
+    margin: 0 auto;
+    height: 498px;
+    box-sizing: border-box;
+}
+.catalogue-slide__slide-text-wrapper {
+    display: inline-block;
+    width: 46%;
+    margin-left: 70px;
+}
+.catalogue-slide__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(50);
+    line-height: lh(60, 50);
+    color: #ffffff;
+
+    margin-top: 121px;
+}
+.catalogue-slide__subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: lh(25, 18);
+    color: #ffffff;
+    opacity: 0.7;
+
+    margin-top: 19px;
+    width: 69%;
+}
+.take-quiz {
+    margin-top: 31px;
+    display: block;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.catalogue-slide__btn {
+    width: 255px;
+    height: 65px;
+    background: #ffffff;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    text-align: center;
+    color: #000000;
+}
