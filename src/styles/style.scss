@@ -1,10 +1,21 @@
 @import "fonts.scss";
 @import "nullstyle.scss";
 //===========================
+
 // Components
 @import "mixFuncVar";
 @import "burger.scss";
-//===========================
+//======================
+
+// Header
 @import "header.scss";
+//======================
+
+// Lending =============
 @import "lending.scss";
 @import "reviews.scss";
+//======================
+
+// Footer
+@import "footer.scss";
+//======================

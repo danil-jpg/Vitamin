@@ -1107,6 +1107,8 @@
     justify-content: space-between;
 
     position: relative;
+
+
 }
 .lending-happy__left {
     margin: 50px 0px 0px 0px;
@@ -1234,6 +1236,8 @@
 
 .lending-started__container {
     position: relative;
+
+    margin-bottom: 101px;
     &::after{
         content: "";
         position: absolute;
@@ -1339,7 +1343,7 @@
     .lending-started__container{
         width: 375px;
 
-        margin-bottom: 62px;
+        margin-bottom: 64px;
     }
     .lending-started__block{
         margin-top: 61px;
