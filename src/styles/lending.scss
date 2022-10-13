@@ -1099,3 +1099,133 @@
         margin: 0 0 0 19px;
     }
 }
+
+// happy======================
+
+.lending-happy__container {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+}
+.lending-happy__left {
+    margin: 50px 0px 0px 0px;
+    img{
+        display: block;
+    }
+    h4{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+
+        color: #000000;
+
+        margin: 40px 0px 0px 1px;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.42%;
+
+        color: #808080;
+
+        margin: 30px 0 0 1px;
+    }
+}
+.lending-happy__right {
+    position: absolute;
+    left: 67.8%;
+    top: -107px;
+
+    img{
+        width: 444px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 1460px){
+    .lending-happy__container{
+        width: 1140px;
+    }
+    .lending-happy__right img {
+        width: 386px;
+        height: 364px;
+    }
+    .lending-happy__right {
+        top: -81px;
+        left: 61.8%;
+    }
+}
+@media (max-width: 1140px){
+    .lending-happy__container{
+        width: 912px;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .lending-happy__right{
+        display: none;
+    }
+    .lending-happy__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        margin-top: 25px;
+    }
+}
+@media (max-width: 890px){
+    .lending-happy__container{
+        width: 645px;
+    }
+    .lending-happy__left{
+        h4{
+            font-size: clamp(1.25rem, -0.013rem + 6.32vw, 3.5rem);
+            line-height: clamp(1.5rem, -0.044rem + 7.72vw, 4.25rem);
+        }
+        p{
+            font-size: clamp(0.875rem, 0.664rem + 1.05vw, 1.25rem);
+        }
+    }
+}
+@media (max-width: 645px){
+    .lending-happy__container{
+        width: 375px;
+    }
+    .lending-happy__left{
+        margin-top: -61px;
+        margin-bottom: 30px;
+        img{
+            width: 50px;
+            height: 56.82px;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 24px;
+
+            margin-top: 30px;
+        }
+        p{
+            br{display: none;} 
+
+            font-size: 14px;
+
+            padding: 0 5px;
+            margin: 15px 0px 0px 0px;
+        }
+    }
+}
+@media (max-width: 374px){
+    .lending-happy__container{
+        width: 320px;
+    }
+    .lending-happy__left{
+        margin-top: -37px;
+    }
+}

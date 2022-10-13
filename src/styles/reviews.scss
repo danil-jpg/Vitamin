@@ -1,0 +1,117 @@
+.reviewsLending{
+    margin-top: 80px;
+}
+.reviews-swiper {
+    overflow: hidden;
+}
+.reviews__block {
+    background-color: #FAF8F6;
+    border-radius: 16px;
+
+    display: flex;
+    flex-direction: column;
+
+
+    width: 444px;
+    height: 360px;
+
+    padding: 40px 31px 30px 31px;
+}
+.reviews__block-text {
+    flex-grow: 1;
+    h4{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        
+        margin: 20px 0px 0px 0px;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+
+        margin: 15px 0px 0px 0px;
+    }
+}
+.reviews__block-acount {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+@media (max-width: 1460px){
+    .reviews__container{
+        width: 1140px;
+    }
+}
+@media (max-width: 1140px){
+    .reviews__container{
+        width: 912px;
+    }
+}
+@media (max-width: 911px){
+    .reviews__container{
+        width: 645px;
+    }
+    .reviews__block{
+        width: 100%;
+    }
+}
+@media (max-width: 645px){
+    .reviews__container{
+        width: 375px;
+
+        padding: 0 0 0 20px;
+    }
+    .reviewsLending {
+        margin-top: 2px;
+    }
+    .reviews__block{
+        padding: 31px 20px 19px;
+    }
+    .reviews__block-text{
+        h4{
+            font-size: 16px;
+            line-height: 19px;
+
+            margin-top: 15px;
+        }
+        p{
+            font-size: 14px;
+            line-height: 24px;
+
+            margin-top: 14px;
+        }
+    }
+    .reviews__block-acount{
+        p{
+            font-size: 14px;
+            line-height: 19px; 
+
+            margin-bottom: 1px;
+        }
+    }
+}
+@media (max-width: 374px){
+    .reviews__container{
+        width: 320px;
+    }
+    .reviewsLending{
+        margin-top: -3px;
+    }
+    .reviews__block {
+        padding: 30px 19px 20px 20px;
+    }
+}
