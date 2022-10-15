@@ -1,5 +1,5 @@
 {
- "tabWidth": 4,
- "useTabs": false,
- "max_line_length": 120
+    "tabWidth": 4,
+    "useTabs": false,
+    "max_line_length": 120
 }

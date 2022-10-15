@@ -115,6 +115,65 @@
                     </div>
                 </div>
             </section>
+            <section class="shop-catalogue">
+                <div class="shop-catalogue__content">
+                    <div class="shop-catalogue__left-wr">
+                        <div class="shop-menu__center">
+                            <p class="menu__item">
+                                <a> All categories </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Vitamins & Dietary Supplements </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Weight Loss </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Minerals </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Antioxidants </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Probiotics </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Pain Relief </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Prenatal Vitamins </a>
+                            </p>
+                            <p class="menu__item">
+                                <a> Sale% </a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="shop-catalogue__right-wr">
+                        <!-- prettier-ignore  -->
+                        @@include("html/tablet-pack.html",{
+                            "image":"./img/Catalogue/1tab.webp",
+                            "textColorClass":"light-purple",
+                            "subtitleText" : "Vitamins & Dietary Supplements",
+                            "titleText" : "Ortho B Complex" 
+                        })
+
+                        @@include("html/tablet-pack.html",{
+                            "image":"./img/Catalogue/2tab.webp",
+                            "textColorClass":"light-purple",
+                            "subtitleText" : "Vitamins & Dietary Supplements",
+                            "titleText" : "Metagenics - 500-C Methoxyflavone" ,
+                            "IfTwoLinesClass" : "mt20"
+                        })
+
+                        @@include("html/tablet-pack.html",{
+                            "image":"./img/Catalogue/3tab.webp",
+                            "textColorClass":"light-purple",
+                            "subtitleText" : "Vitamins & Dietary Supplements",
+                            "titleText" : "Ortho Molecular - Vitamin D" 
+                        })
+                    </div>
+                </div>
+            </section>
         </main>
         <footer></footer>
         <script src="scripts/main.js"></script>

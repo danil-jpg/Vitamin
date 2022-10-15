@@ -120,7 +120,95 @@
     right: 0;
     border-radius: 25px 0 0 25px;
 }
+.shop-catalogue {
+}
+.shop-catalogue__content {
+    width: 1396px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    column-gap: 78px;
+}
+.shop-catalogue__left-wr {
+    .shop-menu__center {
+        width: 100%;
+        margin-top: 90px;
+    }
+    .menu__item {
+        margin-bottom: 45px;
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 400;
+        font-size: em(22);
+        line-height: lh(27, 22);
+        color: #000000;
+        &:first-of-type {
+            color: #ff7d4e;
+        }
+    }
+}
 
+.shop-catalogue__right-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 32px;
+    margin-top: 58px;
+    width: 93%;
+}
+.shop-catalogue__card-wr {
+    height: 479px;
+    background: #faf8f6;
+    border-radius: 16px;
+    width: 100%;
+}
+.tablet {
+    margin: 0 auto;
+    margin-top: 62px;
+    display: block;
+}
+.shop-catalogue__subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(14);
+    line-height: lh(19, 14);
+}
+.light-purple {
+    color: #6b5ebb;
+}
+.shop-catalogue__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    color: #000000;
+    margin-top: 13px;
+}
+.shop-catalogue__price {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(20);
+    line-height: lh(27, 20);
+    color: #000000;
+
+    margin-top: 41px;
+}
+
+.shop-catalogue__card-text-wr {
+    padding-left: 30px;
+    margin-top: 52px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+@media screen and (min-width: 1801px) {
+    .swiper-catalogue-button-next,
+    .swiper-catalogue-button-prev {
+        right: 56px;
+    }
+}
 @media screen and (max-width: 1799px) {
     .catalogue-slide__false-slide {
         display: none;
