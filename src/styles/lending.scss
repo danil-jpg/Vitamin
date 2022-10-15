@@ -1099,3 +1099,334 @@
         margin: 0 0 0 19px;
     }
 }
+
+// happy======================
+
+.lending-happy__container {
+    display: flex;
+    justify-content: space-between;
+
+    position: relative;
+
+
+}
+.lending-happy__left {
+    margin: 50px 0px 0px 0px;
+    img{
+        display: block;
+    }
+    h4{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+
+        color: #000000;
+
+        margin: 40px 0px 0px 1px;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.42%;
+
+        color: #808080;
+
+        margin: 30px 0 0 1px;
+    }
+}
+.lending-happy__right {
+    position: absolute;
+    left: 67.8%;
+    top: -107px;
+
+    img{
+        width: 444px;
+        height: 416px;
+    }
+}
+
+@media (max-width: 1460px){
+    .lending-happy__container{
+        width: 1140px;
+    }
+    .lending-happy__right img {
+        width: 386px;
+        height: 364px;
+    }
+    .lending-happy__right {
+        top: -81px;
+        left: 61.8%;
+    }
+}
+@media (max-width: 1140px){
+    .lending-happy__container{
+        width: 912px;
+
+        align-items: center;
+        justify-content: center;
+    }
+    .lending-happy__right{
+        display: none;
+    }
+    .lending-happy__left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        margin-top: 25px;
+    }
+}
+@media (max-width: 890px){
+    .lending-happy__container{
+        width: 645px;
+    }
+    .lending-happy__left{
+        h4{
+            font-size: clamp(1.25rem, -0.013rem + 6.32vw, 3.5rem);
+            line-height: clamp(1.5rem, -0.044rem + 7.72vw, 4.25rem);
+        }
+        p{
+            font-size: clamp(0.875rem, 0.664rem + 1.05vw, 1.25rem);
+        }
+    }
+}
+@media (max-width: 645px){
+    .lending-happy__container{
+        width: 375px;
+    }
+    .lending-happy__left{
+        margin-top: -61px;
+        margin-bottom: 30px;
+        img{
+            width: 50px;
+            height: 56.82px;
+        }
+        h4{
+            font-size: 20px;
+            line-height: 24px;
+
+            margin-top: 30px;
+        }
+        p{
+            br{display: none;} 
+
+            font-size: 14px;
+
+            padding: 0 5px;
+            margin: 15px 0px 0px 0px;
+        }
+    }
+}
+@media (max-width: 374px){
+    .lending-happy__container{
+        width: 320px;
+    }
+    .lending-happy__left{
+        margin-top: -37px;
+    }
+}
+
+// Started ============================
+
+.lending-started__container {
+    position: relative;
+
+    margin-bottom: 101px;
+    &::after{
+        content: "";
+        position: absolute;
+        top: 191px;
+        left: -64px;
+        background-image: url('../img/Lending/line-header3.svg');
+        background-repeat: no-repeat;
+        width: 142px;
+        height: 280px;
+    }
+    &::before{
+        content: "";
+        position: absolute;
+        top: 6px;
+        right: -257px;
+        background-image: url('../img/Lending/lending-listeners-1.svg');
+        background-repeat: no-repeat;
+        width: 142px;
+        height: 280px;
+
+        transform: rotate(-90deg);
+    }
+}
+.lending-started__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 100px;
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 68px;
+
+        margin-top: 49px;
+        padding: 0 2px 0 0;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 163.42%;
+        text-align: center;
+
+        color: #808080;
+
+        margin-top: 38px;
+        padding: 0 230px 0;
+    }
+}
+.lending-started__button {
+    display: flex;
+    flex-direction: column;
+
+    margin: 48px 0px 0px 0px;
+    gap: 32px;
+    a{
+        &:nth-child(1){
+            margin: 0px 0px 0px 0px;
+        }
+    }
+}
+@media (max-width: 1460px){
+    .lending-started__container{
+        width: 1140px;
+    }
+}
+@media (max-width: 1140px){
+    .lending-started__container{
+        width: 912px;
+    }
+    .lending-started__container::before{
+        right: -80px;
+    }
+}
+@media (max-width: 911px){
+    .lending-started__container{
+        width: 646px;
+    }
+    .lending-started__block p{
+        padding: 0px 20px 0px;
+    }
+    .lending-started__block h2{
+        font-size: 50px;
+    }
+    .lending-started__block p{
+        font-size: 16px;
+    }
+    .lending-started__button{
+        gap: 20px;
+        a{
+            &:nth-child(1){
+                width: 200px;
+                height: 60px;
+            }
+        }
+    }
+}
+@media (max-width: 645px){
+    .lending-started__container{
+        width: 375px;
+
+        margin-bottom: 64px;
+    }
+    .lending-started__block{
+        margin-top: 61px;
+        img{
+            height: 46.009918212890625px;
+            width: 49.844852447509766px;
+
+            margin-right: 17px;
+        }
+        h2{
+            font-size: 24px;
+            line-height: 29px;
+
+            margin-top: 30px;
+            padding: 0 0px 0 0;
+        }
+        p{
+            font-size: 14px;
+
+            margin-top: 14px;
+            padding: 0 5px;
+        }
+    }
+    .lending-started__button{
+        margin-top: 20px;
+        gap: 21px;
+        a{
+            &:nth-child(1){
+                width: 154px;
+                height: 50px;
+
+                font-size: 16px;
+                line-height: 19px;
+            }
+            &:nth-child(2){
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+    }
+    .lending-started__container::before{
+        right: 0;
+        left: 0;
+        top: 45px;
+
+        width: 76px;
+        height: 76px;
+
+        background-size: 97%;
+        background-position: left 0 top -72px;
+    }
+    .lending-started__container::after{
+        top: 297px;
+        left: 395px;
+
+        width: 70px;
+        height: 280px;
+
+        background-size: 100%;
+        background-position: left 0 top 0;
+        transform: rotate(-90deg);
+    }
+}
+@media (max-width: 374px){
+    .lending-started__container{
+        width: 320px;
+        margin-bottom: 46px;
+    }
+    .lending-started__block {
+        margin-top: 60px;
+        img{
+            margin-right: 0;
+        }
+        p{
+            margin-top: 15px;
+        }
+    }
+    .lending-started__container::before {
+        left: -8px;
+        top: 44px;
+    }
+    .lending-started__container::after {
+        top: 301px;
+        left: 335px;
+    }
+}

@@ -2,10 +2,22 @@
 @import "nullstyle.scss";
 @import "../../node_modules/swiper/swiper-bundle.css";
 //===========================
+
 // Components
 @import "header.scss";
 @import "mixFuncVar";
 @import "burger.scss";
-//===========================
+
+//======================
+
+// Header
+@import "header.scss";
+//======================
+
+// Lending =============
 @import "lending.scss";
-@import "catalogue.scss";
+@import "reviews.scss";
+@import "catalogue.scss"; //======================
+// Footer
+@import "footer.scss";
+//======================

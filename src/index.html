@@ -157,6 +157,37 @@
                     </div>
                 </div>
             </div>
+
+            <div class="lending-happy__container">
+                <div class="lending-happy__left">
+                    <img src="img/Lending/happy.svg" alt="#">
+                    <h4>What healthy and happy&nbsp;<br> customer says</h4>
+                    <p>We'll help you create a health plan with vitamins, supplements, and&nbsp;<br> more that help you feel your best today and support you long-term.</p>
+                </div>
+                <div class="lending-happy__right">
+                    <img src="img/Lending/happy-2.webp" alt="#">
+                </div>
+            </div>
+
+            @@include('html/reviews.html',{
+                "class":"reviewsLending"
+            })
+
+            <div class="lending-started__container">
+                <div class="lending-started__block">
+                    <img src="img/Lending/started.svg" alt="#">
+                    <h2>Ready to get started?</h2>
+                    <p>We'll help you create a health plan with vitamins, supplements, and more that help you feel your best today and support you long-term.</p>
+                    <div class="lending-vitamin__button lending-started__button">
+                        <a href="#" class="lending-vitamin__button-left">Take the quiz</a>
+                        <a href="#" class="lending-vitamin__button-right">Go to the shop</a>
+                    </div>
+                </div>
+            </div>
+
+            @@include('html/footer.html',{
+                "class":"footerLending"
+            })
         </div>
         <!-- Swiper -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
