@@ -1,5 +1,25 @@
+import Swiper, { Navigation, Pagination } from 'swiper'
 import burger from './modules/burger.js'
-import './modules/lenidg.js'
-import './modules/reviews.js'
+import {reviews , choose} from './modules/lending.js';
+import quizPage from './modules/quiz.js'
+import catalogue from './modules/catalogue.js'
 
-burger()
+
+window.addEventListener('DOMContentLoaded', () => {
+  const cataloguePage = document.querySelector('.cataloguePage')
+  const mainPage = document.querySelector('#mainPage')
+  const quiz = document.querySelector('#quizPage')
+  if (mainPage) { 
+      choose()
+      reviews()
+  }
+  console.log(quiz)
+  if (quiz) {
+      quizPage()
+  }
+  if (cataloguePage) {
+    catalogue()
+  }
+
+  burger()
+})
