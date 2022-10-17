@@ -226,12 +226,14 @@
 @media (max-width: 645px){
     .lending-vitamin__container{
         width: 375px;
+        padding: 0px 0px 0px 0px;
     }
     .lending-vitamin__text-title{
         font-size: 24px;
         line-height: 29px;
 
         margin-top: 110px;
+        padding: 0 20px;
         br{
             display: none;
         }
@@ -249,7 +251,7 @@
         background-size: 100%;
 
         bottom: 1px;
-        right: -17px;
+        right: -1px;
     }
     .lending-vitamin__button{
         margin-top: 20px;
@@ -279,8 +281,8 @@
         background-image: url('../img/Lending/lending-vitamins2.svg');
         background-repeat: no-repeat;
         background-position: center;
-        background-position: top 11px left -17px;
-        background-size: 110%;
+        background-position: top 13px left 1px;
+        background-size: 100%;
 
         height: 341px;
     }
@@ -306,24 +308,26 @@
         }
     }
     .lending-vitamin__text-text{
+        padding: 0 20px;
+        margin-top: 14px;
         br{
             display: none;
         } 
     }
     .lending-vitamin__button {
-        margin-top: 21px;
+        margin-top: 22px;
     }
     .lending-vitamin__text-contents::before {
         bottom: 30px;
-        right: -27px;
+        right: -12px;
     }
     .lending-vitamin__container::before {
         top: 61.9%;
         left: -68px;
     }
     .lending-vitamin__block {
-        background-position: top 12px left -16px;
-        background-size: 111%;
+        background-position: top 13px left 1px;
+        background-size: 100%;
 
         height: 295px;
     }
@@ -405,7 +409,7 @@
     margin: 100px 0 0 9px;
     gap: 98px;
     p{
-        padding: 19px 0px 0 0px;
+        padding: 18px 0px 0 0px;
     }
 }
 @media (max-width: 1460px){
@@ -516,7 +520,7 @@
         }
     }
     .lending-healthy__block-3{
-        margin-top: 40.31px;
+        margin-top: 40px;
         margin-bottom: 40px;
         margin-left: 4px;
         gap: 30.3px;
@@ -525,7 +529,7 @@
             width: 44px;
         }
         p{
-            padding-top: 8.2px;
+            padding-top: 8px;
         }
     }
 }
@@ -615,7 +619,7 @@
         line-height: 68px;
         text-align: center;
 
-        margin: 51px 1px 0 0px;
+        margin: 50px 1px 0 0px;
     }
     p{
         font-family: 'Open Sans';
@@ -627,7 +631,7 @@
 
         color: #808080;
 
-        margin: 29px 0px 0px 0px;
+        margin: 30px 0px 0px 0px;
     }
     a{
         width: 260px;
@@ -740,7 +744,7 @@
         transform: translate(-61px,9px);
     }
     .lending-listeners__text{
-        margin-top: 67px;
+        margin-top: 68px;
         margin-bottom: 59px;
     }
     .lending-listeners__text::before{
@@ -753,6 +757,7 @@
     .lending-listeners__text img{
         height: 50px;
         width: 50px;
+        margin-left: -1px;
     }
     .lending-listeners__text h2{
         font-size: 24px;
@@ -760,7 +765,7 @@
         margin-right: 0;
     }
     .lending-listeners__text p{
-        margin-top: 15px;
+        margin-top: 14px;
         padding: 0 7px 0 7px;
 
         font-size: 14px;
@@ -781,7 +786,7 @@
         width: 320px;
     }
     .listeners__block-icon {
-        margin-top: 39px;
+        margin-top: 40px;
     }
     .listeners__block-icon img:nth-child(1){
         width: 168.24px;
@@ -796,10 +801,10 @@
         transform: translate(-53px,9px);
     }
     .lending-listeners__text::before{
-        top: -14px;
+        top: -15px;
     }
     .lending-listeners__text{
-        margin-top: 70px;
+        margin-top: 69px;
         margin-bottom: 59px;
     }
     .lending-listeners__text h2{
@@ -808,7 +813,7 @@
         }
     }
     .lending-listeners__text a{
-        margin-top: 20px;
+        margin-top: 22px;
         margin-right: 1px;
     }
 }
@@ -1013,6 +1018,9 @@
     .swiper-choose__title-min{
         margin-top: clamp(1.25rem, -2.699rem + 9.8vw, 2.75rem);
     }
+    .swiper-choose__block-icon{
+        margin: 0 0 0 142px;
+    }
 }
 @media (max-width: 645px){
     .lending-choose__container{
@@ -1032,7 +1040,7 @@
         font-size: 14px;
         line-height: 163.42%;
         margin: 15px 0 0 0;
-        padding: 0 20px 19px;
+        padding: 0 20px 20px;
 
         br{
             display: none;
@@ -1202,10 +1210,11 @@
     }
     .lending-happy__left{
         margin-top: -61px;
-        margin-bottom: 30px;
+        margin-bottom: 29px;
         img{
             width: 50px;
             height: 56.82px;
+            margin-left: -1px;
         }
         h4{
             font-size: 20px;
@@ -1219,7 +1228,7 @@
             font-size: 14px;
 
             padding: 0 5px;
-            margin: 15px 0px 0px 0px;
+            margin: 16px 0px 0px 0px;
         }
     }
 }
@@ -1228,8 +1237,10 @@
         width: 320px;
     }
     .lending-happy__left{
-        margin-top: -37px;
+        margin-top: -38px;
+        margin-bottom: 30px;
     }
+
 }
 
 // Started ============================
@@ -1288,7 +1299,7 @@
         color: #808080;
 
         margin-top: 38px;
-        padding: 0 230px 0;
+        padding: 0 230px 0 228px;
     }
 }
 .lending-started__button {
@@ -1368,8 +1379,8 @@
         }
     }
     .lending-started__button{
-        margin-top: 20px;
-        gap: 21px;
+        margin-top: 22px;
+        gap: 20px;
         a{
             &:nth-child(1){
                 width: 154px;
@@ -1406,6 +1417,7 @@
         background-position: left 0 top 0;
         transform: rotate(-90deg);
     }
+ 
 }
 @media (max-width: 374px){
     .lending-started__container{
@@ -1428,5 +1440,9 @@
     .lending-started__container::after {
         top: 301px;
         left: 335px;
+    }
+    .lending-started__button {
+        margin-top: 20px;
+        gap: 20px;
     }
 }
