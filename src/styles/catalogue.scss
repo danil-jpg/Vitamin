@@ -257,6 +257,9 @@
     .swiper-catalogue-button-prev {
         right: 56px;
     }
+    .header__container {
+        width: 98vw;
+    }
 }
 @media screen and (max-width: 1799px) {
     .catalogue-slide__false-slide {
@@ -415,6 +418,7 @@
         max-width: 100%;
         .shop-menu__center {
             margin-top: -30px;
+            // position: relative;
 
             .menu__item {
                 font-family: "Effra";
@@ -426,6 +430,7 @@
                 margin-left: 20px;
 
                 &:first-of-type {
+                    position: relative;
                     text-align: inherit;
                 }
             }
@@ -436,6 +441,18 @@
             position: absolute;
             top: 0;
             right: 21px;
+        }
+    }
+    .shop-catalogue__left-wr {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            top: 39px;
+            left: 0;
+            content: "";
+            border-bottom: 1px solid #f2f2f2;
+            width: 100vw;
         }
     }
 
@@ -496,5 +513,18 @@
         line-height: 22px;
         /* identical to box height */
         color: #000000;
+    }
+    .tablet {
+        margin: 19px auto 0;
+    }
+    .mt20 {
+        margin-top: 14px;
+    }
+    .shop-catalogue__card-wr {
+        height: 285px;
+        margin-bottom: 5px;
+    }
+    .shop-catalogue__price {
+        margin-top: 15px;
     }
 }
