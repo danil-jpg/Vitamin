@@ -261,6 +261,70 @@
 .bright-purple {
     color: #9448a0;
 }
+.catalogue-demo {
+}
+.catalogue-demo__content {
+    width: 100%;
+}
+
+.catalogue-demo__card-wr {
+    width: per(1396, 1800);
+    height: 472px;
+    background: url(../img/Catalogue/demo-banner.webp) no-repeat #5f9dca;
+    background-position: right center;
+    margin: 0 auto;
+    margin-top: 101px;
+    border-radius: 24px;
+}
+.catalogue-demo__text-wr {
+    /* margin-top: 137px; */
+    display: inline-block;
+    margin-left: 70px;
+}
+.catalogue-demo__top-text {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 103px;
+}
+.catalogue-demo__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(50);
+    line-height: lh(60, 50);
+    color: #ffffff;
+    margin-top: 17px;
+}
+.catalogue-demo__center-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: lh(25, 18);
+    color: #ffffff;
+    opacity: 0.7;
+    margin-top: 19px;
+    width: 58%;
+}
+.catalogue-demo__bottom-btn {
+    width: 255px;
+    height: 65px;
+    background: #ffffff;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
 @media screen and (min-width: 1801px) {
     .swiper-catalogue-button-next,
     .swiper-catalogue-button-prev {
@@ -305,6 +369,9 @@
     }
     .shop-catalogue__right-wr {
         grid-template-columns: 1fr 1fr;
+    }
+    .catalogue-demo__card-wr {
+        width: 100%;
     }
 }
 
@@ -691,5 +758,10 @@
     }
     .shop-catalogue__title {
         width: 91%;
+    }
+    .shop-catalogue__btn {
+        margin-top: 26px;
+        width: 280px;
+        height: 50px;
     }
 }
