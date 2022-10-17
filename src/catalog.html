@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="catalogueHtml">
     @@include("./html/head.html",{ "title" : "Catalogue" })
     <body class="cataloguePage">
         @@include("./html/header.html")
@@ -152,6 +152,7 @@
                         <!-- Fist row -->
                         <!-- prettier-ignore  -->
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375 mobile-320",
                             "image":"./img/Catalogue/1tab.webp",
                             "textColorClass":"light-purple",
                             "subtitleText" : "Vitamins & Dietary Supplements",
@@ -159,6 +160,7 @@
                         })
 
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375 mobile-320",
                             "image":"./img/Catalogue/2tab.webp",
                             "textColorClass":"light-purple",
                             "subtitleText" : "Vitamins & Dietary Supplements",
@@ -167,6 +169,7 @@
                         })
 
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375 mobile-320",
                             "image":"./img/Catalogue/3tab.webp",
                             "textColorClass":"light-purple",
                             "subtitleText" : "Vitamins & Dietary Supplements",
@@ -175,6 +178,7 @@
                         <!-- 2 row -->
                         <!-- prettier-ignore  -->
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375 mobile-320",
                             "image":"./img/Catalogue/4tab.webp",
                             "textColorClass":"light-purple",
                             "subtitleText" : "Vitamins & Dietary Supplements",
@@ -182,6 +186,7 @@
                         })
 
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375",
                             "image":"./img/Catalogue/5tab.webp",
                             "textColorClass":"light-blue",
                             "subtitleText" : "Weight Loss",
@@ -189,6 +194,7 @@
                         })
 
                         @@include("html/tablet-pack.html",{
+                            "additionalClass" : "mobile-375",
                             "image":"./img/Catalogue/6tab.webp",
                             "textColorClass":"light-purple",
                             "subtitleText" : "Vitamins & Dietary Supplements",
@@ -338,6 +344,13 @@
                             "IfTwoLinesClass" : "mt20"
                         })
                     </div>
+                    <button class="shop-catalogue__btn">
+                        <span>View more</span
+                        ><img
+                            src="img/Catalogue/arrow-down-sm.svg"
+                            alt="arrow-down-sm"
+                        />
+                    </button>
                 </div>
             </section>
         </main>
