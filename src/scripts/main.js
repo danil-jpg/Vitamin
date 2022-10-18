@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const cataloguePage = document.querySelector('.cataloguePage')
   const mainPage = document.querySelector('#mainPage')
   const quiz = document.querySelector('#quizPage')
+
   if (mainPage) {
     choose()
     reviews()
@@ -17,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   if (cataloguePage) {
     catalogue()
+    reviews()
   }
 
   burger()
