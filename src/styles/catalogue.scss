@@ -852,6 +852,21 @@
     }
 }
 
+@media screen and (max-width: 767px) and (min-width: 376px) {
+    .shop-catalogue__card-wr {
+        justify-self: center;
+        width: 100%;
+    }
+    .catalogue-demo__text-wr {
+        margin: 0 auto;
+        display: block;
+        transform: translate(0, 250px);
+    }
+    .catalogue-rew__title {
+        text-align: center;
+    }
+}
+
 @media screen and (max-width: 374px) {
     .catalogue-slide__slide-item {
         max-width: 100%;
