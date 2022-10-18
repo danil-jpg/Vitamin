@@ -157,7 +157,7 @@
     height: 0px;
     border: 1px solid #f2f2f2;
     margin: 0 auto;
-    margin-top: 28px;
+    margin-top: 21px;
 }
 
 .switch {
@@ -224,4 +224,35 @@ input:checked + .slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.card__border-block-bottom-wr {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 41px;
+    width: 90%;
+}
+.card__border-block-bottom_text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(30);
+    line-height: lh(41, 30);
+    color: #000000;
+}
+.card__border-bottom_btn {
+    width: 330px;
+    height: 65px;
+    background: #ff7d4e;
+    border: 1px solid #ff7d4e;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    text-align: center;
+    color: #ffffff;
+    margin-left: 79px;
+    margin-top: -12px;
 }
