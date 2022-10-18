@@ -24,9 +24,13 @@
 //======================
 
 // Catalogue =============
-@import "catalogue.scss"; 
+@import "catalogue.scss";
 //======================
 
 // Footer
 @import "footer.scss";
 //======================
+
+* {
+    // border: 1px solid red;
+}
