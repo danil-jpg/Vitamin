@@ -356,6 +356,7 @@
 .catalogue-footer {
     margin-top: 99px;
 }
+
 @media screen and (min-width: 1801px) {
     .swiper-catalogue-button-next,
     .swiper-catalogue-button-prev {
@@ -837,6 +838,17 @@
     }
     .catalogue-footer {
         margin-top: 61px;
+    }
+}
+.shop-catalogue__link {
+    img {
+        transition: 0.3s;
+    }
+}
+.shop-catalogue__link:hover {
+    img {
+        transition: 0.3s;
+        transform: scale(1.1);
     }
 }
 

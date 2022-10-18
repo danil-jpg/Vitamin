@@ -1,0 +1,98 @@
+.card {
+}
+.card__content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card__left-wr {
+    img {
+        position: fixed;
+    }
+}
+.card__banner-img {
+}
+.card__right-wr {
+    position: relative;
+    padding-left: 136px;
+}
+.card__return-wr {
+    position: absolute;
+    top: 44px;
+    left: 135px;
+    display: flex;
+    align-items: center;
+    img {
+        margin-right: 15px;
+    }
+}
+.card__return-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: lh(22, 16);
+    color: #000000;
+}
+
+.card__text-top-wr {
+    margin-top: 159px;
+}
+.card__subTitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: lh(22, 16);
+    color: #6b5ebb;
+}
+.card__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(40);
+    line-height: lh(48, 40);
+    color: #000000;
+    margin-top: 13px;
+    width: 50%;
+}
+.card__hor-line {
+    width: 562px;
+    height: 0px;
+    border: 1px solid #f2f2f2;
+    margin-top: 41px;
+}
+.card__center-wr {
+    display: flex;
+    margin-top: 39px;
+    align-items: center;
+}
+.card-img-to-change {
+}
+.card__counter-wr {
+    display: flex;
+    align-items: center;
+    margin-left: 166px;
+}
+.card__counter {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.card__counter-left {
+    background: url(../img/cardPage/minus.svg) center center no-repeat #f5f5f5;
+}
+.card__counter-num {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    text-align: center;
+    color: #000000;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+.card__counter-right {
+    background: url(../img/cardPage/plus.svg) center center no-repeat #f5f5f5;
+}
