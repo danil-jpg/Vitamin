@@ -470,3 +470,50 @@ input:checked + .slider:before {
         margin: -11px 0 0 2px;
     }
 }
+
+@media screen and (max-width: 374px) {
+    .card__left-wr {
+        height: 386px;
+        img {
+            width: 100%;
+            height: 296px;
+        }
+    }
+    .card__title {
+        width: 72%;
+    }
+    .card__hor-line {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 38px;
+    }
+
+    .card__counter-wr {
+        margin-left: 10px;
+        margin-top: 80px;
+    }
+
+    .card__border-block {
+        width: 280px;
+        height: 192px;
+    }
+
+    .card__border-block-top-wr {
+        transform: translate(0, -16px);
+    }
+    .switch {
+        margin-left: 10px;
+    }
+
+    .card__border-block-bottom-wr {
+        width: 100%;
+        margin-left: 16px;
+        margin-bottom: -2px;
+    }
+
+    .card__border-bottom_btn {
+        width: 144px;
+        height: 56px;
+        margin-left: 35px;
+    }
+}
