@@ -16,12 +16,17 @@
     <header class="header-quiz">
         <div class="header-quiz__container">
             <div class="header-quiz__logo">
-                <a href="index.html"><img src="./img/Lending/quiz-logo.svg" alt="Logo"></a>
+                <a href="index.html">
+                    <picture>
+                        <source srcset="./img/Quiz/logo.svg" media="(max-width: 768px)">
+                        <img src="./img/Lending/quiz-logo.svg" alt="Logo">
+                    </picture>
+                </a>
             </div>
             <div class="quiz-indicator" id="indicator">1/9</div>
         </div>
     </header>
-    <main id="quiz">
+    <main id="quiz" class="quiz-main-page">
         <div class="quiz-main__container">
             <div class="quiz-main__questions" id="questions"></div>
         </div>
