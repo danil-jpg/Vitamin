@@ -35,5 +35,25 @@ function catalogue () {
       }
     }
   })
+
+  const collapseTriggerButton = document.querySelector('.shop-catalogue__btn')
+  const elementsToShow = document.querySelectorAll('.shop-catalogue__card-wr:not(.mobile-375)')
+
+  const collapseListTrigger = document.querySelector('.shop-catalogue__content .menu__item:first-of-type')
+  const elemListToShow = document.querySelectorAll('.shop-catalogue__content .menu__item:not(:first-of-type)')
+
+  console.log(collapseListTrigger, elemListToShow)
+
+  collapseTriggerButton.addEventListener('click', () => {
+    elementsToShow.forEach((item) => {
+      item.classList.toggle('active')
+    })
+  })
+
+  collapseListTrigger.addEventListener('click', () => {
+    elemListToShow.forEach(item => {
+      item.classList.toggle('active')
+    })
+  })
 }
 export default catalogue
