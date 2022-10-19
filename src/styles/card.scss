@@ -261,6 +261,75 @@ input:checked + .slider:before {
 .card__border-block-text_320 {
     display: none;
 }
+.card-descr {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+}
+.card-descr__content {
+    grid-column: 2/3;
+    width: 100%;
+}
+.card-descr__top-wr {
+    margin: 0 auto;
+    margin-top: 90px;
+    width: 70%;
+}
+.card-descr__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(26, 16);
+    line-height: lh(31, 26);
+    color: #000000;
+}
+.card-descr__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(28, 16);
+    color: #000000;
+}
+.card-descr__text-spec {
+    margin-top: 28px;
+    width: 95%;
+    margin-bottom: 33px;
+}
+.card-descr__item-text-wr {
+    margin: 25px auto;
+}
+.card-descr__item-hor-line {
+    // vertical-align: text-top;
+}
+.card-descr__item-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(22, 16);
+    color: #000000;
+    margin-left: 30px;
+    display: inline-block;
+
+    margin-left: 50px;
+
+    width: 80%;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: -51px;
+        top: 11px;
+        width: 30px;
+        height: 2px;
+        background: #ff7d4e;
+        display: inline-block;
+    }
+}
+.card-descr__bottom-wr {
+}
 
 @media screen and (max-width: 1799px) {
     .card__left-wr {
@@ -311,6 +380,10 @@ input:checked + .slider:before {
 
     .card__border-block {
         margin: 40px auto 0;
+    }
+    .card-descr {
+        grid-template-columns: 1fr;
+        font-size: 20px;
     }
 }
 
