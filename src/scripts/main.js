@@ -14,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (mainPage) {
     choose()
     reviews()
+    burger()
   }
   if (quiz) {
     quizPage()
@@ -21,10 +22,10 @@ window.addEventListener('DOMContentLoaded', () => {
   if (cataloguePage) {
     catalogue()
     reviews()
+    burger()
   }
   if (cardPage1) {
     card()
+    burger()
   }
-
-  burger()
 })

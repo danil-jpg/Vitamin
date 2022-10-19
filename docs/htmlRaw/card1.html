@@ -199,9 +199,8 @@
         <div class="header__account burger-account">
             <img
                 src="img/BurgerMenu/Menu.svg"
-
                 alt="Menu"
-                class="header__account-icon"
+                class="header__account-icon header__account-icon_spec"
             />
         </div>
         <div class="header__cart">
@@ -219,11 +218,17 @@
             <section class="card">
                 <div class="card__content">
                     <div class="card__left-wr">
-                        <img
-                            src="img/cardPage/card1-banner.webp"
-                            alt="banner"
-                            class="card__banner-img"
-                        />
+                        <picture>
+                            <source
+                                media="(max-width: 767px)"
+                                srcset="img/cardPage/card1-banner_375.webp"
+                            />
+                            <img
+                                src="img/cardPage/card1-banner.webp"
+                                alt="banner"
+                                class="card__banner-img"
+                            />
+                        </picture>
                     </div>
                     <div class="card__right-wr">
                         <div class="card__return-wr">
@@ -243,11 +248,18 @@
                             <div class="card__hor-line"></div>
                         </div>
                         <div class="card__center-wr">
-                            <img
-                                src="img/cardPage/Can.svg"
-                                alt="can"
-                                class="card-img-to-change"
-                            />
+                            <picture>
+                                <source
+                                    media="(max-width: 767px)"
+                                    srcset="img/cardPage/can_375.svg"
+                                />
+                                <img
+                                    src="img/cardPage/Can.svg"
+                                    alt="can"
+                                    class="card-img-to-change"
+                                />
+                            </picture>
+
                             <div class="card__counter-wr">
                                 <div
                                     class="card__counter card__counter-left"
@@ -262,6 +274,11 @@
                             <div class="card__border-block-top-wr">
                                 <p class="card__border-block-text">
                                     Autoship this item every
+                                </p>
+                                <p
+                                    class="card__border-block-text card__border-block-text_320"
+                                >
+                                    Deliver every
                                 </p>
                                 <select
                                     name=""
