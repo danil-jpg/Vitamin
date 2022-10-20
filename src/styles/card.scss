@@ -382,6 +382,10 @@ input:checked + .slider:before {
 .card-descr__text-bold {
     font-weight: 600;
 }
+
+.card-descr {
+    width: 100%;
+}
 @media screen and (max-width: 1799px) {
     .card__left-wr {
         width: 100%;
