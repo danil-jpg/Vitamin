@@ -4,183 +4,316 @@ function quizPage () {
       question: 'What’s your first name?',
       answers: [
         {
-          id: '',
+          text: '',
           value: 'First Name',
           btnClass: 'btn-next',
-          type: 'text'
+          type: 'text',
+          classLi: 'icon-quiz-1',
+          classLi2: 'list-quiz__one-1',
+          icon: './img/Quiz/quiz 1-1.svg',
+          icon2: './img/Quiz/quiz 1-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'Do you smoke?',
+      classQuestion: 'question-page-2',
       answers: [
         {
-          id: 'Yes',
+          text: 'Yes',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__two-1',
+          classLi2: 'list-quiz__two-1',
+          icon: './img/Quiz/quiz 2-1.svg',
+          icon2: './img/Quiz/quiz 2-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'No',
+          text: 'No',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__two-2',
+          classLi2: 'list-quiz__two-2',
+          icon: './img/Quiz/quiz 2-1.svg',
+          icon2: './img/Quiz/quiz 2-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'What is your eating habits?',
+      classQuestion: 'question-page-3',
+      classUl: 'answers-page-3',
       answers: [
         {
-          id: 'Vegan diet',
+          text: 'Vegan diet',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__three-1',
+          classLi2: 'list-quiz__three-1',
+          icon: './img/Quiz/quiz 3-1.svg',
+          icon2: './img/Quiz/quiz 3-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'Vegetarian diet',
+          text: 'Vegetarian diet',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__three-2',
+          classLi2: 'list-quiz__three-2',
+          icon: './img/Quiz/quiz 2-1.svg',
+          icon2: './img/Quiz/quiz 2-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'My diet is generally healthy and includes animal protein, fish and veggies',
+          text: 'My diet is generally healthy and includes animal protein, fish and veggies',
           value: '',
-          type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          type: 'text',
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__three-3',
+          classLi2: 'list-quiz__three-3',
+          icon: './img/Quiz/quiz 2-1.svg',
+          icon2: './img/Quiz/quiz 2-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'My diet includes fast food and soft drinks',
+          text: 'My diet includes fast food and soft drinks',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__three-4',
+          classLi2: 'list-quiz__three-4',
+          icon: './img/Quiz/quiz 2-1.svg',
+          icon2: './img/Quiz/quiz 2-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'How frequently do you consume alcoholic beverages?',
+      classQuestion: 'question-page-4',
+      classUl: 'answers-page-4',
       answers: [
         {
-          id: '≤ 3 times per week',
+          text: '≤ 3 times per week',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__four-1',
+          classLi2: 'list-quiz__four-1',
+          icon: './img/Quiz/quiz 4-1.svg',
+          icon2: './img/Quiz/quiz 4-2.svg',
+          btnLink: 'button'
         },
         {
-          id: '4 - 7 times per week',
+          text: '4 - 7 times per week',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__four-2',
+          classLi2: 'list-quiz__four-2',
+          icon: './img/Quiz/quiz 3-1.svg',
+          icon2: './img/Quiz/quiz 3-2.svg',
+          btnLink: 'button'
         },
         {
-          id: '7+ times per week',
+          text: '7+ times per week',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__four-3',
+          classLi2: 'list-quiz__four-3',
+          icon: './img/Quiz/quiz 3-1.svg',
+          icon2: './img/Quiz/quiz 3-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'How frequently do you have cold/flu symptoms?',
+      classQuestion: 'question-page-5',
+      classUl: 'answers-page-5',
       answers: [
         {
-          id: '≤ 2 per year',
+          text: '≤ 2 per year',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__five-1',
+          classLi2: 'list-quiz__five-1',
+          icon: './img/Quiz/quiz 5-1.svg',
+          icon2: './img/Quiz/quiz 5-2.svg',
+          btnLink: 'button'
         },
         {
-          id: '3 - 5 times per year',
+          text: '3 - 5 times per year',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__five-2',
+          classLi2: 'list-quiz__five-2',
+          icon: './img/Quiz/quiz 5-1.svg',
+          icon2: './img/Quiz/quiz 5-2.svg',
+          btnLink: 'button'
         },
         {
-          id: '5+ times per week',
+          text: '5+ times per week',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__five-3',
+          classLi2: 'list-quiz__five-3',
+          icon: './img/Quiz/quiz 5-1.svg',
+          icon2: './img/Quiz/quiz 5-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'Describe your stress level',
+      classQuestion: 'question-page-6',
+      classUl: 'answers-page-6',
       answers: [
         {
-          id: 'I feel calm and relaxed most of the time',
+          text: 'I feel calm and relaxed most of the time',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__six-1',
+          classLi2: 'list-quiz__six-1',
+          icon: './img/Quiz/quiz 6-1.svg',
+          icon2: './img/Quiz/quiz 6-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'I get nerevous from time to time',
+          text: 'I get nerevous from time to time',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__six-2',
+          classLi2: 'list-quiz__six-2',
+          icon: './img/Quiz/quiz 6-1.svg',
+          icon2: './img/Quiz/quiz 6-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'I’m under a lot of stress most of the time',
+          text: 'I’m under a lot of stress most of the time',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__six-3',
+          classLi2: 'list-quiz__six-3',
+          icon: './img/Quiz/quiz 6-1.svg',
+          icon2: './img/Quiz/quiz 6-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'Have you ever been diagnosted with high blood glucose level?',
+      classQuestion: 'question-page-7',
+      classUl: 'answers-page-7',
       answers: [
         {
-          id: 'Yes',
+          text: 'Yes',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__seven-1',
+          classLi2: 'list-quiz__two-1',
+          icon: './img/Quiz/quiz 7-1.svg',
+          icon2: './img/Quiz/quiz 7-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'No',
+          text: 'No',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__two-2',
+          classLi2: 'list-quiz__two-2',
+          icon: './img/Quiz/quiz 7-1.svg',
+          icon2: './img/Quiz/quiz 7-2.svg',
+          btnLink: 'button'
         }
       ]
     },
     {
       question: 'Tell us what you want to focus on',
+      classQuestion: 'question-page-8',
+      classUl: 'answers-page-8',
       answers: [
         {
-          id: 'Weight managment',
+          text: 'Weight managment',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-1',
+          classLi2: 'list-quiz__eight-1',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'Stress relief',
+          text: 'Stress relief',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-2',
+          classLi2: 'list-quiz__eight-2',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'Immune boost',
+          text: 'Immune boost',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-3',
+          classLi2: 'list-quiz__eight-3',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'Need to solve a sprcific problem',
+          text: 'Need to solve a sprcific problem',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-4',
+          classLi2: 'list-quiz__eight-4',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'I need a bassic kit for a daily intake',
+          text: 'I need a bassic kit for a daily intake',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-5',
+          classLi2: 'list-quiz__eight-5',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         },
         {
-          id: 'All in one',
+          text: 'All in one',
           value: '',
           type: 'button',
-          btnClass: 'btn-next btn-new-next'
+          btnClass: 'btn-next btn-new-next',
+          classLi: 'icon-quiz__eight-6',
+          classLi2: 'list-quiz__eight-6',
+          icon: './img/Quiz/quiz 8-1.svg',
+          icon2: './img/Quiz/quiz 8-2.svg',
+          btnLink: 'button'
         }
       ]
     },
@@ -188,10 +321,16 @@ function quizPage () {
       question: 'What’s your email address?',
       answers: [
         {
-          id: '',
+          text: '',
           value: 'Email',
           btnClass: 'btn-next',
-          type: 'text'
+          type: 'text',
+          classLi: 'icon-quiz-1',
+          classLi2: 'list-quiz__one-1',
+          icon: './img/Quiz/quiz 1-1.svg',
+          icon2: './img/Quiz/quiz 1-2.svg',
+          btnLink: 'a',
+          ref: 'href="index.html"'
         }
       ]
     }
@@ -213,13 +352,17 @@ function quizPage () {
 
     const renderAnswers = () => DATA[index].answers
       .map((answer) => `
-            <li>
+            <li class="${answer.classLi}">
+                <img src="${answer.icon}" alt="Img">
+                <img src="${answer.icon2}" alt="Img">
+            </li>
+            <li class="${answer.classLi2}">
                 <p>${answer.value}</p>
                 <label>
-                    <input class="answer-input" type=${answer.type} name=${index} value="${answer.id}">
-                    <button  class='${answer.btnClass}' id="btn-next">
+                    <textarea class="answer-input" type=${answer.type} name=${index} value="${answer.id}"  draggable="true">${answer.text}</textarea>
+                    <${answer.btnLink}  class='${answer.btnClass}' id="btn-next" ${answer.ref}>
                         <img src="./img/Lending/quiz-next.svg" alt="Next">
-                    </button>
+                    </${answer.btnLink}>
                 </label>
             </li>
         `)
@@ -227,8 +370,8 @@ function quizPage () {
 
     questions.innerHTML = `
     <div class="quiz-questions-item">
-        <div class="quiz-questions-item__question"><p>${DATA[index].question}</p></div>
-        <ul class="quiz-questions-item__answers">${renderAnswers()}</ul>
+        <div class="quiz-questions-item__question ${DATA[index].classQuestion}"><p>${DATA[index].question}</p></div>
+        <ul class="quiz-questions-item__answers ${DATA[index].classUl}">${renderAnswers()}</ul>
     </div>
     `
   }
