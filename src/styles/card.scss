@@ -386,6 +386,63 @@ input:checked + .slider:before {
 .card-descr {
     width: 100%;
 }
+
+.card-proposal {
+    width: 100%;
+    z-index: 1;
+    display: inline-block;
+    background-color: white;
+    position: relative;
+    margin-top: 187px;
+}
+.card-proposal__content {
+    width: per(1396, 1800);
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 78.7%;
+    margin-top: 104px;
+}
+.card-proposal__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 36px;
+    color: #000000;
+}
+.card-proposal__cards-wr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 38px;
+    grid-column-gap: -19px;
+    width: 95.5%;
+    /* padding: 0 14px; */
+}
+
+.cardPage {
+    footer {
+        position: relative;
+        z-index: 1;
+        background: #faf8f6;
+    }
+}
+.card-proposal__content {
+    margin-bottom: 104px;
+}
+@media screen and (min-width: 1800px) {
+    .card-proposal__content {
+        width: 77.7%;
+        margin: 46px auto 102px;
+
+        .shop-catalogue__card-wr {
+            width: 325px;
+            height: 479px;
+        }
+    }
+    .card-proposal__cards-wr {
+        width: 102.5%;
+    }
+}
 @media screen and (max-width: 1799px) {
     .card__left-wr {
         width: 100%;
@@ -393,6 +450,16 @@ input:checked + .slider:before {
 
     .card__banner-img {
         width: 720px;
+    }
+    .card-proposal__cards-wr {
+        width: 100%;
+        gap: 15px;
+    }
+    .card-proposal__cards-wr {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-proposal {
+        margin-top: 0;
     }
 }
 
@@ -705,6 +772,29 @@ input:checked + .slider:before {
             width: 100%;
         }
     }
+    .card-proposal__title {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #000000;
+    }
+    .card-proposal__content {
+        margin: 122px auto 0;
+        width: 89.7%;
+    }
+
+    .card-proposal__cards-wr {
+        margin-top: 27px;
+        gap: 3px;
+    }
+    .cardPage {
+        footer {
+            margin-top: 54px;
+        }
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -771,5 +861,17 @@ input:checked + .slider:before {
 
     .card-descr__text {
         width: 99%;
+    }
+
+    .card-proposal__content {
+        margin: 122px auto 0;
+        width: 88%;
+    }
+    .card-proposal__cards-wr {
+        grid-template-columns: 1fr;
+    }
+    .card-proposal__cards-wr {
+        gap: 11px;
+        margin-top: 30px;
     }
 }
