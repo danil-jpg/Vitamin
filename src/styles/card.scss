@@ -1,6 +1,8 @@
 .card {
 }
-
+.card1Html {
+    // overflow-x: hidden;
+}
 .card__content {
     width: 100%;
     display: grid;
@@ -264,7 +266,7 @@ input:checked + .slider:before {
 .card-descr {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100vw;
+    width: 100%;
 }
 .card-descr__content {
     grid-column: 2/3;
