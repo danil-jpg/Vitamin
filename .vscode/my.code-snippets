@@ -75,5 +75,15 @@
 		"}"
 		],
 		"description": "Отслеживание клика"
-	}
+	},
+
+	"Медиа запрос": {
+		//"scope": "javascript,typescript",
+		"prefix": "mmw",
+		"body": [
+			"@media (max-width: $1px){$2}"
+		],
+		"description": "Внутренний отступ"
+	},
+	// @media (max-width: 374px)
 }

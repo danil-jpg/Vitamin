@@ -331,7 +331,7 @@ const DATA = [
                 icon: './img/Quiz/quiz 1-1.svg',
                 icon2: './img/Quiz/quiz 1-2.svg',
                 btnLink: 'a',
-                ref: 'href="index.html"'
+                ref: 'href="pack.html"'
             }
         ]
     },

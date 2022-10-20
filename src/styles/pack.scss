@@ -1,0 +1,256 @@
+.pack {
+    position: relative;
+}
+.pack-picture-1 {
+    position: absolute;
+    top: 36px;
+    right: clamp(3.25rem, -4.858rem + 40.54vw, 40.75rem);
+    z-index: -1;
+}
+.pack-picture-2 {
+    position: absolute;
+    top: clamp(12.188rem, 11.269rem + 4.59vw, 16.438rem);
+    right: 0;
+    z-index: -1;
+}
+.pack-text {
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(1.5rem, 1.149rem + 1.76vw, 3.125rem);
+        line-height: clamp(1.813rem, 1.394rem + 2.09vw, 3.75rem);
+
+        margin-top: clamp(7.5rem, 6.689rem + 4.05vw, 11.25rem);
+
+        max-width: clamp(10.75rem, 4.399rem + 31.76vw, 40.125rem);
+    }
+    h6{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(1.25rem, 1.169rem + 0.41vw, 1.625rem);
+        line-height: clamp(1.5rem, 1.405rem + 0.47vw, 1.938rem);
+
+        margin-top: clamp(3.875rem, 1.47rem + 2.03vw, 3.75rem);
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(0.875rem, 0.821rem + 0.27vw, 1.125rem);
+        line-height: clamp(1.5rem, 1.446rem + 0.27vw, 1.75rem);
+
+        margin-top: clamp(1.25rem, 1.196rem + 0.27vw, 1.5rem);
+
+        max-width: clamp(17.5rem, 9.122rem + 41.89vw, 56.25rem);
+    }
+}
+.personal-pack {
+    margin-top: clamp(0.063rem, -1.086rem + 5.74vw, 5.375rem);
+    margin-bottom: clamp(0.063rem, -1.289rem + 6.76vw, 6.313rem);
+}
+.personal-pack__container {
+    width: clamp(20rem, 3.838rem + 80.81vw, 94.75rem);
+
+    background-color: #FAF8F6;
+    border-radius: 16px;
+
+    position: relative;
+
+    padding: 60px 45px 50px;
+
+    &::before{
+        content: '';
+        position: absolute;
+        top: clamp(-5.688rem, -6.093rem + 2.03vw, -3.813rem);
+        right: clamp(2.125rem, -2.01rem + 20.68vw, 21.25rem);
+
+        width: clamp(3.813rem, 2.988rem + 4.12vw, 7.625rem);
+        height: clamp(3.813rem, 2.988rem + 4.12vw, 7.625rem);
+
+        background-color: #FFCA78;
+        border-radius: 100%;
+    }
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: clamp(1.25rem, 1.034rem + 1.08vw, 2.25rem);
+        line-height: clamp(1.5rem, 1.243rem + 1.28vw, 2.688rem);
+
+        padding-left: 15px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: #FF7D4E;
+        border-radius: 100px;
+
+        width: 330px;
+        height: clamp(3.5rem, 3.378rem + 0.61vw, 4.063rem);
+
+        text-align: center;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 33px;
+        color: #fff;
+
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+}
+.personal-pack__vitamin {
+    display: flex;
+    justify-content: center;
+    .shop-catalogue__card-wr{
+        background-color: #fff;
+
+        width: 325px;
+        margin: 50px 16px 0px;
+    }
+}
+
+
+@media (max-width: 1730px){
+    .personal-pack__container{
+        a{
+            margin: clamp(1.875rem, 1.605rem + 1.35vw, 3.125rem) auto 0;
+        }
+        .personal-pack__vitamin{
+            flex-wrap: wrap;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .personal-pack__container{
+        &::before{
+            top: -30px;
+        }
+    }
+}
+@media (max-width: 920px){
+    .personal-pack__container {
+        padding: 45px 0 50px;
+        .personal-pack__vitamin {
+            .shop-catalogue__card-wr{
+                width: clamp(10rem, 5.313rem + 23.44vw, 20.313rem);
+                height: 495px;
+    
+                margin: clamp(0.938rem, -0.057rem + 4.97vw, 3.125rem) 7.5px 0px;
+                
+                position: static;
+                opacity: 1;
+                .shop-catalogue__card-text-wr{
+                    .shop-catalogue__price{
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 767px){
+    .personal-pack__container {
+        .personal-pack__vitamin {
+            .shop-catalogue__card-wr{
+                height: 279px;
+            }
+        }
+    }
+}
+@media (max-width: 408px){
+    .personal-pack{
+        margin-top: 60px;
+        margin-bottom: 0;
+        .personal-pack__container{
+            margin: 0px 0px 0px 0px;
+            padding: 61px 0px 58px 0px;
+    
+            width: 100%;
+            border-radius: 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 1);
+            h2{
+                padding-left: 18px;
+            }
+            a{
+                width: 335px;
+            }
+            &::before{
+                right: 34px;
+                top: -30px;
+    
+                width: 61px;
+                height: 61px;
+            }
+            .personal-pack__vitamin {
+                gap: 15px;
+                .shop-catalogue__card-wr{
+                    margin: 0px 0px 0px 0px;
+                    
+                }
+            }
+            .personal-pack__vitamin {
+                margin-top: 30px;
+                .shop-catalogue__card-wr {
+                    width: 160px;
+                    .tablet {
+                        margin: 10px auto 0;
+                    }
+                }
+            }
+        }
+    }
+    .pack-picture-1{
+        top: 56px;
+        right: 52px;
+    }
+    .pack-picture-2{
+        top: 195px;
+    }
+    .pack-text{
+        margin-left: 5px;
+        h2{
+            margin-top: 120px;
+            max-width: 227px;
+        }
+        h6{
+            margin-top: 29px;
+        }
+        p{
+            margin-top: 17px;
+            max-width: 333px;
+        }
+    }
+}
+
+@media (max-width: 374px){
+    .pack-text {
+        h2{
+            max-width: 170px;
+        }
+        p{
+            margin-top: 18px;
+            max-width: 277px;
+        }
+    }
+    .personal-pack {
+        margin-top: 64px;
+        .personal-pack__container {
+            a{
+                width: 280px;
+            }
+            .personal-pack__vitamin {
+                .shop-catalogue__card-wr {
+                    width: 87%;
+                    height: 405px;
+                }
+            }
+        }
+
+    }
+}

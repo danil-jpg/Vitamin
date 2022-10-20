@@ -7,7 +7,6 @@
 @import "header.scss";
 @import "mixFuncVar";
 @import "burger.scss";
-
 //======================
 
 // Header
@@ -23,10 +22,13 @@
 @import "quiz.scss";
 //======================
 
+// Pack =============
+@import "pack.scss";
+//======================
+
 // Catalogue =============
 @import "catalogue.scss";
 //======================
-
 // Footer
 @import "footer.scss";
 //======================
