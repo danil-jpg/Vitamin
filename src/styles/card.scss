@@ -649,6 +649,62 @@ input:checked + .slider:before {
             height: 2px;
         }
     }
+
+    .card-descr__bottom-wr_1 {
+        margin-top: 61px;
+        width: 90%;
+    }
+
+    .card-descr__title {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .card-descr__bottom-item-wr {
+        padding-left: 2px;
+        display: block;
+    }
+
+    .card-descr__text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .card-descr__bottom-text_right {
+        display: block;
+        width: 99%;
+        margin-top: 10px;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: #000000;
+    }
+    .card-descr__text-bold {
+        font-weight: 600;
+    }
+    .card-descr__bottom-item-wr {
+        margin-top: 28px;
+    }
+    .card-descr__bottom-wr {
+        width: 90%;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+            border: 1px solid #f2f2f2;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -705,5 +761,15 @@ input:checked + .slider:before {
     }
     .card-descr__content::after {
         width: 280px;
+    }
+    .card-descr__bottom-wr {
+        width: 88%;
+    }
+    .card-descr__text {
+        width: 100%;
+    }
+
+    .card-descr__text {
+        width: 99%;
     }
 }
