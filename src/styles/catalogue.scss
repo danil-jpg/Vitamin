@@ -356,6 +356,7 @@
 .catalogue-footer {
     margin-top: 99px;
 }
+
 @media screen and (min-width: 1801px) {
     .swiper-catalogue-button-next,
     .swiper-catalogue-button-prev {
@@ -837,6 +838,32 @@
     }
     .catalogue-footer {
         margin-top: 61px;
+    }
+}
+.shop-catalogue__link {
+    img {
+        transition: 0.3s;
+    }
+}
+.shop-catalogue__link:hover {
+    img {
+        transition: 0.3s;
+        transform: scale(1.1);
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 376px) {
+    .shop-catalogue__card-wr {
+        justify-self: center;
+        width: 100%;
+    }
+    .catalogue-demo__text-wr {
+        margin: 0 auto;
+        display: block;
+        transform: translate(0, 250px);
+    }
+    .catalogue-rew__title {
+        text-align: center;
     }
 }
 
