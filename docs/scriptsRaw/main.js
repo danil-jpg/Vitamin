@@ -1,2 +1,0 @@
-(()=>{"use strict";var e={801:(e,o,r)=>{(0,r(456).Z)()},456:(e,o,r)=>{r.d(o,{Z:()=>t});const t=function(){console.log("someTest")}},857:()=>{}},o={};function r(t){var n=o[t];if(void 0!==n)return n.exports;var s=o[t]={exports:{}};return e[t](s,s.exports,r),s.exports}r.d=(e,o)=>{for(var t in o)r.o(o,t)&&!r.o(e,t)&&Object.defineProperty(e,t,{enumerable:!0,get:o[t]})},r.o=(e,o)=>Object.prototype.hasOwnProperty.call(e,o),r(801),r(456),r(857)})();
-//# sourceMappingURL=main.js.map
