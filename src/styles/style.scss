@@ -3,13 +3,13 @@
 @import "../../node_modules/swiper/swiper-bundle.css";
 //===========================
 
-// Components
+// Components ==========
 @import "header.scss";
 @import "mixFuncVar";
 @import "burger.scss";
 //======================
 
-// Header
+// Header ==============
 @import "header.scss";
 //======================
 
@@ -18,20 +18,26 @@
 @import "reviews.scss";
 //======================
 
-// Quiz =============
+// Quiz ================
 @import "quiz.scss";
 //======================
 
-// Pack =============
+// Pack ================
 @import "pack.scss";
 //======================
 
-// Catalogue =============
+// Checkout ============
+@import "checkout.scss";
+//======================
+
+// Catalogue ===========
 @import "catalogue.scss";
 //======================
-// Footer
+
+// Footer ==============
 @import "footer.scss";
 //======================
+
 @import "card.scss";
 * {
     // border: 1px solid red;
