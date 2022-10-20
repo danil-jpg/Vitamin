@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{ "title":"Витамин" })
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+
+        <div class="pack">
+            <picture class="pack-picture-1">
+                <source srcset="./img/Pack/1-1.webp" media="(max-width: 768px)">
+                <img src="./img/Pack/1.svg" alt="#" >
+            </picture>
+            <picture class="pack-picture-2">
+                <source srcset="./img/Pack/2-2.webp" media="(max-width: 768px)">
+                <img src="./img/Pack/2.webp" alt="#">
+            </picture>
+
+            <div class="pack__container">
+                <div class="pack-text">
+                    <h2>Alex, we made personalized pack for you!</h2>
+                    <h6>Recommenadation</h6>
+                    <p>Your recommendation is based on your answers and our database of clinical research. This health plan, made just for you, is recommended for you to feel your best today while supporting long-term health.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="personal-pack">
+            <div class="personal-pack__container">
+                <h2>Your Personalized Pack</h2>
+                <div class="personal-pack__vitamin">
+                    @@include("html/tablet-pack.html",{
+                        "image":"./img/Catalogue/17tab.webp",
+                        "textColorClass":"light-purple",
+                        "subtitleText" : "Vitamins & Dietary Supplements",
+                        "titleText" : "Ortho Molecular Products Orthomega 820" ,
+                        "IfTwoLinesClass" : "mt20",
+                        "background": "personal-pack__back"
+                    })
+
+                    @@include("html/tablet-pack.html",{
+                        "image":"./img/Catalogue/16tab.webp",
+                        "textColorClass":"light-green",
+                        "subtitleText" : "Minerals",
+                        "titleText" : "Ortho Molecular - Reacted Magnesium" ,
+                        "IfTwoLinesClass" : "mt20"
+                    })
+
+                    @@include("html/tablet-pack.html",{
+                        "image":"./img/Catalogue/17tab.webp",
+                        "textColorClass":"light-purple",
+                        "subtitleText" : "Vitamins & Dietary Supplements",
+                        "titleText" : "Ortho Molecular Products Orthomega 820" ,
+                        "IfTwoLinesClass" : "mt20"
+                    })
+
+                    @@include("html/tablet-pack.html",{
+                        "image":"./img/Catalogue/18tab.webp",
+                        "textColorClass":"light-purple",
+                        "subtitleText" : "Vitamins & Dietary Supplements",
+                        "titleText" : "Ortho Molecular Products - Reacted Selenium" ,
+                        "IfTwoLinesClass" : "mt20"
+                    })
+                </div>
+                <a href="index.html">Continue</a>
+            </div>
+        </div>
+        @@include('html/footer.html',{ "class":"footerLending" })
+    </div>
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
