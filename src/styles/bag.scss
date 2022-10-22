@@ -1,0 +1,393 @@
+body {
+    color: black;
+}
+.bag {
+    position: absolute;
+    top: 0;
+    right: 200%;
+    width: 500px;
+    height: 100vh;
+    background-color: white;
+    transition: 0.5s;
+    visibility: hidden;
+}
+
+.bag.active {
+    right: 0;
+    transition: 0.5s;
+    visibility: visible;
+}
+
+.bag__content {
+    margin-top: 40px;
+    height: 100vh;
+}
+.bag__top-wr {
+    padding: 0 38px 0 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bag__name {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    color: #000000;
+}
+.cross_big {
+}
+.bag__hor-line {
+    width: 100%;
+    opacity: 0.07;
+    border: 1px solid #000000;
+    margin-top: 38px;
+}
+.bag__card-wr {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    gap: 25px;
+    margin-top: 29px;
+    width: 88%;
+    margin: 0 auto;
+    margin-top: 29px;
+}
+.bag__card-wr_1 {
+}
+.bag__card-img {
+    background: #da91e0;
+    border-radius: 8px;
+    width: 120px;
+    height: 174px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bag__card-texts-wr {
+    width: 100%;
+}
+.bag__card-top-text-wr {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 15px;
+    width: 97%;
+}
+.bag_card-top-text {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: -5px;
+}
+.cross_sm {
+}
+.bag__card-center-text-wr {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.bag__card-center-sum {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    margin: 4px 0 0 0;
+}
+
+.bag__card-center-counter-wr {
+    display: flex;
+    align-items: center;
+    width: 125px;
+    /* justify-content: space-around; */
+}
+.bag__card-center_minus {
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bag__card-center-count {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin: 0 15px;
+}
+.bag__card-center_plus {
+    width: 30px;
+    height: 30px;
+    background: #f5f5f5;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bag__hor-line_center {
+    width: 295px;
+    height: 0px;
+    border: 1px solid #f2f2f2;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.bag__card-bottom-wr {
+    margin-top: 21px;
+    display: flex;
+    align-items: flex-start;
+}
+
+//
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    // margin-bottom: 12px;
+    cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #ff7d4e;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../img/bag/ok.svg) no-repeat center center;
+}
+
+.bag__card-bottom-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+
+    color: #000000;
+
+    opacity: 0.5;
+    margin-left: -9px;
+    margin-top: -10;
+}
+
+.bag__select {
+    width: 60px;
+    height: 30px;
+    margin-left: 11px;
+    margin-top: -7px;
+}
+
+.bag_afterText {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #000000;
+    opacity: 0.5;
+    margin-left: 10px;
+}
+
+.bag__card-wr_2 {
+    margin-top: 60px;
+
+    .bag__card-img {
+        background: #9c91e0;
+    }
+}
+
+.bag_card-top-text {
+    width: 90%;
+}
+
+.bag__btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+
+    width: 440px;
+    height: 65px;
+    background: #ff7d4e;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    a {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .bag {
+        width: 100%;
+    }
+    .bag__content {
+        width: 100%;
+        margin-top: 23px;
+    }
+    .bag__btn {
+        width: per(335, 375);
+        height: 56px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-top: 68px;
+        letter-spacing: 0.07em;
+    }
+    .bag__top-wr {
+        padding: 0 26px 0 20px;
+    }
+    .bag__name {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .bag__hor-line {
+        margin-top: 22px;
+    }
+
+    .bag__card-wr {
+        width: 100%;
+        margin-top: 0px;
+        gap: 20px;
+    }
+
+    .bag__card-img {
+        width: 100px;
+        height: 204px;
+        border-radius: 0;
+    }
+
+    .bag__card-top-text-wr {
+        margin-top: 35px;
+    }
+    .bag_card-top-text {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        width: 80%;
+    }
+    .bag__card-center-count {
+        margin: 0 11px;
+    }
+    .bag__card-wr {
+        margin-bottom: 1px;
+    }
+
+    .bag__card-top-text-wr {
+        width: 92%;
+    }
+
+    .bag_card-top-text {
+        width: 79%;
+    }
+
+    .bag__card-center-text-wr {
+        width: 92%;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    .bag__card-center-sum {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .bag__hor-line_center {
+        width: 100%;
+        width: 235px;
+        margin-left: 0;
+    }
+
+    .bag__card-bottom-wr {
+        .card__border-block-select {
+            margin-left: 8px;
+            margin-top: -8px;
+            width: 38px;
+            height: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .bag__card-center-text-wr {
+        width: 80%;
+    }
+}
