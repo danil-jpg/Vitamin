@@ -177,7 +177,7 @@
 }
 .footer-signIn__container {
     margin-top: 83px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     text-align: center;
     p{
         font-family: 'Open Sans';
@@ -230,7 +230,7 @@
         justify-content: center;
 
         padding: 0px 20px 50px;
-        margin-top: 41px;
+        margin-top: 40px;
         gap: 10px;
 
         border-bottom: 1px solid #F2F2F2;
@@ -251,16 +251,16 @@
         }
     }
     .signIn__block-google{
-        gap: 90px;
+        gap: 94px;
     }
     .signIn__block-apple{
-        gap: 95px;
+        gap: 99px;
     }
     .signIn__block-facebook{
-        gap: 85px;
+        gap: 86px;
     }
     .footer-signIn__container{
-        margin-top: 39px;
+        margin-top: 40px;
         p{
             font-size: 14px;
             line-height: 19px;
@@ -295,7 +295,7 @@
         padding: 0 115px 0 24px;
     }
     .signIn__pass-link {
-        top: 27px;
+        top: 29px;
         right: 44px;
     }
     .signIn__btn {
@@ -319,11 +319,17 @@
     }
     input.signIn__mail {
         width: 87%;
-        margin-top: 19px;
+        margin-top: 20px;
         padding: 0 115px 0 23px;
+    }
+    .signIn__title{
+        margin-top: 40px;
     }
     .signIn__pass {
         width: 87%;
+    }
+    .signIn__btn-link{
+        margin-top: 40px;
     }
     .signIn__pass-link {
         top: 29px;
@@ -342,6 +348,9 @@
         gap: 59px;
     }
     .footer-signIn__container {
-        margin-top: 40px;
+        margin-top: 39px;
+    }
+    .signIn__block-acc{
+        margin-top: 41px;
     }
 }
