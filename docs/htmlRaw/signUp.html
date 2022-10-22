@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Витамин</title>
+    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper wrapper__sign-in">
+        <header class="header-signIn__container">
+            <img src="./img/Sign-In/header logo.svg" alt="Logo">
+        </header>
+        <main>
+            <section class="singUp__container">
+                <div class="singUp__block">
+                    <div class="singUp__block-button">
+                        <button class="singUp__regular-btn active">Regular customer</button>
+                        <button class="singUp__wholesale-btn">Wholesale customer</button>
+                    </div>
+                    <div class="singUp__block-reg">
+                        <h2>Sign up with</h2>
+                        <div class="signIn__block-acc singUp__block-acc">
+                            <div class="signIn__block-google">
+                                <img src="./img/Sign-In/google.svg" alt="Google-acc">
+                                <p>Google</p>
+                            </div>
+                            <div class="signIn__block-apple">
+                                <img src="./img/Sign-In/apple.svg" alt="Apple-acc">
+                                <p>Apple</p>
+                            </div>
+                            <div class="signIn__block-facebook">
+                                <img src="./img/Sign-In/facebook.svg" alt="Facebook-acc">
+                                <p>Facebook</p>
+                            </div>
+                        </div>
+                        <p class="singUp__text">or sign up using your email address...</p>
+                        <div class="singUp-regular active">
+                            <input type="email" placeholder="Email" class="singUp-regular__input">
+                            <input type="text" placeholder="First Name" class="singUp-regular__input">
+                            <input type="text" placeholder="Last Name" class="singUp-regular__input">
+                            <input type="password" placeholder="Password" class="singUp-regular__input">
+                        </div>
+                        <div class="singUp-wholesale">
+                            <input type="email" placeholder="Email" class="singUp-regular__input">
+                            <input type="text" placeholder="First Name" class="singUp-regular__input">
+                            <input type="text" placeholder="Last Name" class="singUp-regular__input">
+                            <input type="password" placeholder="Password" class="singUp-regular__input">
+                            <div class="singUp-wholesale__block-input">
+                                <input type="text" placeholder="Wholesale purchase permission" class="singUp-regular__input" disabled>
+                                <button>Upload</button>
+                            </div>
+                        </div>
+                        <a href="#" class="singUp-link">Create my account</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-signIn__container footer-signUp">
+            <p>Don't have an account? <a href="">Create one</a></p>
+        </footer>
+    </div>
+
+    <script type="module" id="singUpPage" src="scripts/main.js"></script>
+</body>
+</html>
