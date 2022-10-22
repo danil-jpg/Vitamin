@@ -27,7 +27,6 @@ function card () {
     counterBlock.textContent = counter
     priceBlock.textContent = `$${(counter * 61.98).toFixed(2)}`
   })
-  console.log(defaultBurger)
 
   defaultLogo.setAttribute('src', 'img/cardPage/white-logo.svg')
   defaultBurger.setAttribute('src', 'img/cardPage/burger-white.svg')

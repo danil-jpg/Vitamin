@@ -1,0 +1,273 @@
+.wholeSaleHeader {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.wholeSalePage {
+    background: #faf8f6;
+    width: 100%;
+    height: 100vh;
+}
+.wholeSaleHeader {
+    img {
+        margin-top: 28px;
+    }
+}
+.wholeSaleSec {
+}
+.wholeSaleSec__content {
+    width: per(920, 1800);
+    height: 351px;
+    background: #ffffff;
+    margin: 0 auto;
+    margin-top: 196px;
+}
+.wholeSale__wr {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.wholeSale__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+    text-align: center;
+    color: #000000;
+    margin-top: 61px;
+}
+.wholeSale__subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #000000;
+    margin-top: 8px;
+}
+.wholeSale__label {
+    width: per(444, 1800);
+    background: #faf8f6;
+    position: relative;
+
+    &::after {
+        content: "upload";
+        position: absolute;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        /* identical to box height */
+        top: 2px;
+        right: 41px;
+        text-align: center;
+        pointer-events: none;
+        color: #ffffff;
+    }
+}
+.wholeSale__form {
+    width: 444px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 23px;
+}
+.wholeSale__input {
+    width: 100%;
+    height: 56px;
+    background: #faf8f6;
+    border-radius: 12px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    padding-left: 24px;
+    padding-bottom: 1px;
+
+    color: #000000;
+
+    opacity: 0.5;
+}
+.wholeSale__file-wr {
+    position: absolute;
+    right: 10px;
+    top: -7px;
+    width: 104px;
+    height: 36px;
+    background: #ff7d4e;
+    border-radius: 12px;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #fff;
+}
+.wholeSale__file {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    &::after {
+        content: "upload";
+        top: 4px;
+        left: 4px;
+        position: absolute;
+    }
+}
+.wholeSale__btn {
+    width: 444px;
+    height: 65px;
+    background: #c4bdb6;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: block;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.proposal {
+}
+.proposal__content {
+    margin-top: 213px;
+}
+.proposal__text-wr {
+    width: 100%;
+    text-align: center;
+}
+.proposal__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+.proposal__text_1 {
+    color: #000000;
+}
+
+.proposal__text_2 {
+    color: #ff7d4e;
+}
+
+@media screen and (max-width: 1023px) {
+    .wholeSaleSec__content {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wholeSalePage {
+        background: white;
+    }
+
+    .wholeSaleSec__content {
+        width: 100%;
+        margin: -21px auto 0;
+    }
+
+    .wholeSale__title {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .wholeSale__subtitle {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        /* identical to box height, or 200% */
+        text-align: center;
+        color: #000000;
+    }
+
+    .wholeSale__form {
+        width: 100%;
+        width: 335px;
+        height: 56px;
+        left: 20px;
+        top: 199px;
+        background: #faf8f6;
+        border-radius: 12px;
+        margin: 17px auto 0;
+    }
+
+    .wholeSale__btn {
+        width: 335px;
+        height: 56px;
+        background: #c4bdb6;
+        border-radius: 100px;
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .proposal__content {
+        margin-top: -56px;
+    }
+
+    .proposal__text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .wholeSale__form {
+        width: 280px;
+        height: 56px;
+        left: 20px;
+        top: 228px;
+        background: #faf8f6;
+        border-radius: 12px;
+    }
+
+    .wholeSale__input {
+        width: 280px;
+        padding-left: 24px;
+        height: 56px;
+        left: 20px;
+        top: 228px;
+        background: #faf8f6;
+        border-radius: 12px;
+    }
+
+    .wholeSale__btn {
+        width: 280px;
+        height: 56px;
+        left: 20px;
+        top: 304px;
+        background: #c4bdb6;
+        border-radius: 100px;
+    }
+
+    .proposal__content {
+        margin-top: -29px;
+    }
+}
