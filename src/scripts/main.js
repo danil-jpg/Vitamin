@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
     choose()
     reviews()
     burger()
+    card()
   }
   if (quiz) {
     quizPage()
@@ -36,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (checkoutPage) {
     burger()
     checkout()
+    card()
   }
   if (singUpPage) {
     singUpTab()
