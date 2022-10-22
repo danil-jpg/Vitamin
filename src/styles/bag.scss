@@ -3,16 +3,23 @@ body {
 }
 .bag {
     position: absolute;
-    right: 0;
     top: 0;
-    // width: per(500, 1800);
+    right: 200%;
     width: 500px;
     height: 100vh;
-    background: white;
+    background-color: white;
+    transition: 0.5s;
+    visibility: hidden;
 }
+
+.bag.active {
+    right: 0;
+    transition: 0.5s;
+    visibility: visible;
+}
+
 .bag__content {
     margin-top: 40px;
-    position: fixed;
     height: 100vh;
 }
 .bag__top-wr {
@@ -376,5 +383,11 @@ body {
             width: 38px;
             height: 30px;
         }
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .bag__card-center-text-wr {
+        width: 80%;
     }
 }

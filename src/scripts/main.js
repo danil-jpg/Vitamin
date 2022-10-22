@@ -5,6 +5,7 @@ import quizPage from './modules/quiz.js'
 import catalogue from './modules/catalogue.js'
 import card from './modules/card.js'
 import checkout from './modules/checkout.js'
+import cart from './modules/bag.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   const cataloguePage = document.querySelector('.cataloguePage')
@@ -30,7 +31,7 @@ window.addEventListener('DOMContentLoaded', () => {
     card()
     burger()
   }
-  if(checkoutPage){
+  if (checkoutPage) {
     burger()
     checkout()
   }

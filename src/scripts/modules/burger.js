@@ -1,4 +1,8 @@
+import cart from './bag.js'
+
 function burger () {
+  cart()
+
   const menuTrigger = document.querySelector('.burger-account')
   const menu = document.querySelector('.burger-menu__wrapper')
   const notMenu = document.querySelector('.header__container')
