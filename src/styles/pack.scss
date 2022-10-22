@@ -81,7 +81,7 @@
 
         padding-left: 15px;
     }
-    a{
+   .pack-link__btn{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -118,7 +118,7 @@
 
 @media (max-width: 1730px){
     .personal-pack__container{
-        a{
+        .pack-link__btn{
             margin: clamp(1.875rem, 1.605rem + 1.35vw, 3.125rem) auto 0;
         }
         .personal-pack__vitamin{
@@ -177,7 +177,7 @@
             h2{
                 padding-left: 18px;
             }
-            a{
+            .pack-link__btn{
                 width: 335px;
             }
             &::before{
@@ -241,7 +241,7 @@
     .personal-pack {
         margin-top: 64px;
         .personal-pack__container {
-            a{
+            .pack-link__btn{
                 width: 280px;
             }
             .personal-pack__vitamin {
