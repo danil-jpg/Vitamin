@@ -1,0 +1,102 @@
+.error {
+    margin-top: clamp(8.125rem, 6.809rem + 5.61vw, 13.125rem);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.error-title {
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 31px;
+
+    text-align: center;
+
+    margin-top: clamp(1.875rem, 1.053rem + 3.51vw, 5rem);
+}
+.error-text {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+
+    text-align: center;
+
+    margin-top: 13px;
+}
+.error-btn {
+    background: #FF7D4E;
+    border: 1px solid #FF7D4E;
+    border-radius: 100px;
+    color: #fff;
+
+    width: 330px;
+    height: 65px;
+
+    font-family: 'Effra';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin: 23px 0px 0px;
+    padding: 0px 0px 0px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-404{
+    margin-top: clamp(3.75rem, 3.092rem + 2.81vw, 6.25rem);
+    background-color: #FAF8F6;
+}
+
+@media (max-width: 768px){
+    .error{
+        padding: 0px 20px 0px;
+    }
+    .error-logo {
+        width: 335px;
+        height: 138.5px;
+    }
+}
+
+@media (max-width: 375px){
+    .error-logo{
+        width: 100%;
+    }
+    .error-title {
+        margin-top: 30px;
+
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .error-text{
+        font-size: 14px;
+        line-height: 19px;
+
+        margin-top: 14px;
+    }
+    .error-btn{
+        width: 100%;
+        height: 56px;
+
+        margin-top: 21px;
+    }
+}
+
+@media (max-width: 320px){
+    .error-logo{
+        height: 116px;
+    }
+    .error-title{
+        margin-top: 31px;
+    }
+}
