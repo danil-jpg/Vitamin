@@ -265,4 +265,116 @@ body {
     line-height: 24px;
     text-align: center;
     color: #ffffff;
+    a {
+        color: #ffffff;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .bag {
+        width: 100%;
+    }
+    .bag__content {
+        width: 100%;
+        margin-top: 23px;
+    }
+    .bag__btn {
+        width: per(335, 375);
+        height: 56px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #ffffff;
+        margin-top: 68px;
+        letter-spacing: 0.07em;
+    }
+    .bag__top-wr {
+        padding: 0 26px 0 20px;
+    }
+    .bag__name {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .bag__hor-line {
+        margin-top: 22px;
+    }
+
+    .bag__card-wr {
+        width: 100%;
+        margin-top: 0px;
+        gap: 20px;
+    }
+
+    .bag__card-img {
+        width: 100px;
+        height: 204px;
+        border-radius: 0;
+    }
+
+    .bag__card-top-text-wr {
+        margin-top: 35px;
+    }
+    .bag_card-top-text {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+        width: 80%;
+    }
+    .bag__card-center-count {
+        margin: 0 11px;
+    }
+    .bag__card-wr {
+        margin-bottom: 1px;
+    }
+
+    .bag__card-top-text-wr {
+        width: 92%;
+    }
+
+    .bag_card-top-text {
+        width: 79%;
+    }
+
+    .bag__card-center-text-wr {
+        width: 92%;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        color: #000000;
+    }
+
+    .bag__card-center-sum {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .bag__hor-line_center {
+        width: 100%;
+        width: 235px;
+        margin-left: 0;
+    }
+
+    .bag__card-bottom-wr {
+        .card__border-block-select {
+            margin-left: 8px;
+            margin-top: -8px;
+            width: 38px;
+            height: 30px;
+        }
+    }
 }
