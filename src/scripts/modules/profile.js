@@ -16,16 +16,17 @@ function profile () {
     })
   }
 
-  hideCard(1)
+  for (let i = 1; i <= 3; i++) {
+    hideCard(i, i)
+  }
 
-  function hideCard (num) {
-    unsubscribeBtn.forEach(item => {
-      item.addEventListener('click', () => {
+  function hideCard (num, i) {
+    unsubscribeBtn[i - 1]
+      .addEventListener('click', () => {
         const parentCard = document.querySelector(`.subscriptions__card-wr:nth-of-type(${num})`)
         console.log(parentCard)
         parentCard.classList.add('active')
       })
-    })
   }
 }
 
