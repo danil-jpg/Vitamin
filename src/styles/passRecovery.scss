@@ -1,0 +1,125 @@
+
+.passRecovery-block {
+    background-color: #FFFFFF;
+
+    width: 920px;
+    height: 351px;
+
+    margin: 209px auto 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    h2{
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 31px;
+
+        margin-top: 60px;
+    }
+    p{
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+
+        margin: 9px 0px 0px 0px;
+    }
+    input{
+        background-color: #FAF8F6;
+        border-radius: 12px;
+
+        width: 444px;
+        height: 56px;
+
+        padding: 0px 40px 0px 24px;
+        margin: 21px 0px 0px 0px;
+
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    a{
+        background-color: #FF7D4E;
+        border: 1px solid #FF7D4E;
+        border-radius: 100px;
+        color: #FFFFFF;
+
+        width: 270px;
+        height: 65px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        margin: 21px auto 0;
+
+        font-family: 'Effra';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+.passRecovery-footer{
+    margin-top: 226px !important;
+}
+
+@media (max-width: 1439px){
+    .passRecovery-section__container {
+        width: 1025px;
+    }
+}
+@media (max-width: 1024px){
+    .passRecovery-section__container {
+        width: 769px;
+    }
+    .passRecovery-block{
+        width: 100%;
+    }
+}
+@media (max-width: 768px){
+    .passRecovery-section__container {
+        width: 375px;
+        padding: 0px 20px 0px;
+    }
+    .passRecovery-block{
+        margin-top: 41px;
+        height: auto;
+        h2{
+            font-size: 24px;
+            line-height: 29px;
+            margin-top: 0;
+        }
+        p{
+            font-size: 14px;
+            line-height: 19px; 
+        }
+        input{
+            width: 100%;
+            height: 56px;
+        }
+        a{
+            width: 100%;
+            height: 56px;
+            margin-top: 20px;
+            font-size: 16px;
+            line-height: 19px;
+            padding-bottom: 2px;
+        }
+    }
+    .passRecovery-footer{
+        margin-top: 20px !important;
+    }
+}
+@media (max-width: 374px){
+    .passRecovery-section__container {
+        width: 320px;
+    }
+}

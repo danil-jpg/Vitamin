@@ -482,6 +482,9 @@
         }
     }
 }
+.question-page-9{
+    padding: 0 198px 0px 202px;
+}
 @media (max-width: 1775px) {
     .icon-quiz-1 img:nth-child(1) {
         left: -50px;
@@ -1096,15 +1099,15 @@
     .question-page-4,
     .question-page-5 {
         flex: 0 1 57%;
-        padding: 0 43px 0 33px;
+        padding: 0 17px 1px 18px;
     }
     .question-page-6 {
         flex: 0 1 44%;
-        padding: 0 43px 0 33px;
+        padding: 0 43px 0 44px;
     }
     .question-page-7 {
         flex: 0 1 79%;
-        padding: 0 33px 0 33px;
+        padding: 0 22px 0;
     }
     .list-quiz__six-1 {
         margin: 29px 0px 0px 0px;
@@ -1120,15 +1123,15 @@
         padding: 4px 0 00 0;
     }
     .question-page-8 {
-        flex: 0 1 38.3%;
-        padding: 0 43px 0 33px;
+        flex: 0 1 38%;
+        padding: 0 30px 1px;
     }
     .answers-page-8 {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: flex-start;
         justify-content: center;
-        padding: 29px 0 100px;
+        padding: 30px 0 100px;
         overflow-y: auto;
         column-gap: 15px;
     }
@@ -1217,6 +1220,7 @@
         label {
             textarea {
                 padding: 20px 20px 0;
+                height: 105px;
             }
         }
     }
@@ -1224,11 +1228,18 @@
         label {
             textarea {
                 padding: 42px 18px 0;
+                height: 105px;
             }
         }
     }
+    .question-page-9 {
+        padding: 27px 43px 3px;
+    }
 }
 @media (max-width: 374px) {
+    .quiz-questions-item__question {
+        padding: 27px 34px 13px;
+    }
     .question-page-2 {
         padding: 27px 35px 11px 35px;
         flex: 0 1 65%;
@@ -1247,8 +1258,14 @@
     .answers-page-3 {
         padding: 16px 0 60px;
     }
+    .answers-page-4{
+        transform: translateY(-10px);
+    }
+    .answers-page-5{
+        transform: translateY(-8px);
+    }
     .list-quiz__one-1 {
-        margin-top: 1px;
+        margin-top: -3px;
     }
     .icon-quiz__two-2 {
         display: none;
@@ -1304,9 +1321,11 @@
     }
     .question-page-4 {
         flex: 0 1 55%;
+        padding: 27px 34px 12px;
     }
     .question-page-5 {
         flex: 0 1 48%;
+        padding: 27px 25px 10px;
     }
     .question-page-6,
     .question-page-8 {
@@ -1340,8 +1359,8 @@
     }
 
     .question-page-8 {
-        flex: 0 1 49.3%;
-        padding: 0 43px 0 33px;
+        flex: 0 1 49%;
+        padding: 0px 33px 1px;
     }
     .answers-page-8 {
         flex-direction: row;
@@ -1445,6 +1464,15 @@
             textarea {
                 padding: 40px 18px 0;
             }
+        }
+    }
+    .question-page-9 {
+        padding: 27px 39px 0px;
+        flex: 0 1 84%;
+    }
+    .answers-page-9{
+        .list-quiz__one-1{
+            transform: translateY(13px);
         }
     }
 }

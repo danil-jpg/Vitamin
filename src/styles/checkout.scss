@@ -401,7 +401,7 @@
         transform: translateY(0px);
         border-radius: 0px;
         background-color: #FAF8F6;
-        padding: 29px 19px 38px 19px;
+        padding: 29px 19px 29px 19px;
         height: 491px;
     }
     .checkout-total{
@@ -417,7 +417,7 @@
         background-color: #FAF8F6;
 
         margin-top: 70px;
-        padding: 0px 20px 0px 20px;
+        padding: 0px 31px 0px 20px;
 
         order: 1;
 
@@ -433,7 +433,7 @@
     .checkout-total-text{
         display: flex;
         align-items: center;
-        gap: 19px;
+        gap: 13px;
 
         h6{
             font-family: 'Effra';
@@ -491,7 +491,7 @@
         gap: 14px;
     }
     .checkout-order__total-3 {
-        margin-top: 39px;
+        margin-top: 42px;
         p{
             font-size: 16px;
             line-height: 22px;
@@ -521,6 +521,9 @@
         display: flex !important;
         margin-top: 40px;
         height: 56px;
+        
+        font-size: 16px;
+        line-height: 19px;
     }
     .checkout-order__total-2 {
         h6{

@@ -34,25 +34,69 @@
 @import "catalogue.scss";
 //======================
 
-// Sign-Up ===========
+// Sign-Up =============
 @import "signUp.scss";
 //======================
 
-// Sign-In ===========
+// Sign-In =============
 @import "signIn.scss";
+//======================
+
+// Order =================
+@import "order.scss";
+//======================
+
+// 404 =================
+@import "404.scss";
+//======================
+
+// PassRecovery ========
+@import "passRecovery.scss";
+//======================
+
+// Card ================
+@import "card.scss";
+//======================
+
+// Bag =================
+@import "bag.scss";
+//======================
+
+// WholeSaleP ==========
+@import "wholeSaleP.scss";
 //======================
 
 // Footer ==============
 @import "footer.scss";
 //======================
 
+// 404 =================
+@import "404.scss";
+//======================
+
+// PassRecovery ========
+@import "passRecovery.scss";
+//======================
+
+// Card ================
 @import "card.scss";
+//======================
 
+// Bag =================
 @import "bag.scss";
+//======================
 
-@import "wholeSaleP";
+// WholeSaleP ==========
+@import "wholeSaleP.scss";
+//======================
+
+// Footer ==============
+@import "footer.scss";
+//======================
 
 @import "profile";
+
+//@import "profile";
 
 * {
     // border: 1px solid red;

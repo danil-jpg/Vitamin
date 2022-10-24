@@ -81,7 +81,7 @@
 
         padding-left: 15px;
     }
-    a{
+   .pack-link__btn{
         display: flex;
         align-items: center;
         justify-content: center;
@@ -118,7 +118,7 @@
 
 @media (max-width: 1730px){
     .personal-pack__container{
-        a{
+        .pack-link__btn{
             margin: clamp(1.875rem, 1.605rem + 1.35vw, 3.125rem) auto 0;
         }
         .personal-pack__vitamin{
@@ -165,20 +165,25 @@
 }
 @media (max-width: 408px){
     .personal-pack{
-        margin-top: 60px;
+        margin-top: 61px;
         margin-bottom: 0;
         .personal-pack__container{
             margin: 0px 0px 0px 0px;
-            padding: 61px 0px 58px 0px;
+            padding: 61px 0px 59px 0px;
     
             width: 100%;
             border-radius: 0;
             border-bottom: 1px solid rgba(0, 0, 0, 1);
             h2{
-                padding-left: 18px;
+                padding-left: 20px;
+
+                font-size: 20px;
+                line-height: 24px;
             }
-            a{
+            .pack-link__btn{
                 width: 335px;
+                font-size: 16px;
+                line-height: 19px;
             }
             &::before{
                 right: 34px;
@@ -216,14 +221,22 @@
         margin-left: 5px;
         h2{
             margin-top: 120px;
-            max-width: 227px;
+            max-width: 250px;
+
+            font-size: 24px;
+            line-height: 29px;
         }
         h6{
-            margin-top: 29px;
+            margin-top: 30px;
+            font-size: 20px;
+            line-height: 24px;
         }
         p{
-            margin-top: 17px;
+            margin-top: 19px;
             max-width: 333px;
+
+            font-size: 14px;
+            line-height: 24px;
         }
     }
 }
@@ -234,15 +247,19 @@
             max-width: 170px;
         }
         p{
-            margin-top: 18px;
+            margin-top: 19px;
+            margin-left: 1px;
+
             max-width: 277px;
         }
     }
     .personal-pack {
-        margin-top: 64px;
+        margin-top: 62px;
         .personal-pack__container {
-            a{
+            padding-top: 60px;
+            .pack-link__btn{
                 width: 280px;
+                margin-top: 31px;
             }
             .personal-pack__vitamin {
                 .shop-catalogue__card-wr {

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('html/head.html',{ "title":"Витамин" })
+<body>
+    <div class="wrapper">
+        @@include('html/header.html',{})
+        
+        <div class="error">
+            <img src="./img/404/404.svg" alt="404" class="error-logo">
+            <h2 class="error-title">Page not found</h2>
+            <p class="error-text">Unfortunately, the page you requested is out of date or does not exist</p>
+            <a href="index.html" class="error-btn">Go to main page</a>
+        </div>
+
+        @@include('html/footer.html',{ "class":"footer-404" })
+    </div>
+
+
+    <script type="module" src="scripts/main.js"></script>
+</body>
+</html>
