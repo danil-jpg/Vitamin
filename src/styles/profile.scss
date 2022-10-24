@@ -30,6 +30,7 @@
     transition: 0.7s;
     a {
         transition: 0.3s;
+        color: inherit;
     }
     a:visited {
         color: inherit;
@@ -206,6 +207,18 @@
     opacity: 0;
     position: absolute;
     pointer-events: none;
+}
+
+.tabs-block:target {
+    display: block;
+}
+
+.tabs-block {
+    display: none;
+}
+
+.tabs-block_chosen {
+    display: block;
 }
 
 @media screen and (max-width: 1439px) {
