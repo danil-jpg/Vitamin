@@ -1,5 +1,5 @@
 .profile__content {
-    margin: 152px auto;
+    margin: 152px auto 101px;
     width: 1396px;
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -27,6 +27,7 @@
 }
 
 .profile__item {
+    transition: 0.7s;
     a {
         transition: 0.3s;
     }
@@ -37,7 +38,7 @@
         color: #d32d2c;
     }
     a:hover {
-        font-size: 1.1em;
+        font-size: 1.05em;
     }
 }
 
@@ -131,4 +132,111 @@
     margin-top: 25px;
     opacity: 0.07;
     border: 1px solid #000000;
+}
+
+.subscriptions__card-bottom-wr {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 23px;
+}
+.subscriptions__card-bottom-text-wr {
+    width: 100%;
+    margin-top: 2px;
+}
+.subscriptions__card-bottom-toptext {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(14);
+    line-height: lh(19, 14);
+
+    color: #000000;
+
+    opacity: 0.5;
+}
+.subscriptions__card-bottom-bottomtext {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: lh(22, 16);
+    margin-top: 4px;
+
+    color: #000000;
+}
+.subscriptions__card-btn {
+    width: 164px;
+    height: 50px;
+    border: 2px solid #d32d2c;
+    border-radius: 100px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1em;
+    line-height: lh(19, 16);
+    text-align: center;
+    color: #d32d2c;
+    justify-self: end;
+    background: transparent;
+    transition: 0.3s;
+
+    &:hover {
+        background-color: black;
+        color: white;
+        border-color: white;
+    }
+}
+
+.subscriptions__card-left-wr_2 {
+    background: #da91e0;
+}
+
+.subscriptions__card-left-wr_3 {
+    background: #9c91e0;
+}
+.profile__item.active {
+    opacity: 0;
+    position: absolute;
+    top: -10000px;
+}
+@media screen and (max-width: 1439px) {
+    .profile__content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 912px;
+    }
+    .profile__list {
+        width: 184px;
+    }
+    .profile__title {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::after {
+            transition: 0.3s;
+            position: absolute;
+            content: "";
+            width: 15px;
+            right: 0;
+            background-image: url(../img/profile/Back_arrow.svg);
+            height: 10px;
+            background-repeat: no-repeat;
+        }
+    }
+    .profile__title.active1 {
+        &:after {
+            transition: 0.3s;
+            position: absolute;
+            content: "";
+            width: 15px;
+            right: 0;
+            background-image: url(../img/profile/Back_arrow.svg);
+            height: 10px;
+            background-repeat: no-repeat;
+            transform: rotate(180deg);
+            transition: 0.3s;
+        }
+    }
 }
