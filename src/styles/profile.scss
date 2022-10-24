@@ -406,3 +406,12 @@
         margin-bottom: 63px;
     }
 }
+
+@media screen and (max-width: 374px) {
+    .profile__content {
+        width: 280px;
+    }
+    .subscriptions__card-wr:nth-of-type(2) {
+        height: 421px;
+    }
+}
