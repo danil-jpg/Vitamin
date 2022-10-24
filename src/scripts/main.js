@@ -7,6 +7,7 @@ import card from './modules/card.js'
 import checkout from './modules/checkout.js'
 import cart from './modules/bag.js'
 import singUpTab from './modules/singUp.js'
+import profile from './modules/profile.js'
 
 window.addEventListener('DOMContentLoaded', () => {
   const cataloguePage = document.querySelector('.cataloguePage')
@@ -15,6 +16,8 @@ window.addEventListener('DOMContentLoaded', () => {
   const cardPage1 = document.querySelector('.cardPage1')
   const checkoutPage = document.querySelector('#checkoutPage')
   const singUpPage = document.querySelector('#singUpPage')
+  const profilePage = document.querySelector('.profileHTML')
+  const packPage = document.querySelector('#packPge')
 
   if (mainPage) {
     choose()
@@ -41,5 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   if (singUpPage) {
     singUpTab()
+    card()
+  }
+  if (profilePage) {
+    burger()
+    profile()
+  }
+  if(packPage){
+    burger()
+    card()
   }
 })

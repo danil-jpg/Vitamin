@@ -280,6 +280,7 @@ body {
 @media screen and (max-width: 481px) {
     .bag {
         width: 100%;
+        overflow: scroll;
     }
     .bag__content {
         width: 100%;
