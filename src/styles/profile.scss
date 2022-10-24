@@ -1,0 +1,134 @@
+.profile__content {
+    margin: 152px auto;
+    width: 1396px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 7px;
+}
+
+.profile__left {
+}
+.profile__right {
+}
+.subscriptions {
+}
+
+.profile__left {
+}
+.profile__list {
+    font-family: "Effra";
+    font-style: normal;
+    font-size: em(22);
+    line-height: 320%;
+    color: #000000;
+}
+.profile__title {
+    font-weight: 700;
+}
+
+.profile__item {
+    a {
+        transition: 0.3s;
+    }
+    a:visited {
+        color: inherit;
+    }
+    &:last-of-type {
+        color: #d32d2c;
+    }
+    a:hover {
+        font-size: 1.1em;
+    }
+}
+
+.profile__main {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        opacity: 0.07;
+        border: 1px solid #000000;
+        left: 0;
+        top: 109px;
+    }
+}
+
+.subscriptions__title {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(36);
+    line-height: lh(43, 36);
+    color: #000000;
+    margin-top: 8px;
+    margin-bottom: 40px;
+}
+
+.subscriptions__card-wr {
+    width: 100%;
+    height: 230px;
+    background: #faf8f6;
+    border-radius: 16px;
+    padding: 30px 40px 0 40px;
+    margin-top: 20px;
+}
+.subscriptions__card-content {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+.subscriptions__card-left-wr {
+    width: 100%;
+    height: 170px;
+    background: #94d6be;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscriptions__card-right-wr {
+    width: 100%;
+    height: 170px;
+    padding-left: 31px;
+    padding-top: 11px;
+}
+.subscriptions__card-subtitle {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+}
+.subscriptions__card-center-wr {
+    justify-content: space-between;
+    display: flex;
+    margin-top: 6px;
+    padding-left: -5px;
+    /* letter-spacing: 0.0000em; */
+}
+.subscriptions__card-name {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(20);
+    line-height: lh(24, 20);
+    color: #000000;
+}
+.subscriptions__card-price {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: em(18);
+    line-height: lh(25, 18);
+    color: #000000;
+    transform: translate(-3px);
+}
+.subscriptions__card-hor-line {
+    width: 100%;
+    margin-top: 25px;
+    opacity: 0.07;
+    border: 1px solid #000000;
+}
