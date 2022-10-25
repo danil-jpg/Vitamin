@@ -23,7 +23,7 @@
                                 <a href="#payment">Payment methods</a>
                             </li>
                             <li class="profile__item">
-                                <a href="">Change Password</a>
+                                <a href="#changePassword">Change Password</a>
                             </li>
                             <li class="profile__item">
                                 <a href="">Sign out</a>
@@ -276,11 +276,44 @@
                         <!--  -->
                         <div class="tabs-block" id="payment">
                             <p class="subscriptions__title">Payment methods</p>
-                            
+                            <div class="profile__payment-card">
+                                <div class="payment-card__block-1">
+                                    <p>Card Number</p>
+                                    <input type="text">
+                                </div>
+                                <div class="payment-card__block-2">
+                                    <p>Expiration</p>
+                                    <input type="text">
+                                </div>
+                                <div class="payment-card__block-3">
+                                    <p>CVC</p>
+                                    <input type="password">
+                                </div>
+                            </div>
                             <button class="checkout-form__profile-btn">Save</button>
                         </div>
                         <!--  -->
+                        <div class="tabs-block" id="changePassword">
+                            <div class="changePassword">
+                                <p class="subscriptions__title">Change Password</p>
 
+                                <div class="profile__change-password">
+                                    <div class="profile-change__block">
+                                        <p>Current Password</p>
+                                        <input type="password">
+                                    </div>
+                                    <div class="profile-change__block">
+                                        <p>New Password</p>
+                                        <input type="password">
+                                    </div>
+                                    <div class="profile-change__block">
+                                        <p>Confirm New Password</p>
+                                        <input type="password">
+                                    </div>
+                                </div>
+                                <button class="checkout-form__profile-btn">Save</button>
+                            </div>
+                        </div>
                         <!--  -->
                     </div>
                 </div>
