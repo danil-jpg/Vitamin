@@ -489,6 +489,7 @@
 .question-page-9{
     padding: 0 198px 0px 202px;
 }
+
 @media (max-width: 1775px) {
     .icon-quiz-1 img:nth-child(1) {
         left: -50px;
@@ -812,9 +813,8 @@
         top: 27px;
     }
     .quiz-questions-item__answers {
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
     }
     .btn-new-next {
         background-color: transparent;
@@ -934,6 +934,12 @@
     }
     .answers-page-8 {
         padding: 0px 0 65px;
+    }
+    .answers-page-2{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
     }
 }
 @media (max-width: 424px) {
@@ -1239,6 +1245,7 @@
     .question-page-9 {
         padding: 27px 43px 3px;
     }
+
 }
 @media (max-width: 374px) {
     .quiz-questions-item__question {
