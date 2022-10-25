@@ -59,6 +59,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
 
     position: relative;
     overflow: hidden;
@@ -228,27 +229,27 @@
 .list-quiz__three-4 label textarea {
     padding-top: 43px;
 }
-.list-quiz__one-1 {
-    margin-top: 345px;
-}
-.list-quiz__two-1 {
-    margin-top: 293px;
-}
+// .list-quiz__one-1 {
+//     margin-top: 345px;
+// }
+// .list-quiz__two-1 {
+//     margin-top: 293px;
+// }
 .list-quiz__two-2 {
     margin-top: -10px;
 }
-.list-quiz__three-1 {
-    margin-top: 165px;
-}
-.list-quiz__four-1 {
-    margin-top: 248px;
-}
-.list-quiz__five-1 {
-    margin-top: 248px;
-}
-.list-quiz__six-1 {
-    margin-top: 248px;
-}
+// .list-quiz__three-1 {
+//     margin-top: 165px;
+// }
+// .list-quiz__four-1 {
+//     margin-top: 248px;
+// }
+// .list-quiz__five-1 {
+//     margin-top: 248px;
+// }
+// .list-quiz__six-1 {
+//     margin-top: 248px;
+// }
 .list-quiz__four-1 label textarea,
 .list-quiz__four-2 label textarea,
 .list-quiz__four-3 label textarea,
