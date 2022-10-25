@@ -47,16 +47,15 @@ function profile () {
         parentCard.classList.add('active')
       })
   }
-// ==========================================================
+  // ==========================================================
   profileCheckoutBtn.addEventListener('click', () => {
     popUp.classList.toggle('active')
-    setTimeout(function() {
-      popUp.classList.remove('active');
-    }, 1500);
+    setTimeout(function () {
+      popUp.classList.remove('active')
+    }, 1500)
   })
 
-// ==========================================================
-
+  // ==========================================================
 }
 
 export default profile
