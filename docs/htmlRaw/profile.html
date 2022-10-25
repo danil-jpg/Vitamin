@@ -313,11 +313,12 @@
             </a>
         </div>
         <div class="header__account">
-            <img
+            <a href="profile.html">
+                <img
                 src="img/Lending/Profile.svg"
                 alt="Profile"
-                class="header__account-icon"
-            />
+                class="header__account-icon"/>
+            </a>
         </div>
         <div class="header__account burger-account">
             <img
@@ -351,10 +352,10 @@
                                 <a href="#orders">Orders</a>
                             </li>
                             <li class="profile__item">
-                                <a href="">Account Overview</a>
+                                <a href="#overview">Account Overview</a>
                             </li>
                             <li class="profile__item">
-                                <a href="">Payment methods</a>
+                                <a href="#payment">Payment methods</a>
                             </li>
                             <li class="profile__item">
                                 <a href="">Change Password</a>
@@ -555,11 +556,77 @@
                             <h2>Hello,its working</h2>
                         </div>
                         <!--  -->
+                        <div class="overview tabs-block"  id="overview">
+                            <div class="profile-block__title">
+                                <p class="subscriptions__title">Account Overview</p>
+                                <p class="subscriptions__title-min">Regular customer</p>
+                            </div>
+                            <div class="checkout-form checkout-form__profile">
+                                <div class="checkout-form__blocks-top">
+                                    <div class="checkout-form__block">
+                                        <p>First Name</p>
+                                        <input type="text" class="checkout-form__block-line" required>
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>Last Name</p>
+                                        <input type="text" class="checkout-form__block-line" required>
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>Address Line 1</p>
+                                        <input type="text" class="checkout-form__block-line" required>
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>Address Line 2</p>
+                                        <input type="text" class="checkout-form__block-line">
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>City</p>
+                                        <input type="text" class="checkout-form__block-line" required>
+                                    </div>
+                                    <div class="checkout-form__block-min">
+                                        <div class="checkout-form__block">
+                                            <p>State / Province</p>
+                                            <select name="user_profile_color_1" required>
+                                                <option value="0">--</option>
+                                                <option value="1">NY</option>
+                                              </select>
+                                        </div>
+                                        <div class="checkout-form__block">
+                                            <p>ZIP / Postal Code</p>
+                                            <input type="text" class="checkout-form__block-line-min" required>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>Email</p>
+                                        <input type="email" class="checkout-form__block-line" required>
+                                    </div>
+                                    <div class="checkout-form__block">
+                                        <p>Phone Number</p>
+                                        <input type="tel" class="checkout-form__block-line" required>
+                                    </div>
+                                </div>
+                                <button class="checkout-form__profile-btn">Save</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tabs-block" id="payment">
+                            <p class="subscriptions__title">Payment methods</p>
+                            
+                            <button class="checkout-form__profile-btn">Save</button>
+                        </div>
+                        <!--  -->
+
+                        <!--  -->
                     </div>
                 </div>
             </section>
+
+            <section class="pop-up">
+                <img src="./img/pop-up/ep.svg" alt="#">
+                <p>Changes successfully saved</p>
+            </section>
         </main>
-        <footer class="@@class">
+        <footer class="footer-profile">
     <div class="footer__container">
         <div class="footer__contents">
             <div class="footer__block-logo">

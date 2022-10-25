@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const checkoutPage = document.querySelector('#checkoutPage')
   const singUpPage = document.querySelector('#singUpPage')
   const profilePage = document.querySelector('.profileHTML')
+  const packPage = document.querySelector('#packPge')
 
   if (mainPage) {
     choose()
@@ -43,9 +44,14 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   if (singUpPage) {
     singUpTab()
+    card()
   }
   if (profilePage) {
     burger()
     profile()
+  }
+  if(packPage){
+    burger()
+    card()
   }
 })
