@@ -12,13 +12,15 @@ const DATA = [
                 classLi2: 'list-quiz__one-1',
                 icon: './img/Quiz/quiz 1-1.svg',
                 icon2: './img/Quiz/quiz 1-2.svg',
-                btnLink: 'button'
+                btnLink: 'button',
+                ref: 'href="#"'
             },
         ]
     },
     {
         question: 'Do you smoke?',
         classQuestion: 'question-page-2',
+        classUl: 'answers-page-2',
         answers: [
             {
                 text: 'Yes',
