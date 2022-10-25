@@ -347,6 +347,10 @@
     text-align: center;
 
     color: #ffffff;
+    transition: 0.3s;
+    &:hover {
+        background-color: black;
+    }
 }
 @media screen and (max-width: 1439px) {
     .profile__content {
