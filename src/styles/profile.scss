@@ -907,6 +907,11 @@
 }
 
 // Даниил А ==========================================================================
+.overview,
+.payment-profile,
+.changePassword{
+    position: relative;
+}
 .profile-block__title {
     display: flex;
     justify-content: space-between;
@@ -983,8 +988,35 @@
     background-color: #faf8f6;
 }
 @media (max-width: 767px) {
-    .profile-block__title {
-        display: none;
+    .profile-block__title{
+        position: absolute;
+        top: -99px;
+        left: 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .subscriptions__title-main,
+    .subscriptions__title-min{
+        display: block !important;
+        padding-bottom: 0 !important;
+    }
+    .subscriptions__title-main{
+        margin-bottom: 10px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    .subscriptions__title-min{
+        margin-bottom: 30px;
+        margin-top: 0;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .checkout-form {
+        padding: 0px 0px 0px 0px;
+        margin-top: 54px;
+        .checkout-form__blocks-top{
+            margin-left: 0;
+        }
     }
 }
 @media (max-width: 375px) {
@@ -1000,10 +1032,14 @@
     }
     .checkout-form__profile-btn {
         width: 100%;
-        height: 60px;
+        height: 50px;
 
         margin-top: 35px;
     }
+    .profile__content {
+        margin-bottom: 60px;
+    }
+
 }
 
 .profile__payment-card {
@@ -1154,7 +1190,18 @@
         }
     }
 }
-
+@media (max-width: 375px){
+    .profile__payment-card {
+        gap: 26px 17px;
+        margin-top: 22px;
+    }
+    .payment-card__block-1 p {
+        margin-left: -2px;
+    }
+    .payment-block__title{
+        top: -67px;
+    }
+}
 .profile__change-password {
     display: flex;
     flex-direction: column;
@@ -1209,5 +1256,16 @@
     }
     .changePassword {
         align-items: flex-start;
+    }
+}
+@media (max-width: 375px){
+    .change-block__title{
+        top: -45px;
+    }
+    .profile__change-password {
+        width: 100%;
+        margin-top: 22px;
+        gap: 26px;
+        margin-left: 1px;
     }
 }
