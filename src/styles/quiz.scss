@@ -160,7 +160,7 @@
         }
         .btn__next-question {
             background-color: #FF7D4E;
-            background-image: url('@img/Quiz/Back_arrow.svg');
+            background-image: url('../img/Quiz/Back_arrow.svg');
             background-repeat: no-repeat;
             background-position: left 50% top 50%;
         
@@ -260,7 +260,7 @@
     color: #FFFFFF;
 
     background-color: transparent;
-    background-image: url("@img/Lending/quiz-arrow.svg");
+    background-image: url("../img/Lending/quiz-arrow.svg");
     background-repeat: no-repeat;
     background-position: left 0 top 4px;
 
@@ -466,7 +466,7 @@
     }
     .btn-restart{
         color: #000;
-        background-image: url('@img/Quiz/arrow.svg');
+        background-image: url('../img/Quiz/arrow.svg');
     }
 
     // 22222222222222222222222222222222222222222222222222222

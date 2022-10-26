@@ -4,7 +4,7 @@ function profile () {
   const elemToShow = document.querySelector('.profile__title')
   const unsubscribeBtn = document.querySelectorAll('.subscriptions__card-btn')
   const profileCheckoutBtn = document.querySelector('.checkout-form__profile-btn')
-  const popUp = document.querySelectorAll('.pop-up')
+  const popUp = document.querySelector('.pop-up')
   const itemTogglers = document.querySelectorAll('.orders__block-top-text-wr')
   const orderArrow = document.querySelectorAll('.orders__bottom-text')
 
