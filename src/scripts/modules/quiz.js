@@ -1,5 +1,6 @@
 function quizPage () {
   const DATA = [
+      // 1==================
       {
           question: 'What’s your first name?',
           classUl: '',
@@ -17,6 +18,7 @@ function quizPage () {
               },
           ]
       },
+      // 2==================
       {
         question: 'Do you smoke?',
         classUl: 'question-2',
@@ -45,6 +47,7 @@ function quizPage () {
           },
         ]
       },
+      // 3==================
       {
       question: 'What is your eating habits?',
       classUl: 'question-3',
@@ -95,7 +98,7 @@ function quizPage () {
           },
       ]
       },
-
+      // 4==================
       {
     question: 'How frequently do you consume alcoholic beverages?',
     classUl: 'question-4',
@@ -135,7 +138,7 @@ function quizPage () {
         },
     ]
       },
-
+      // 5==================
       {
       question: 'How frequently do you have cold/flu symptoms?',
       classUl: 'question-4',
@@ -175,7 +178,7 @@ function quizPage () {
         },
       ]
       },
-
+      // 6==================
       {
         question: 'Describe your stress level',
         classUl: 'question-3',
@@ -215,7 +218,7 @@ function quizPage () {
             },
         ]
       },
-
+      // 7==================
       {
         question: 'Have you ever been diagnosted with high blood glucose level?',
         classUl: 'question-2',
@@ -244,7 +247,80 @@ function quizPage () {
           },
         ]
       },
-
+      // 8==================
+      {
+        question: 'Tell us what you want to focus on?',
+        classUl: 'question-8',
+        answers: [
+          {
+            classLi: 'quiz-list-1 quiz-list-8',
+            classLi2: 'icon-questions-2',
+            textP: '',
+            textT: 'Weight managment',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '<img src="../img/Quiz/quiz 8-1.svg" alt="Img-decor">',
+            icon2: '<img src="../img/Quiz/quiz 8-2.svg" alt="Img-decor">',
+            type: 'text',
+            btn: 'button',
+          },
+          {
+            classLi: 'quiz-list-1 quiz-list-8',
+            classLi2: '',
+            textP: '',
+            textT: 'Stress relief',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '',
+            icon2: '',
+            type: 'text',
+            btn: 'button',
+          },
+          {
+            classLi: 'quiz-list-1 quiz-list-8',
+            classLi2: '',
+            textP: '',
+            textT: 'Immune boost',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '',
+            icon2: '',
+            type: 'text',
+            btn: 'button',
+          },
+          {
+            classLi: 'quiz-list-1 quiz-list-8 quiz-list__fore-8',
+            classLi2: '',
+            textP: '',
+            textT: 'Need to solve a sprcific problem',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '',
+            icon2: '',
+            type: 'text',
+            btn: 'button',
+          },
+          {
+            classLi: 'quiz-list-1 quiz-list-8 quiz-list__five-8',
+            classLi2: '',
+            textP: '',
+            textT: 'I need a bassic kit for a daily intake',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '',
+            icon2: '',
+            type: 'text',
+            btn: 'button',
+          },
+          {
+            classLi: 'quiz-list-1 quiz-list-8',
+            classLi2: '',
+            textP: '',
+            textT: 'All in one',
+            btnClass: 'btn__next-question btn__next',
+            icon1: '',
+            icon2: '',
+            type: 'text',
+            btn: 'button',
+          },
+        ]
+      },
+      // 9==================
       {
         question: 'What’s your email address?',
         classUl: '',
@@ -255,14 +331,14 @@ function quizPage () {
               textP: '<p>Email</p>',
               textT: '',
               btnClass: 'btn__next-question',
-              icon1: '<img src="../img/Quiz/quiz 1-1.svg" alt="Img-decor">',
-              icon2: '<img src="../img/Quiz/quiz 1-2.svg" alt="Img-decor">',
+              icon1: '<img src="../img/Quiz/quiz 9-1.svg" alt="Img-decor">',
+              icon2: '<img src="../img/Quiz/quiz 9-2.svg" alt="Img-decor">',
               type: 'text',
               btn: 'a',
               link: 'pack.html',
             },
         ]
-    },
+      },
   ];
   
     const quiz = document.getElementById('quiz')
