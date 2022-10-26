@@ -6,7 +6,7 @@ function profile () {
   const elemToShow = document.querySelector('.profile__title')
   const unsubscribeBtn = document.querySelectorAll('.subscriptions__card-btn')
   const profileCheckoutBtn = document.querySelector('.checkout-form__profile-btn')
-  const popUp = document.querySelector('.pop-up')
+  const popUp = document.querySelectorAll('.pop-up')
 
   titlesList.forEach(item => {
     item.addEventListener('click', (e) => {
@@ -49,10 +49,12 @@ function profile () {
   }
 // ==========================================================
   profileCheckoutBtn.addEventListener('click', () => {
-    popUp.classList.toggle('active')
-    setTimeout(function() {
-      popUp.classList.remove('active');
-    }, 1500);
+    popUp.forEach(item => {
+      item.classList.toggle('active')
+      setTimeout(function() {
+        item.classList.remove('active');
+      }, 1500);
+    })
   })
 
 // ==========================================================
