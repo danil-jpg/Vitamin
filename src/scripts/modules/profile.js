@@ -42,6 +42,7 @@ function profile () {
   function collapseCard (i) {
     itemTogglers[i].addEventListener('click', () => {
       const elemsToHide2 = document.querySelectorAll(`.orders__block-wr:nth-of-type(${i + 1}) > *:not(.orders__block-top-text-wr)`)
+      console.log(i)
       elemsToHide2.forEach(item => {
         item.classList.toggle('order-collapse')
         orderArrow[i].classList.toggle('order-rotate-arrow')

@@ -431,6 +431,10 @@
     .profile__list {
         font-weight: 400;
     }
+
+    .profile__list {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -834,6 +838,25 @@
     .profile__content {
         margin-top: 150px;
     }
+    .orders {
+        position: relative;
+
+        &::after {
+            content: "Orders";
+            position: absolute;
+
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+
+            color: #000000;
+            top: -57px;
+            left: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -842,6 +865,54 @@
     }
     .subscriptions__card-wr:nth-of-type(2) {
         height: 421px;
+    }
+    .orders__block-wr {
+        padding: 28px 20px;
+    }
+
+    .orders__top-text-wr {
+        width: 66%;
+    }
+
+    .order__card-wr {
+        height: 134px;
+
+        .subscriptions__card-right-wr {
+            padding-left: 37px;
+            padding-top: 23px;
+        }
+    }
+
+    .order__card-wr_2 {
+        .subscriptions__card-name {
+            width: 117%;
+        }
+    }
+
+    .orders__bottom-block_left-wr {
+        width: 64%;
+    }
+    .orders__block-wr {
+        .subscriptions__card-wr:nth-of-type(2) {
+            height: 134px;
+        }
+    }
+
+    .order__card-wr-3 {
+        .subscriptions__card-subtitle {
+            width: 113%;
+            margin-top: -7px;
+        }
+    }
+
+    .orders__bottom-amount {
+        margin-top: 9px;
+    }
+    .orders__block-wr {
+        margin-bottom: 14px;
+    }
+    .orders__bottom-block_left-wr {
+        margin-top: -4px;
     }
 }
 
