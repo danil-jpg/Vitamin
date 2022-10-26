@@ -21,6 +21,7 @@
     font-size: em(22);
     line-height: 320%;
     color: #000000;
+    display: grid;
 }
 .profile__title {
     font-weight: 700;
@@ -39,7 +40,7 @@
         color: #d32d2c;
     }
     a:hover {
-        font-size: 1.05em;
+        cursor: pointer;
     }
 }
 
@@ -352,6 +353,30 @@
         background-color: black;
     }
 }
+
+.order-collapse {
+    opacity: 0;
+    animation: opacity-close 0.3s;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    // top: 0;
+    left: -100%;
+}
+.orders__bottom-text.order-rotate-arrow::after {
+    content: url(../img/profile/Back_arrow.svg);
+    background: no-repeat;
+    position: absolute;
+    right: 4px;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    pointer-events: all;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
 @media screen and (max-width: 1439px) {
     .profile__content {
         display: grid;
@@ -392,6 +417,20 @@
             transition: 0.3s;
         }
     }
+    .orders {
+        width: 912px;
+    }
+
+    .orders__content {
+        width: 100%;
+    }
+
+    .order__card-wr {
+        width: 100%;
+    }
+    .profile__list {
+        font-weight: 400;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -406,6 +445,12 @@
     .profile__list {
         text-align: center;
         margin: 0 auto;
+    }
+    .orders {
+        width: 760px;
+    }
+    .profile__list {
+        font-weight: 400;
     }
 }
 
@@ -483,7 +528,7 @@
         /* identical to box height */
 
         /* Goods_Mint_Text */
-        color: #6bb0a4;
+        // color: #6bb0a4;
     }
 
     .subscriptions__card-name {
@@ -548,6 +593,246 @@
     }
     .profile__content {
         margin-bottom: 63px;
+    }
+    .orders {
+        width: 100%;
+    }
+
+    .orders__content {
+        margin: 20px auto -21px;
+    }
+
+    .orders__block-wr {
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding: 28px 20px;
+
+        * {
+            transition: 0.3s;
+        }
+    }
+
+    .orders__block-top-text-wr {
+        grid-column: 1/2;
+        cursor: pointer;
+    }
+
+    .orders__top-text-wr {
+        width: 54%;
+        margin-top: 4px;
+    }
+
+    .orders__top-text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    .orders__top-text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    .orders__bottom-text {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .order__card-wr {
+        padding: 0;
+        height: 135px;
+
+        .subscriptions__card-content {
+            grid-template-columns: 34% 60%;
+        }
+        .subscriptions__card-left-wr {
+            margin-top: 15px;
+            width: 100px;
+            height: 120px;
+        }
+
+        .subscriptions__card-right-wr {
+            padding-left: 21px;
+            padding-top: 32px;
+        }
+
+        .subscriptions__card-name {
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            width: 100%;
+            /* margin-top: -17px; */
+            margin-left: -1px;
+        }
+
+        .subscriptions__card-price {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: left;
+            color: #000000;
+            margin-top: 27px;
+            margin-left: 0px;
+        }
+    }
+    .orders__hor-line {
+        grid-column: 1/2;
+    }
+
+    .orders__bottom-block-wr {
+        grid-column: 1/2;
+    }
+
+    .orders__bottom-block_left-wr {
+        width: 33%;
+    }
+
+    .orders__bottom_btn {
+        width: 50%;
+    }
+    .order__card-wr_1 {
+        margin-top: 15px;
+    }
+    .order__card-wr_2 {
+        margin-top: 2px !important;
+    }
+    .order__card-wr-3 {
+        margin-top: 0px !important;
+
+        .subscriptions__card-right-wr {
+            padding-top: 23px;
+        }
+    }
+    .orders__hor-line {
+        margin-top: 36px;
+    }
+    .orders__bottom-amount {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #000000;
+
+        opacity: 0.5;
+    }
+    .orders__bottom-sum {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+
+        color: #000000;
+    }
+
+    .orders__bottom_btn {
+        width: 154px;
+        height: 50px;
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .orders__bottom-block-wr {
+        margin-top: 29px;
+    }
+    .orders__bottom-block_left-wr {
+        width: 35%;
+    }
+    .orders__top-text_right {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "•";
+            left: -13px;
+            font-family: "Open Sans";
+            top: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #000000;
+
+            opacity: 0.5;
+        }
+    }
+    .orders__bottom-text {
+        position: relative;
+        &::after {
+            content: url(../img/profile/Back_arrow.svg);
+            background: no-repeat;
+            position: absolute;
+            right: 4px;
+            top: -15px;
+            width: 15px;
+            height: 15px;
+            pointer-events: all;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+    .orders__block-wr {
+        margin-bottom: 12px;
+    }
+
+    .profile__list {
+        display: grid;
+
+        font-weight: 400;
+    }
+    .profile__list {
+        display: none;
+    }
+
+    .subscriptions {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            content: "Subscriptions";
+            left: 0;
+            top: -57px;
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            pointer-events: all;
+            line-height: 29px;
+            /* identical to box height */
+
+            color: #000000;
+        }
+    }
+    .profile__content {
+        margin-top: 150px;
     }
 }
 
