@@ -1,6 +1,5 @@
 function profile () {
   const titlesList = document.querySelectorAll('.profile__item a')
-  const preChosenTab = document.querySelector('.tabs-block_chosen')
   const elemToHide = document.querySelectorAll('.profile__list *:not(.profile__title)')
   const elemToShow = document.querySelector('.profile__title')
   const unsubscribeBtn = document.querySelectorAll('.subscriptions__card-btn')
@@ -11,7 +10,6 @@ function profile () {
 
   titlesList.forEach(item => {
     item.addEventListener('click', (e) => {
-      preChosenTab.classList.remove('tabs-block_chosen')
       titlesList.forEach(item => {
         item.classList.remove('profile__title')
         elemToShow.classList.remove('profile__title')
