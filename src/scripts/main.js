@@ -50,7 +50,7 @@ window.addEventListener('DOMContentLoaded', () => {
     burger()
     profile()
   }
-  if(packPage){
+  if (packPage) {
     burger()
     card()
   }
