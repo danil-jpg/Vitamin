@@ -11,6 +11,7 @@
     font-size: em(22);
     line-height: 320%;
     color: #000000;
+    display: grid;
 }
 .profile__title {
     font-weight: 700;
@@ -29,7 +30,7 @@
         color: #d32d2c;
     }
     a:hover {
-        font-size: 1.05em;
+        cursor: pointer;
     }
 }
 
@@ -197,6 +198,8 @@
     opacity: 0;
     position: absolute;
     pointer-events: none;
+    transition: 0.6s;
+    left: -100%;
 }
 
 .tabs-block:target {
@@ -209,6 +212,159 @@
 
 .tabs-block_chosen {
     display: block;
+}
+
+.orders {
+}
+
+.orders__content {
+    margin: 42px auto -21px;
+    width: 1039px;
+}
+.orders__block-wr {
+    background: #faf8f6;
+    width: 100%;
+    padding: 40px;
+    border-radius: 24px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 38px;
+    margin-bottom: 17px;
+}
+.orders__block-top-text-wr {
+    grid-column: 1/3;
+}
+.orders__top-text-wr {
+    display: flex;
+    justify-content: space-between;
+}
+.orders__top-text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: em(18);
+    line-height: lh(25, 18);
+    color: #000000;
+    opacity: 0.5;
+}
+.orders__top-text_left {
+    font-weight: 400;
+    color: #000000;
+    opacity: 0.5;
+}
+.orders__top-text_right {
+    color: #000000;
+    font-weight: 400;
+}
+.orders__bottom-text {
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 500;
+    font-size: em(22);
+    line-height: lh(27, 22);
+    color: #000000;
+    margin-top: 8px;
+}
+
+.order__card-wr {
+    padding: 0;
+    margin-top: 38px;
+    width: 455px;
+    height: 176px;
+    .subscriptions__card-right-wr {
+        padding-left: 29px;
+    }
+
+    .subscriptions__card-center-wr {
+        flex-direction: column;
+    }
+    .subscriptions__card-price {
+        margin-top: 50px;
+        margin-left: 3px;
+    }
+}
+.order__card-wr-3 {
+    margin-top: 25px;
+}
+.orders__hor-line {
+    margin-top: 43px;
+    grid-column: 1/3;
+    width: 100%;
+    opacity: 0.07;
+    border: 1px solid #000000;
+}
+
+.orders__bottom-block-wr {
+    grid-column: 1/3;
+    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+}
+.orders__bottom-block_left-wr {
+    width: 294px;
+}
+.orders__bottom-amount {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 4px;
+}
+.orders__bottom-sum {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    /* identical to box height */
+
+    color: #000000;
+}
+.orders__bottom_btn {
+    width: 154px;
+    height: 50px;
+    background: #ff7d4e;
+    border-radius: 50px;
+    font-family: "Effra";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+    transition: 0.3s;
+    &:hover {
+        background-color: black;
+    }
+}
+
+.order-collapse {
+    opacity: 0;
+    animation: opacity-close 0.3s;
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    // top: 0;
+    left: -100%;
+}
+.orders__bottom-text.order-rotate-arrow::after {
+    content: url(../img/profile/Back_arrow.svg);
+    background: no-repeat;
+    position: absolute;
+    right: 4px;
+    top: -4px;
+    width: 15px;
+    height: 15px;
+    pointer-events: all;
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: 0.3s;
 }
 
 @media screen and (max-width: 1439px) {
@@ -251,6 +407,24 @@
             transition: 0.3s;
         }
     }
+    .orders {
+        width: 912px;
+    }
+
+    .orders__content {
+        width: 100%;
+    }
+
+    .order__card-wr {
+        width: 100%;
+    }
+    .profile__list {
+        font-weight: 400;
+    }
+
+    .profile__list {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 1023px) {
@@ -265,6 +439,12 @@
     .profile__list {
         text-align: center;
         margin: 0 auto;
+    }
+    .orders {
+        width: 760px;
+    }
+    .profile__list {
+        font-weight: 400;
     }
 }
 
@@ -342,7 +522,7 @@
         /* identical to box height */
 
         /* Goods_Mint_Text */
-        color: #6bb0a4;
+        // color: #6bb0a4;
     }
 
     .subscriptions__card-name {
@@ -408,6 +588,265 @@
     .profile__content {
         margin-bottom: 63px;
     }
+    .orders {
+        width: 100%;
+    }
+
+    .orders__content {
+        margin: 20px auto -21px;
+    }
+
+    .orders__block-wr {
+        grid-template-columns: 1fr;
+        padding: 0;
+        padding: 28px 20px;
+
+        * {
+            transition: 0.3s;
+        }
+    }
+
+    .orders__block-top-text-wr {
+        grid-column: 1/2;
+        cursor: pointer;
+    }
+
+    .orders__top-text-wr {
+        width: 54%;
+        margin-top: 4px;
+    }
+
+    .orders__top-text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    .orders__top-text {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #000000;
+        opacity: 0.5;
+    }
+
+    .orders__bottom-text {
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        /* identical to box height */
+        color: #000000;
+    }
+
+    .order__card-wr {
+        padding: 0;
+        height: 135px;
+
+        .subscriptions__card-content {
+            grid-template-columns: 34% 60%;
+        }
+        .subscriptions__card-left-wr {
+            margin-top: 15px;
+            width: 100px;
+            height: 120px;
+        }
+
+        .subscriptions__card-right-wr {
+            padding-left: 21px;
+            padding-top: 32px;
+        }
+
+        .subscriptions__card-name {
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #000000;
+            width: 100%;
+            /* margin-top: -17px; */
+            margin-left: -1px;
+        }
+
+        .subscriptions__card-price {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+            text-align: left;
+            color: #000000;
+            margin-top: 27px;
+            margin-left: 0px;
+        }
+    }
+    .orders__hor-line {
+        grid-column: 1/2;
+    }
+
+    .orders__bottom-block-wr {
+        grid-column: 1/2;
+    }
+
+    .orders__bottom-block_left-wr {
+        width: 33%;
+    }
+
+    .orders__bottom_btn {
+        width: 50%;
+    }
+    .order__card-wr_1 {
+        margin-top: 15px;
+    }
+    .order__card-wr_2 {
+        margin-top: 2px !important;
+    }
+    .order__card-wr-3 {
+        margin-top: 0px !important;
+
+        .subscriptions__card-right-wr {
+            padding-top: 23px;
+        }
+    }
+    .orders__hor-line {
+        margin-top: 36px;
+    }
+    .orders__bottom-amount {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #000000;
+
+        opacity: 0.5;
+    }
+    .orders__bottom-sum {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 22px;
+        /* identical to box height */
+
+        color: #000000;
+    }
+
+    .orders__bottom_btn {
+        width: 154px;
+        height: 50px;
+        font-family: "Effra";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .orders__bottom-block-wr {
+        margin-top: 29px;
+    }
+    .orders__bottom-block_left-wr {
+        width: 35%;
+    }
+    .orders__top-text_right {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "•";
+            left: -13px;
+            font-family: "Open Sans";
+            top: 0;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19px;
+
+            color: #000000;
+
+            opacity: 0.5;
+        }
+    }
+    .orders__bottom-text {
+        position: relative;
+        &::after {
+            content: url(../img/profile/Back_arrow.svg);
+            background: no-repeat;
+            position: absolute;
+            right: 4px;
+            top: -15px;
+            width: 15px;
+            height: 15px;
+            pointer-events: all;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+    }
+    .orders__block-wr {
+        margin-bottom: 12px;
+    }
+
+    .profile__list {
+        display: grid;
+
+        font-weight: 400;
+    }
+    .profile__list {
+        display: none;
+    }
+
+    .subscriptions {
+        position: relative;
+
+        &::after {
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            content: "Subscriptions";
+            left: 0;
+            top: -57px;
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            pointer-events: all;
+            line-height: 29px;
+            /* identical to box height */
+
+            color: #000000;
+        }
+    }
+    .profile__content {
+        margin-top: 150px;
+    }
+    .orders {
+        position: relative;
+
+        &::after {
+            content: "Orders";
+            position: absolute;
+
+            font-family: "Effra";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+
+            color: #000000;
+            top: -57px;
+            left: 0;
+        }
+    }
 }
 
 @media screen and (max-width: 374px) {
@@ -417,26 +856,71 @@
     .subscriptions__card-wr:nth-of-type(2) {
         height: 421px;
     }
+    .orders__block-wr {
+        padding: 28px 20px;
+    }
+
+    .orders__top-text-wr {
+        width: 66%;
+    }
+
+    .order__card-wr {
+        height: 134px;
+
+        .subscriptions__card-right-wr {
+            padding-left: 37px;
+            padding-top: 23px;
+        }
+    }
+
+    .order__card-wr_2 {
+        .subscriptions__card-name {
+            width: 117%;
+        }
+    }
+
+    .orders__bottom-block_left-wr {
+        width: 64%;
+    }
+    .orders__block-wr {
+        .subscriptions__card-wr:nth-of-type(2) {
+            height: 134px;
+        }
+    }
+
+    .order__card-wr-3 {
+        .subscriptions__card-subtitle {
+            width: 113%;
+            margin-top: -7px;
+        }
+    }
+
+    .orders__bottom-amount {
+        margin-top: 9px;
+    }
+    .orders__block-wr {
+        margin-bottom: 14px;
+    }
+    .orders__bottom-block_left-wr {
+        margin-top: -4px;
+    }
 }
 
-
-
-
 // Даниил А ==========================================================================
-.profile-block__title{
+.profile-block__title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.checkout-form__profile{
+.checkout-form__profile {
     margin-top: 0px;
-    .checkout-form__blocks-top{
+    .checkout-form__blocks-top {
         margin-top: 1px;
         margin-left: 3px;
     }
 }
-.subscriptions__title-min{
-    font-family: 'Effra';
+.subscriptions__title-min {
+    font-family: "Effra";
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
@@ -445,19 +929,19 @@
     margin-right: 119px;
     padding-bottom: 22px;
 }
-.checkout-form__profile-btn{
-    background-color: #C4BDB6;
+.checkout-form__profile-btn {
+    background-color: #c4bdb6;
     border-radius: 100px;
 
     width: 154px;
     height: 50px;
 
-    font-family: 'Effra';
+    font-family: "Effra";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     display: flex;
     align-items: center;
@@ -466,23 +950,23 @@
     margin: 39px 0 0 3px;
 
     transition: all 0.3s;
-    &:hover{
-        background-color: #FF7D4E;
+    &:hover {
+        background-color: #ff7d4e;
     }
 }
-.pop-up{
+.pop-up {
     position: fixed;
     top: -100%;
     left: clamp(1.25rem, -10.444rem + 49.89vw, 45.688rem);
     z-index: 4;
 
-    background: #A2C94F;
+    background: #a2c94f;
     border-radius: 12px;
     color: #fff;
 
     width: 336px;
     height: 56px;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -491,30 +975,30 @@
 
     transition: all 0.3s;
 
-    &.active{
+    &.active {
         top: 27px;
     }
 }
-.footer-profile{
-    background-color: #FAF8F6;
+.footer-profile {
+    background-color: #faf8f6;
 }
-@media (max-width: 767px){
-    .profile-block__title{
+@media (max-width: 767px) {
+    .profile-block__title {
         display: none;
     }
 }
-@media (max-width: 375px){
-    .pop-up{
+@media (max-width: 375px) {
+    .pop-up {
         width: 100%;
         height: 70px;
 
         left: 0;
         border-radius: 0;
-        &.active{
+        &.active {
             top: 0;
         }
     }
-    .checkout-form__profile-btn{
+    .checkout-form__profile-btn {
         width: 100%;
         height: 60px;
 
@@ -528,7 +1012,7 @@
     width: 674px;
     height: 336px;
 
-    background-image: url('../img/profile/card.webp');
+    background-image: url("../img/profile/card.webp");
     background-repeat: no-repeat;
     background-size: auto;
 
@@ -538,23 +1022,23 @@
     position: absolute;
     top: 50px;
     left: 40px;
-    p{
-        font-family: 'Open Sans';
+    p {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        
+
         opacity: 0.5;
     }
-    input{
-        font-family: 'Open Sans';
+    input {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
 
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 12px;
 
         width: 410px;
@@ -568,23 +1052,23 @@
     position: absolute;
     top: 164px;
     left: 40px;
-    p{
-        font-family: 'Open Sans';
+    p {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        
+
         opacity: 0.5;
     }
-    input{
-        font-family: 'Open Sans';
+    input {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
 
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 12px;
 
         width: 104px;
@@ -598,35 +1082,35 @@
     position: absolute;
     bottom: 48px;
     right: 40px;
-    p{
-        font-family: 'Open Sans';
+    p {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
         line-height: 19px;
-        
+
         opacity: 0.5;
     }
-    input{
-        font-family: 'Open Sans';
+    input {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
 
-        background: #FFFFFF;
+        background: #ffffff;
         border-radius: 12px;
 
         width: 104px;
         height: 56px;
-        
+
         padding: 0px 0px 0px 25px;
         margin: 8px 0px 0px 0px;
     }
 }
 
-@media (max-width: 767px){
-    .profile__payment-card{
+@media (max-width: 767px) {
+    .profile__payment-card {
         width: 100%;
         height: auto;
 
@@ -639,32 +1123,32 @@
 
         margin-top: 30px;
     }
-    .payment-card__block-1{
+    .payment-card__block-1 {
         position: static;
         grid-row: 1/2;
         grid-column: 1/3;
-        input{
-            background-color: #FAF8F6;
+        input {
+            background-color: #faf8f6;
             margin-top: 5px;
             width: 100%;
         }
     }
-    .payment-card__block-2{
+    .payment-card__block-2 {
         position: static;
         grid-row: 2/3;
         grid-column: 1/2;
-        input{
-            background-color: #FAF8F6;
+        input {
+            background-color: #faf8f6;
             margin-top: 5px;
             width: 100%;
         }
     }
-    .payment-card__block-3{
+    .payment-card__block-3 {
         position: static;
         grid-row: 2/3;
         grid-column: 2/3;
-        input{
-            background-color: #FAF8F6;
+        input {
+            background-color: #faf8f6;
             margin-top: 5px;
             width: 100%;
         }
@@ -679,8 +1163,8 @@
     margin: 0px 0 0 4px;
 }
 .profile-change__block {
-    p{
-        font-family: 'Open Sans';
+    p {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -688,14 +1172,14 @@
 
         opacity: 0.5;
     }
-    input{
-        font-family: 'Open Sans';
+    input {
+        font-family: "Open Sans";
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
         line-height: 25px;
 
-        background-color: #FAF8F6;
+        background-color: #faf8f6;
         border-radius: 12px;
 
         width: 444px;
@@ -705,25 +1189,25 @@
         margin: 5px 0px 0px 0px;
     }
 }
-@media (max-width: 1023px){
-    .changePassword{
+@media (max-width: 1023px) {
+    .changePassword {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 }
-@media (max-width: 768px){
-    .profile-change__block{
-        input{
+@media (max-width: 768px) {
+    .profile-change__block {
+        input {
             width: 100%;
         }
     }
-    .profile__change-password{
+    .profile__change-password {
         width: 100%;
         margin-top: 30px;
         gap: 25px;
     }
-    .changePassword{
+    .changePassword {
         align-items: flex-start;
     }
 }
