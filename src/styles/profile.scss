@@ -1257,11 +1257,11 @@
     .changePassword {
         align-items: flex-start;
     }
-}
-@media (max-width: 375px){
     .change-block__title{
         top: -45px;
     }
+}
+@media (max-width: 375px){
     .profile__change-password {
         width: 100%;
         margin-top: 22px;
