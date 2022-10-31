@@ -16,6 +16,8 @@ import webpack from 'webpack-stream'
 import fileinclude from 'gulp-file-include'
 import webp from 'gulp-webp'
 import sourcemaps from 'gulp-sourcemaps'
+import gulpCssMin from 'gulp-cssmin'
+import ttf2woff from 'gulp-ttf2woff'
 const browserSync = name.create()
 const sass = gulpSass(dartSass)
 
@@ -59,8 +61,8 @@ const paths = {
 
 function clean () {
   // return del(["docs/*", "!docs/src/img", "!docs/src/fonts"]);
-  // return del(["docs/*", "!docs/src/img"]);
-  return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
+  return del(['docs/*'])
+  // return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
 }
 
 function htmlMin () {
@@ -129,6 +131,7 @@ function stylesMin () {
         })
       )
       .pipe(cleanCss({ level: 2 }))
+      .pipe(gulpCssMin())
       .pipe(
         rename({
           basename: 'main',
@@ -195,7 +198,9 @@ function watch () {
 }
 
 function fonts () {
-  return gulp.src(paths.fonts.src).pipe(gulp.dest(paths.fonts.dest))
+  return gulp.src(paths.fonts.src)
+    .pipe(ttf2woff())
+    .pipe(gulp.dest(paths.fonts.dest))
 }
 
 function img () {
