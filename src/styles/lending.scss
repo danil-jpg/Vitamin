@@ -573,7 +573,7 @@
 .lending-started__button {
     display: flex;
     flex-direction: column;
-
+    
     margin: 48px 0px 0px 0px;
     gap: 32px;
     a{
@@ -582,8 +582,6 @@
         }
     }
 }
-
-
 // ===================================
 @media (max-width: 1550px){
     .lending-choose__right-inform{
@@ -1406,6 +1404,3 @@
         width: 38px;
     }
 }
-
-
-
