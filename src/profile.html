@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en" class="profileHTML">
-    @@include("./html/head.html",{ "title" : "profile" })
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile</title>
+        <link rel="stylesheet" href="styles/main.min.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            rel="preload"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+
     <body>
         @@include("html/header.html")
         <main class="profile__main">
@@ -507,10 +525,14 @@
                         <!--  -->
                         <div class="overview tabs-block" id="overview">
                             <div class="profile-block__title">
-                                <p class="subscriptions__title subscriptions__title-main">
+                                <p
+                                    class="subscriptions__title subscriptions__title-main"
+                                >
                                     Account Overview
                                 </p>
-                                <p class="subscriptions__title subscriptions__title-min">
+                                <p
+                                    class="subscriptions__title subscriptions__title-min"
+                                >
                                     Regular customer
                                 </p>
                             </div>
@@ -599,8 +621,14 @@
                         </div>
                         <!--  -->
                         <div class="payment-profile tabs-block" id="payment">
-                            <div class="profile-block__title payment-block__title">
-                                <p class="subscriptions__title subscriptions__title-main">Payment methods</p>
+                            <div
+                                class="profile-block__title payment-block__title"
+                            >
+                                <p
+                                    class="subscriptions__title subscriptions__title-main"
+                                >
+                                    Payment methods
+                                </p>
                             </div>
                             <div class="profile__payment-card">
                                 <div class="payment-card__block-1">
@@ -623,8 +651,12 @@
                         <!-- ss  -->
                         <div class="tabs-block" id="changePassword">
                             <div class="changePassword">
-                                <div class="profile-block__title change-block__title">
-                                    <p class="subscriptions__title subscriptions__title-main">
+                                <div
+                                    class="profile-block__title change-block__title"
+                                >
+                                    <p
+                                        class="subscriptions__title subscriptions__title-main"
+                                    >
                                         Change Password
                                     </p>
                                 </div>
