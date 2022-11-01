@@ -162,6 +162,30 @@ function stylesMin () {
   )
 }
 
+gulp.task('stylesProdMin', () => {
+  return (
+    gulp
+      .src(paths.stylesMin.src)
+      .pipe(sass())
+      .pipe(
+        autoPrefixer({
+          cascade: false
+        })
+      )
+      .pipe(cleanCss({ level: 2 }))
+      .pipe(gulpCssMin())
+      .pipe(
+        rename({
+          basename: 'main',
+          suffix: '.min'
+        })
+      )
+      .pipe(gulpSize({ showFiles: true }))
+      .pipe(gulp.dest(paths.stylesMin.dest))
+  )
+}
+)
+
 function styles () {
   return (
     gulp
