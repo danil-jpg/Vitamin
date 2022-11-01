@@ -151,8 +151,18 @@
         font-size: em(22);
         line-height: lh(27, 22);
         color: #000000;
-        &:first-of-type {
-            color: #ff7d4e;
+        a{
+            color: #000000; 
+        }
+        &:first-child {
+            a{
+                color: #ff7d4e;
+            }
+        }
+        &:last-child{
+            a{
+                color: #ff7d4e;
+            }
         }
     }
 }
