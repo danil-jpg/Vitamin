@@ -573,7 +573,7 @@
 .lending-started__button {
     display: flex;
     flex-direction: column;
-
+    
     margin: 48px 0px 0px 0px;
     gap: 32px;
     a{
@@ -582,8 +582,6 @@
         }
     }
 }
-
-
 // ===================================
 @media (max-width: 1550px){
     .lending-choose__right-inform{
@@ -592,6 +590,9 @@
 }
 // ===================================
 @media (max-width: 1460px){
+    [class*="__container"] {
+        width: 1140px;
+    }
     .lending-vitamin__container{
         width: 1190px;
         height: 100%;
@@ -668,9 +669,6 @@
     .lending-healthy__block{
         margin-top: clamp(2.875rem, 2.037rem + 4.19vw, 6.75rem);
     }
-    .lending-listeners__container{
-        width: 1140px;
-    }
     .listeners__block-icon{
         margin-top: 180px;
 
@@ -714,9 +712,6 @@
         margin: 0px 0px 0px 0px;
         transform: translate(0px,0);
     }
-    .lending-happy__container{
-        width: 1140px;
-    }
     .lending-happy__right img {
         width: 386px;
         height: 364px;
@@ -725,14 +720,11 @@
         top: -81px;
         left: 61.8%;
     }
-    .lending-started__container{
-        width: 1140px;
-    }
 }
 // ===================================
 
 @media (max-width: 1140px){
-    .lending-vitamin__container{
+    [class*="__container"] {
         width: 912px;
     }
     .lending-vitamin__icon-contents img{
@@ -741,12 +733,7 @@
     .lending-vitamin__icon-contents::before{
         left: 225px;
     }
-    .lending-listeners__container{
-        width: 912px;
-    }
     .lending-happy__container{
-        width: 912px;
-
         align-items: center;
         justify-content: center;
     }
@@ -762,17 +749,14 @@
 
         margin-top: 25px;
     }
-    .lending-started__container{
-        width: 912px;
-    }
     .lending-started__container::before{
         right: -80px;
     }
 }
 // ===================================
 @media (max-width: 911px){
-    .lending-started__container{
-        width: 646px;
+    [class*="__container"] {
+        width: 645px;
     }
     .lending-started__block p{
         padding: 0px 20px 0px;
@@ -795,7 +779,7 @@
 }
 // ===================================
 @media (max-width: 890px){
-    .lending-vitamin__container{
+    [class*="__container"] {
         width: 645px;
     }
     .lending-vitamin__button{
@@ -823,9 +807,6 @@
     .lending-healthy__content-left::before{
         width: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
         height: clamp(3.75rem, 0.978rem + 13.86vw, 8.688rem);
-    }
-    .lending-listeners__container{
-        width: 645px;
     }
     .listeners__block-icon{
         margin-top: 110px;
@@ -868,9 +849,6 @@
 
         padding-top: clamp(1.25rem, -2.205rem + 8.57vw, 2.563rem);
     }
-    .lending-choose__container{
-        width: 645px;
-    }
     .swiper-choose{
         width: 100%;
     }
@@ -894,9 +872,6 @@
     .swiper-choose__block-icon{
         margin: 0 0 0 142px;
     }
-    .lending-happy__container{
-        width: 645px;
-    }
     .lending-happy__left{
         h4{
             font-size: clamp(1.25rem, -0.013rem + 6.32vw, 3.5rem);
@@ -909,9 +884,14 @@
 }
 // ===================================
 @media (max-width: 645px){
-    .lending-vitamin__container{
+    [class*="__container"] {
         width: 375px;
+    }
+    .lending-vitamin__container{
         padding: 0px 0px 0px 0px;
+    }
+    .lending-started__container{
+        margin-bottom: 64px;
     }
     .lending-vitamin__text-title{
         font-size: 24px;
@@ -926,15 +906,12 @@
     .lending-vitamin__text-text{
         font-size: 14px;
         line-height: 163.42%;
-
         margin-top: 15px;
     }
     .lending-vitamin__text-contents::before{
         width: 75px;
         height: 90px;
-
         background-size: 100%;
-
         bottom: 1px;
         right: -1px;
     }
@@ -944,18 +921,14 @@
     .lending-vitamin__button-left{
         width: 154px;
         height: 50px;
-
         font-size: 16px;
         line-height: 19px;
-
         margin: 0px 0px 0px 0px;
     }
     .lending-vitamin__button-right{
         font-size: 14px;
         line-height: 17px;
-
         margin: 0 0 0 2px;
-
         background-position: right 7px top 5px;
         background-size: 5.3%;
     }
@@ -963,17 +936,15 @@
         display: none;
     }
     .lending-vitamin__block{
-        background-image: url('../img/Lending/lending-vitamins2.svg');
+        background-image: url('../img/Lending/lending-vitamins2.webp');
         background-repeat: no-repeat;
         background-position: center;
         background-position: top 13px left 1px;
         background-size: 100%;
-
         height: 341px;
     }
     .lending-vitamin__container::before{
         background-size: 100%;
-
         top: 56.3%;
         bottom: 0;
         right: 0;
@@ -981,22 +952,17 @@
         width: 138px;
         height: 84px;
     }
-    .lending-listeners__container{
-        width: 375px;
-    }
     .listeners__block-icon {
         margin-top: 57px;
     }
     .listeners__block-icon img:nth-child(1){
         width: 202.24px;
         height: 171.72px;
-
         transform: translate(59px,-56px);
     }
     .listeners__block-icon img:nth-child(2){
         width: 293.74px;
         height: 170.44px;
-
         transform: translate(-61px,9px);
     }
     .lending-listeners__text{
@@ -1006,7 +972,6 @@
     .lending-listeners__text::before{
         width: 60px;
         height: 60px;
-
         top: -35px;
         right: -45px;
     }
@@ -1023,21 +988,15 @@
     .lending-listeners__text p{
         margin-top: 14px;
         padding: 0 7px 0 7px;
-
         font-size: 14px;
         line-height: 163.42%;
     }
     .lending-listeners__text a{
         margin-top: 28px;
-
         width: 154px;
         height: 50px;
-
         font-size: 16px;
         line-height: 19px;
-    }
-    .lending-choose__container{
-        width: 375px;
     }
     .lending-choose__right-inform{
         padding: 59px 0px 0px 0px;
@@ -1054,10 +1013,7 @@
         line-height: 163.42%;
         margin: 15px 0 0 0;
         padding: 0 20px 20px;
-
-        br{
-            display: none;
-        }
+        br{display: none;}
     }
     .lending-choose__right-block a{
         font-size: 14px;
@@ -1076,7 +1032,6 @@
     .swiper-choose__block-icon{
         width: 202px;
         height: 183px;
-
         margin: 0 0 0 47px;
     }
     .swiper-choose__block{
@@ -1098,9 +1053,6 @@
         line-height: 19px; 
         margin-top: 15px;
     }
-    .lending-happy__container{
-        width: 375px;
-    }
     .lending-happy__left{
         margin-top: -61px;
         margin-bottom: 29px;
@@ -1112,41 +1064,31 @@
         h4{
             font-size: 20px;
             line-height: 24px;
-
             margin-top: 30px;
         }
         p{
             br{display: none;} 
-
             font-size: 14px;
-
             padding: 0 5px;
             margin: 16px 0px 0px 0px;
         }
     }
-    .lending-started__container{
-        width: 375px;
 
-        margin-bottom: 64px;
-    }
     .lending-started__block{
         margin-top: 61px;
         img{
             height: 46.009918212890625px;
             width: 49.844852447509766px;
-
             margin-right: 17px;
         }
         h2{
             font-size: 24px;
             line-height: 29px;
-
             margin-top: 30px;
             padding: 0 0px 0 0;
         }
         p{
             font-size: 14px;
-
             margin-top: 14px;
             padding: 0 5px;
         }
@@ -1158,7 +1100,6 @@
             &:nth-child(1){
                 width: 154px;
                 height: 50px;
-
                 font-size: 16px;
                 line-height: 19px;
             }
@@ -1168,33 +1109,34 @@
             }
         }
     }
-    .lending-started__container::before{
-        right: 0;
-        left: 0;
-        top: 45px;
-
-        width: 76px;
-        height: 76px;
-
-        background-size: 97%;
-        background-position: left 0 top -72px;
-    }
-    .lending-started__container::after{
-        top: 297px;
-        left: 395px;
-
-        width: 70px;
-        height: 280px;
-
-        background-size: 100%;
-        background-position: left 0 top 0;
-        transform: rotate(-90deg);
+    .lending-started__container{
+        &::before{
+            right: 0;
+            left: 0;
+            top: 45px;
+            width: 76px;
+            height: 76px;
+            background-size: 97%;
+            background-position: left 0 top -72px;
+        }
+        &::after{
+            top: 297px;
+            left: 395px;
+            width: 70px;
+            height: 280px;
+            background-size: 100%;
+            background-position: left 0 top 0;
+            transform: rotate(-90deg);
+        }
     }
 }
 // ===================================
 @media (max-width: 374px){
-    .lending-vitamin__container{
+    [class*="__container"] {
         width: 320px;
+    }
+    .lending-started__container{
+        margin-bottom: 46px;
     }
     .lending-vitamin__text-title{
         margin-left: 5px;
@@ -1249,7 +1191,6 @@
     }
     .lending-healthy__content-right{
         padding: 0px 20px 0px 20px;
-
         align-items: flex-start;
     }
     .lending-healthy__block{
@@ -1261,7 +1202,6 @@
         }
         p{
             padding-top: 3px;
-
             font-size: 14px;
             line-height: 16.9px;
             br{
@@ -1294,22 +1234,18 @@
             padding-top: 8px;
         }
     }
-    .lending-listeners__container{
-        width: 320px;
-    }
+
     .listeners__block-icon {
         margin-top: 40px;
     }
     .listeners__block-icon img:nth-child(1){
         width: 168.24px;
         height: 142.85px;
-
         transform: translate(51px,-39px);
     }
     .listeners__block-icon img:nth-child(2){
         width: 256px;
         height: 148.54px;
-
         transform: translate(-53px,9px);
     }
     .lending-listeners__text::before{
@@ -1320,16 +1256,11 @@
         margin-bottom: 59px;
     }
     .lending-listeners__text h2{
-        br{
-            display: none;
-        }
+        br{display: none;}
     }
     .lending-listeners__text a{
         margin-top: 22px;
         margin-right: 1px;
-    }
-    .lending-choose__container{
-        width: 320px;
     }
     .lending-choose__right-block p{
         padding-bottom: 20px;
@@ -1347,16 +1278,9 @@
     .swiper-choose__block-icon {
         margin: 0 0 0 19px;
     }
-    .lending-happy__container{
-        width: 320px;
-    }
     .lending-happy__left{
         margin-top: -38px;
         margin-bottom: 30px;
-    }
-    .lending-started__container{
-        width: 320px;
-        margin-bottom: 46px;
     }
     .lending-started__block {
         margin-top: 60px;
@@ -1367,13 +1291,15 @@
             margin-top: 14px;
         }
     }
-    .lending-started__container::before {
-        left: -8px;
-        top: 44px;
-    }
-    .lending-started__container::after {
-        top: 301px;
-        left: 335px;
+    .lending-started__container{
+        &::before {
+            left: -8px;
+            top: 44px;
+        }
+        &::after {
+            top: 301px;
+            left: 335px;
+        }
     }
     .lending-started__button {
         margin-top: 21px;
@@ -1389,10 +1315,10 @@
     .lending-healthy__content-left h2 {
         padding: 0 18px;
     }
-    .lending-healthy__block img{
-        width: 47px;
-    }
     .lending-healthy__block{
+        img{
+            width: 47px;
+        }
         p{
             br{
                 display: block;
@@ -1406,6 +1332,3 @@
         width: 38px;
     }
 }
-
-
-

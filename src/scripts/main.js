@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', () => {
     choose()
     reviews()
     burger()
-    card()
+    cart()
   }
   if (quiz) {
     quizPage()
@@ -40,11 +40,11 @@ window.addEventListener('DOMContentLoaded', () => {
   if (checkoutPage) {
     burger()
     checkout()
-    card()
+    cart()
   }
   if (singUpPage) {
     singUpTab()
-    card()
+    cart()
   }
   if (profilePage) {
     burger()
@@ -52,6 +52,6 @@ window.addEventListener('DOMContentLoaded', () => {
   }
   if (packPage) {
     burger()
-    card()
+    cart()
   }
 })
