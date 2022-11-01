@@ -18,6 +18,7 @@ import webp from 'gulp-webp'
 import sourcemaps from 'gulp-sourcemaps'
 import gulpCssMin from 'gulp-cssmin'
 import ttf2woff from 'gulp-ttf2woff'
+import { stream as critical } from 'critical'
 const browserSync = name.create()
 const sass = gulpSass(dartSass)
 
@@ -65,6 +66,19 @@ function clean () {
   // return del(['dcs/*', '!docs/src/img', '!docs/src/fonts'])
 }
 
+gulp.task('critical', () => {
+  return gulp
+    .src('docs/*.html')
+    .pipe(
+      critical({
+        base: 'docs/',
+        inline: true,
+        css: ['docs/styles/main.min.css']
+      })
+    )
+    .pipe(gulp.dest('docs'))
+})
+
 function htmlMin () {
   return gulp
     .src(paths.htmlMin.src)
@@ -87,10 +101,12 @@ function htmlMin () {
         collapseWhitespace: true
       })
     )
+
     .pipe(gulpSize({ showFiles: true }))
     .pipe(gulp.dest(paths.htmlMin.dest))
     .pipe(browserSync.stream())
 }
+
 function html () {
   return gulp
     .src(paths.html.src)
@@ -100,6 +116,7 @@ function html () {
         basepath: '@file'
       })
     )
+
     .pipe(gulpSize({ showFiles: true }))
     .pipe(gulp.dest(paths.html.dest))
     .pipe(browserSync.stream())
@@ -213,8 +230,8 @@ function img () {
 }
 
 const build = gulp.series(
-  clean,
-  gulp.parallel(html, htmlMin, componentsHtml, stylesMin, styles, scripts, img, fonts),
+  clean, stylesMin, scripts,
+  gulp.parallel(styles, img, fonts, html, htmlMin, componentsHtml),
   watch
 )
 
