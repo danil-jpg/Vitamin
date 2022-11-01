@@ -230,8 +230,8 @@ function img () {
 }
 
 const build = gulp.series(
-  clean, stylesMin, scripts,
-  gulp.parallel(styles, img, fonts, html, htmlMin, componentsHtml),
+  clean,
+  gulp.parallel(styles, stylesMin, scripts, img, fonts, html, htmlMin, componentsHtml),
   watch
 )
 
