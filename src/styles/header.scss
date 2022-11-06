@@ -7,7 +7,7 @@
 .header__container {
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100vw !important;
 }
 .header__logo-icon {
     display: block;
