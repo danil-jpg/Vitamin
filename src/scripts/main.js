@@ -22,8 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
   if (mainPage) {
     choose()
     reviews()
-    burger()
-    cart()
+    //burger()
+    //cart()
   }
   if (quiz) {
     quizPage()
